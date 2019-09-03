@@ -1,0 +1,20 @@
+body{
+  margin: 0;
+  background-color: lavender;
+}
+h1{
+  color: blue;
+  font-family: sans-serif;
+  font-weight: italic;
+  font-size: 100px;
+  text-align:center;
+}
+
+.box{
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  margin: 20px;
+}
+}
