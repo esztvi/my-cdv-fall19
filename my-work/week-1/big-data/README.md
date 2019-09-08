@@ -26,4 +26,4 @@
 ## Section 6
 ## No prompts here, but a very well written chapter that is relevant to everything we will be talking about this semester. Please enjoy.
 
-### --> Yay!
+ --> Yay!
