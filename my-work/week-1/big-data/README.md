@@ -18,7 +18,7 @@
 ### --> Twitter is not people. As a non-twitter user... you can't lump me in with Twitter users. Yes, while it's true that a lot of people use twitter. And those people come from a variety of backgrounds and have many different points of view, they are not everyone. They do not fully represent that human population as a whole. People have many accounts (yeah celebrities have a real and a fake account) and there are plenty of meme pages and bots. Also consider the fact that there are accounts that are private or protected... there are users say in the EU who won't get their data treated in the way say Americans' data will be treated because of different EU privacy laws. It is much better in research to take a small data set and stratify as opposed to making sweeping generalizations about a population.
 
 ## Section 5 (pp. 671)
-##If you don't need to login to obtain certain data, then it is public and free to use. Or isn't it? Please share your opinion.
+## If you don't need to login to obtain certain data, then it is public and free to use. Or isn't it? Please share your opinion.
 
 ### --> You have the option to make things about you (specifically on social media) public and private. You have to opt into most tracking cookies... if you have data that is publicly accessible it is on you to protect it. If it is online... it is fair game. If you don't want anything to come back and haunt you don't post it. Like sure summer pictures from the time you went to Cancun with your friends are great, but like an employer can see those. Sure you can argue that "tagged photos" are a problem, but facebook allows you to even opt in to tags in photos. Personally, I always browse in private browsing mode and only give things I want to be a part of my consent to use my data. Once something leaves your hands... it isn't really yours anymore... if something you say does get taken out of context you have to be ready to defend yourself. It's naive to think that people reading/viewing your online activity will even care about context... hope for the best, but prepare for the worst. Don't give anyone ammo to fight you with. It could cost you a job later down the road.
 
@@ -26,4 +26,4 @@
 ## Section 6
 ## No prompts here, but a very well written chapter that is relevant to everything we will be talking about this semester. Please enjoy.
 
-### --> Yay! 
+### --> Yay!
