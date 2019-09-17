@@ -1,3 +1,6 @@
+function randomNumber(){
+  return Math.random()*800; //returns a random number between 0 and 800;
+}
 
 let viz = d3.select("#viz-container")
                   .append("svg")
@@ -19,10 +22,7 @@ let viz = d3.select("#viz-container")
 // ;
 //
 // myCircle.attr("fill", "lavender");
-function randomNumber(){
-  return Math.random()*800; //returns a random number between 0 and 800;
-}
-
+//
 let myData = [2,57,96,34,19];
 
 viz.selectAll("circle").data(myData).enter().append("circle")
