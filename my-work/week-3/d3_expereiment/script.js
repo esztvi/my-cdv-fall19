@@ -119,7 +119,7 @@ console.log(i);
           else if(datapoint.person == "Tristan")
           { return "Olive";}
           else if(datapoint.person == "Leon")
-          { return "lime";}
+          { return "Maroon";}
           else if(datapoint.person == "Ellen")
           { return "MediumPurple";}
           else if(datapoint.person == "Sarah Nelson")
