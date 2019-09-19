@@ -17,24 +17,24 @@ console.log(i);
             // return Math.random()*500;
             return i * 80;
         }
-        function getColor (datapoint,i) {
-          
-            console.log(datapoint.color);
-            if(datapoint.color == "Viber")
+        function getColor (medium,i) {
+
+            console.log(datapoint.medium);
+            if(datapoint.medium == "Viber")
             { return "purple";}
-            else if(datapoint.color == "Snapchat")
+            else if(datapoint.medium == "Snapchat")
             { return "yellow";}
             return "datapoint.color";
         }
-            else if(datapoint.color == "Instagram")
+            else if(datapoint.medium == "Instagram")
             { return "magenta";}
     {
-            else if(datapoint.color == "WeChat")
+            else if(datapoint.medium == "WeChat")
             { return "lime";}
         };
         function gotData(incomingData) {
             console.log(incomingData)
-        
+
     viz.selectAll("circle").data(incomingData)
         .enter()
         .append("circle")
