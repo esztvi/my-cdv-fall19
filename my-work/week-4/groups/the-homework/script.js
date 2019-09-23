@@ -3,16 +3,16 @@
 //   let cy = 50;
 //   // return "translate(" + cx + "," + cy + ")";
 // }
-function randomNumber(datapoint, i)
-{
-console.log(datapoint);
-// console.log(whatsthesecond);
-console.log(i);
-    // return Math.random()*500;
-    return datapoint.time * 5;
-};
-function randomTranslate(){
-  let x = randomNumber;
+// function randomNumber(datapoint, i)
+// {
+// console.log(datapoint);
+// // console.log(whatsthesecond);
+// console.log(i);
+//     // return Math.random()*500;
+//     return datapoint.time * 5;
+// };
+function randomTranslate(datapoint, i){
+  let x = (datapoint.time * 5);
   let y = Math.random()*500;
   return "translate(" + x + "," + y + ")";
 };
@@ -20,8 +20,8 @@ function gotData(incomingData){
   // create svg
   let viz = d3.select("body")
     .append("svg")
-      .attr("width", 8000)
-      .attr("height", 100)
+      .attr("width", 7500)
+      .attr("height", 800)
   ;
   // append groups
   let groupelements = viz.selectAll(".datagroup").data(incomingData)
