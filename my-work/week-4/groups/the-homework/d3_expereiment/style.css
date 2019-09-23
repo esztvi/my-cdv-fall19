@@ -1,0 +1,8 @@
+body{
+  width, height: 100%;
+  margin: 0;
+}
+#viz{
+  border: 5px indigo solid;
+  background-color: thistle;
+}

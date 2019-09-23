@@ -48,7 +48,7 @@
 },
 {
     "time" : "365",
-    "medium": "Snapchat",
+    "medium": "Snapchat ",
     "person": "Yvonne",
     "locationOfSender": "New York"
 },
@@ -158,7 +158,7 @@
     "time" : "673",
     "medium": "WeChat",
     "person": "Eleonora ",
-    "locationOfSender": "Abu Dhabi"
+    "locationOfSender": "Abu Dhabi "
 },
 {
     "time" : "683",
@@ -200,13 +200,13 @@
     "time" : "726",
     "medium": "WeChat",
     "person": "Eleonora ",
-    "locationOfSender": "Abu Dhabi"
+    "locationOfSender": "Abu Dhabi "
 },
 {
     "time" : "734",
     "medium": "WeChat",
     "person": "Riya",
-    "locationOfSender": "Abu Dhabi"
+    "locationOfSender": "Abu Dhabi "
 },
 {
     "time" : "738",
@@ -236,7 +236,7 @@
     "time" : "750",
     "medium": "WeChat",
     "person": "Eleonora ",
-    "locationOfSender": "Abu Dhabi"
+    "locationOfSender": "Abu Dhabi "
 },
 {
     "time" : "751",
@@ -260,7 +260,7 @@
     "time" : "757",
     "medium": "WeChat",
     "person": "Eleonora ",
-    "locationOfSender": "Abu Dhabi"
+    "locationOfSender": "Abu Dhabi "
 },
 {
     "time" : "760",
@@ -461,4 +461,3 @@
     "locationOfSender": "New York"
 }
 ]
-     
