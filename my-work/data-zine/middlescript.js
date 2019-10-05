@@ -9,7 +9,7 @@ let viz = d3.select("#container")
     .style("background-color", "lavender")
 ;
 let paddingSide = 8;
-let xScale = d3.scaleLinear().domain([0,100]).range([paddingSide,(w - paddingSide)]);
+let xScale = d3.scaleLinear().domain([0,75]).range([paddingSide,(w - paddingSide)]);
 function xPosition(d, i){
   return xScale(i);
 }
@@ -23,22 +23,22 @@ function getGroupTranslation(d, i){
 }
 
 function getName(d, i){
-  return d.name + " - " + d.height
+  return d.person
 }
 // let yScale;
 let paddingTop = 8;
-let yScale = d3.scaleLinear().domain([0,828]).range([0,(h/2 - paddingTop)]);
+let yScale = d3.scaleLinear().domain([0,26]).range([0,(h/2 - paddingTop)]);
 function getHeight(d,i){
-  return yScale(d.height) ;
+  return yScale(d.person) ;
 
 }
 function getPush(d,i){
-  return - yScale(d.height) ;
+  return - yScale(d.person) ;
 
 }
-let ColorScale = d3.scaleLinear().domain([0,700,828]).range(["orange","blue","blueviolet"]);
+let ColorScale = d3.scaleLinear().domain([0,10,26]).range(["lightblue","blue","midnightblue"]);
 function getColor(d,i){
-return ColorScale(d.height);
+return ColorScale(d.person);
 }
 
 function gotData(incomingData){
@@ -51,15 +51,15 @@ function gotData(incomingData){
 
   let towers = datagroups.append("rect")
       .attr("x", 0)
-      .attr("y", getPush)
+      .attr("y", 12)
       .attr("width", 20)
-      .attr("height",getHeight)
-      .attr("fill", getColor)
+      .attr("height",10)
+      .attr("fill", "red")
   ;
 
   let labels = datagroups.append("text")
       .text(getName)
-      .attr("fill", "red")
+      .attr("fill", "black")
       .attr("transform", "rotate(90)")
   ;
 
@@ -67,4 +67,4 @@ function gotData(incomingData){
 
 }
 
-d3.json("buildings.json").then(gotData);
+d3.json("stuff.json").then(gotData);
