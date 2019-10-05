@@ -9,7 +9,7 @@ let viz = d3.select("#container")
     .style("background-color", "lavender")
 ;
 function randomTranslate(datapoint, i){
-  let x = (datapoint.time);
+  let x = (datapoint.time * 5);
   let y = Math.random()*500;
   return "translate(" + x + "," + y + ")";
 };
