@@ -34,6 +34,8 @@ console.log(i);
         // let xScale = d3.scaleLinear().domain([0,100]).range([paddingSide,(w - paddingSide)]);
         // function xPosition(d, i){
         //   return xScale(i);
+
+      // maybe Y is the date and x is the time???
         }
       }
       function getColor (datapoint,i) {
@@ -143,7 +145,7 @@ console.log(i);
           return "datapoint.person";
           //finish adding people here total should be 75 ish
           //choose a better color code in general (this is cosmetic and can be done later)
-          //potentially color based on message freq? 
+          //potentially color based on message freq?
       };
       function gotData(incomingData) {
           console.log(incomingData)
