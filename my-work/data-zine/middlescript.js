@@ -34,7 +34,9 @@ console.log(i);
         // let xScale = d3.scaleLinear().domain([0,100]).range([paddingSide,(w - paddingSide)]);
         // function xPosition(d, i){
         //   return xScale(i);
-
+//var parser = d3.time.format("%m/%d/%Y");
+//time = d3.time.format("%x %X").parse("01/02/2014 08:22:05");
+//console.log(time);
       // maybe Y is the date and x is the time???
         }
       }
