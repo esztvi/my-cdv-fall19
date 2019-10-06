@@ -5,6 +5,7 @@ let outerRadius = Math.min(w, h) / 2;   // the outerRadius goes from the middle 
 let paddingSide = 200;
 let paddingOther = 100;
 let padding = 8;
+let bandwidth = 20;
 /// SO I WANT TO DO THIS CIRCLE BAR GRAPH
 //That would be super cool for the cover I think...
 //Ideally I want four (like name/freguency, region/frequency, medium/frequency, day/frequency)
@@ -85,7 +86,7 @@ let viz = d3.select("#container")
         .innerRadius(innerRadius)
         .outerRadius(function(d) { return (d.Value); })
         .startAngle(function(d) { return (d.Name); })
-        .endAngle(function(d) { return (d.Name) + bandwidth(); })
+        .endAngle(function(d) { return (d.Name) + bandwidth; })
         .padAngle(0.01)
         .padRadius(innerRadius))
         ;
