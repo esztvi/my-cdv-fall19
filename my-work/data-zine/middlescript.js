@@ -39,7 +39,7 @@ console.log(i);
 //console.log(time);
       // maybe Y is the date and x is the time???
         }
-      }
+      
       function getColor (datapoint,i) {
 
           console.log(datapoint.medium);
