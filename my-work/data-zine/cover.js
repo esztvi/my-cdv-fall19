@@ -1,9 +1,10 @@
 let w = 1200; //single page
 let h = 800;
-let innerRadius = 80,
-let outerRadius = Math.min(width, height) / 2;   // the outerRadius goes from the middle of the SVG area to the border
+let innerRadius = 80;
+let outerRadius = Math.min(w, h) / 2;   // the outerRadius goes from the middle of the SVG area to the border
 let paddingSide = 200;
 let paddingOther = 100;
+let padding = 8;
 /// SO I WANT TO DO THIS CIRCLE BAR GRAPH
 //That would be super cool for the cover I think...
 //Ideally I want four (like name/freguency, region/frequency, medium/frequency, day/frequency)
@@ -31,7 +32,7 @@ let viz = d3.select("#container")
   //     .classed("datagroup", true)
   // ;
   // X scale
-  let xScale = d3.scaleBand().domain( data.map(function(d) { return d.Name; })).range([0, 2 * Math.PI]).align(0);
+  let xScale = d3.scaleBand().domain([0,71]).range([0, 2 * Math.PI]);
   function xPosition(d, i){
     return xScale(i);
   }
@@ -41,7 +42,8 @@ let viz = d3.select("#container")
   }
 
   function getGroupTranslation(d, i){
-    return "translate(" + xPosition(d,i) + "," + yPosition(d,i) + ")";
+    return "translate(" + w / 2 + "," + ( h/2+100 )+ ")"; // Add 100 on Y translation, cause upper bars are longer
+
   }
       // .range([0, 2 * Math.PI])    // X axis goes from 0 to 2pi = all around the circle. If I stop at 1Pi, it will be around a half circle
       // .align(0)                  // This does nothing ?
@@ -81,9 +83,9 @@ let viz = d3.select("#container")
     .attr("fill", getColor)
     .attr("d", d3.arc()     // imagine your doing a part of a donut plot
         .innerRadius(innerRadius)
-        .outerRadius(function(d) { return y(d.Value); })
-        .startAngle(function(d) { return x(d.Name); })
-        .endAngle(function(d) { return x(d.Name) + x.bandwidth(); })
+        .outerRadius(function(d) { return (d.Value); })
+        .startAngle(function(d) { return (d.Name); })
+        .endAngle(function(d) { return (d.Name) + bandwidth(); })
         .padAngle(0.01)
         .padRadius(innerRadius))
         ;
