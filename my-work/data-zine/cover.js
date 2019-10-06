@@ -35,7 +35,7 @@ let viz = d3.select("#container")
   // X scale
   let xScale = d3.scaleBand().domain([0,71]).range([0, 2 * Math.PI]);
   function xPosition(d, i){
-    return xScale(i);
+    return xScale(d.Name);
   }
 
   function yPosition(d, i){
