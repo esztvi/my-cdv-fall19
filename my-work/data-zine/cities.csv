@@ -1,21 +1,21 @@
-City,Population,Longitude,Lattitude,Name
-Toronto,2093000,43.6532,79.3832,Canada
-Fort Collins,165080,40.5853,105.0844,United States
-New York,8623000,40.7128,74.0060,United States
-Belmont,27140,31.9538,115.9261,United States
-Abu Dhabi,1206000,24.4539,54.3773,United Arab Emirates
-DC,633427,38.9072,77.0369, United States
-Madrid,3174000,40.4168,3.7038,Spain
-Prague,1281000,50.0755,14.4378,Czechia
-Shanghai,24240000,31.2304,121.4737,China
-Chiang Mai,131091,18.7953,98.9620,Thailand
-Gyongyos,33553,47.7773,19.9295,Hungary
-Egerbocs,529,48.0141,20.1540,Hungary
-Eger,53876,47.9025,20.3772,Hungary
-Harbin,5282093,45.8038,126.5350,China
-Los Angeles,4000000,34.0522,118.2437,United States
-Florence,382258,43.7696,11.2558,Italy
-Boulder,107125,40.0150,105.2705,United States
-Hong Kong,7392000,22.3193,114.1694,China
-San Francisco,884363,37.7749,122.4194,United States
-Dearborn,94491,42.3223,83.1763,United States
+City,NumberOfMessages,Longitude,Lattitude,Name
+Toronto,1,43.6532,79.3832,Canada
+Fort Collins,61,40.5853,105.0844,United States
+New York,65,40.7128,74.0060,United States
+Belmont,7,31.9538,115.9261,United States
+Abu Dhabi,23,24.4539,54.3773,United Arab Emirates
+DC,12,38.9072,77.0369, United States
+Madrid,6,40.4168,3.7038,Spain
+Prague,30,50.0755,14.4378,Czechia
+Shanghai,185,31.2304,121.4737,China
+Chiang Mai,7,18.7953,98.9620,Thailand
+Gyongyos,2,47.7773,19.9295,Hungary
+Egerbocs,4,48.0141,20.1540,Hungary
+Eger,1,47.9025,20.3772,Hungary
+Harbin,10,45.8038,126.5350,China
+Los Angeles,7,34.0522,118.2437,United States
+Florence,1,43.7696,11.2558,Italy
+Boulder,1,40.0150,105.2705,United States
+Hong Kong,1,22.3193,114.1694,China
+San Francisco,1,37.7749,122.4194,United States
+Dearborn,3,42.3223,83.1763,United States
