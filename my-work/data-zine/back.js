@@ -13,12 +13,13 @@ let viz = d3.select("#container")
     .classed("svg-content", true);
 ;
 
-let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["LightGray","DarkGray","Gray","DimGrey", "Black"]);
-function getColor(d,i){
-  return ColorScale(d.NumberOfMessages);
-}
 d3.json("countries.geojson").then(function(CountriesData){
-  d3.csv("cities.csv").then(function(CitiesData){
+  d3.json("cities.json").then(function(CitiesData){
+    let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["LightGray","DarkGray","Gray","DimGrey", "Black"]);
+    function getColor(d,i){
+      return ColorScale(d.NumberOfMessages);
+    }
+
     viz.selectAll("path")
         .data(CountriesData.features)
         .enter()
