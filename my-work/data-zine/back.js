@@ -13,23 +13,26 @@ let viz = d3.select("#container")
     .classed("svg-content", true);
 ;
 
+let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["lightgrey","darkgrey","grey","dimgrey","black"]);
+// function getColor(d,i){
+//   return ColorScale(d.NumberOfMessages);
+// }
 d3.json("countries.geojson").then(function(CountriesData){
   d3.json("cities.json").then(function(CitiesData){
-    let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["LightGray","DarkGray","Gray","DimGrey", "Black"]);
-    function getColor(d,i){
-      return ColorScale(d.NumberOfMessages);
-    }
-
     viz.selectAll("path")
         .data(CountriesData.features)
         .enter()
         .append("path")
+        .attr("id",function(d){return d.properties.FID})
         .attr("class","continent")
         .attr("d", path)
-        .attr("fill", getColor)
-    //     .attr("x", function(d) {return projection([d.Longitude, d.Lattitude])[0] + 5;})
-    // .attr("y", function(d) {return projection([d.Longitude, d.Lattitude])[1] + 15;})
-    // .attr("class","labels");
+
+    CitiesData.map((country) => {
+      //console.log("Run")
+      viz.select("#" + country.Country)
+      .attr('fill', ColorScale(country.NumberOfMessages));
+    });
+
   });
 
 });
