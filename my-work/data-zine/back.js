@@ -7,7 +7,7 @@ let viz = d3.select("#container")
   .append("svg")
     .attr("width", w)
     .attr("height", h)
-    .style("background-color", "White")
+    .style("background-color", "WhiteSmoke")
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("viewBox", "0 0 " + w + " " + h)
     .classed("svg-content", true);
