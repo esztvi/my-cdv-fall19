@@ -1,6 +1,6 @@
 let w = 1200; //single page
 let h = 800;
-let projection = d3.geoMercator().translate([w/2, h/2]).scale(2200).center([0,40]);
+let projection = d3.geoMercator().translate([w/2, h/2]).scale(200).center([0,40]);
 let path = d3.geoPath().projection(projection);
 
 let viz = d3.select("#container")
@@ -17,7 +17,7 @@ let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["LightGray","
 function getColor(d,i){
   return ColorScale(d.NumberOfMessages);
 }
-d3.json("output.geojson").then(function(CountriesData){
+d3.json("countries.geojson").then(function(CountriesData){
   d3.csv("cities.csv").then(function(CitiesData){
     viz.selectAll("path")
         .data(CountriesData.features)
@@ -28,7 +28,7 @@ d3.json("output.geojson").then(function(CountriesData){
         .attr("fill", getColor)
     //     .attr("x", function(d) {return projection([d.Longitude, d.Lattitude])[0] + 5;})
     // .attr("y", function(d) {return projection([d.Longitude, d.Lattitude])[1] + 15;})
-    .attr("class","labels");
+    // .attr("class","labels");
   });
 
 });
