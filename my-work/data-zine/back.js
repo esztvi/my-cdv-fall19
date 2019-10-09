@@ -17,7 +17,7 @@ let ColorScale = d3.scaleLinear().domain([0,10,30,160,195]).range(["LightGray","
 function getColor(d,i){
   return ColorScale(d.NumberOfMessages);
 }
-d3.json("countries.json").then(function(CountriesData){
+d3.json("output.geojson").then(function(CountriesData){
   d3.csv("cities.csv").then(function(CitiesData){
     viz.selectAll("path")
         .data(CountriesData.features)
