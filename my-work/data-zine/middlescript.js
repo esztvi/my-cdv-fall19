@@ -1,225 +1,359 @@
-let viz = d3.select("#viz-container")
-                .append("svg")
-                    .attr("id", "viz")
-                    .attr("width", 2400)
-                    .attr("height", 800)
-;
+let w = 1200;
+let h = 800;
 
-let line = d3.select("#viz-container")
-                .append("svg")
-                    .attr("id", "line")
-                    .attr("width", 2400)
-                    .attr("height", 800)
-;
-d3.json("full-data.json").then(gotData);
-
-// 3. concept: data and datapoint
-// 4. make one circle for each datapoint (size and position doesn't matter)
-//create svg
-d3.select("body")
+let viz = d3.select("#container")
   .append("svg")
-      .attr("width",2400)
-      .attr("height",800)
+    .attr("width", w)
+    .attr("height", h)
+    .style("background-color", "lavender")
+;
 
-      ;
-      function randomNumber(datapoint, i)
-      {
-console.log(datapoint);
-//This needs to be the date thing... so I need to splace the day from the hour and from the minute
-console.log(i);
+function getColor (datapoint,i) {
+  console.log(datapoint.person);
+  if(datapoint.person == "Mom")
+  { return "DeepPink";}
+  else if(datapoint.person == "Sarah Barber")
+  { return "DarkSlateBlue";}
+  else if(datapoint.person == "Dora")
+  { return "Lime";}
+  else if(datapoint.person == "Katie")
+  { return "MediumSlateBlue";}
+  else if(datapoint.person == "Corey")
+  { return "MediumSpringGreen";}
+  else if(datapoint.person == "Sinead")
+  { return "MediumSeaGreen";}
+  else if(datapoint.person == "Emily")
+  { return "Brown";}
+  else if(datapoint.person == "Riya")
+  { return "DarkGreen";}
+  else if(datapoint.person == "Yvonne")
+  { return "Indigo";}
+  else if(datapoint.person == "Paul")
+  { return "OliveDrab";}
+  else if(datapoint.person == "Stella")
+  { return "MediumAquamarine";}
+  else if(datapoint.person == "Amy")
+  { return "DarkSeaGreen";}
+  else if(datapoint.person == "Gordon")
+  { return "Red";}
+  else if(datapoint.person == "Elisa")
+  { return "Crimson";}
+  else if(datapoint.person == "Lilla")
+  { return "PaleVioletRed";}
+  else if(datapoint.person == "Corbin")
+  { return "Purple";}
+  else if(datapoint.person == "Kevin")
+  { return "MidnightBlue";}
+  else if(datapoint.person == "Ding")
+  { return "Navy";}
+  else if(datapoint.person == "Karesh")
+  { return "Orange";}
+  else if(datapoint.person == "Shannelle")
+  { return "Blue";}
+  else if(datapoint.person == "Sarah Brooker")
+  { return "LimeGreen";}
+  else if(datapoint.person == "Adele")
+  { return "DarkOliveGreen";}
+  else if(datapoint.person == "Fiona")
+  { return "Cyan";}
+  else if(datapoint.person == "Lindsay")
+  { return "Teal";}
+  else if(datapoint.person == "Sienna")
+  { return "RebeccaPurple";}
+  else if(datapoint.person == "Eleonora")
+  { return "DarkRed";}
+  else if(datapoint.person == "Akos")
+  { return "LightCoral";}
+  else if(datapoint.person == "Sabina")
+  { return "RoyalBlue";}
+  else if(datapoint.person == "Linda")
+  { return "SlateGrey";}
+  else if(datapoint.person == "Konrad")
+  { return "DimGrey";}
+  else if(datapoint.person == "Jessica")
+  { return "CornflowerBlue";}
+  else if(datapoint.person == "Ben")
+  { return "DodgerBlue";}
+  else if(datapoint.person == "Jenya")
+  { return "Gold";}
+  else if(datapoint.person == "Tristan")
+  { return "Silver";}
+  else if(datapoint.person == "Leon")
+  { return "Tomato";}
+  else if(datapoint.person == "Ellen")
+  { return "YellowGreen";}
+  else if(datapoint.person == "Sarah Nelson")
+  { return "DeepSkyBlue";}
+  else if(datapoint.person == "Angelina")
+  { return "SpringGreen";}
+  else if(datapoint.person == "Naitra")
+  { return "DarkViolet";}
+  else if(datapoint.person == "Èva")
+  { return "IndianRed";}
+  else if(datapoint.person == "Sheldon")
+  { return "SkyBlue";}
+  else if(datapoint.person == "Jackie")
+  { return "LightSeaGreen";}
+  else if(datapoint.person == "Dan")
+  { return "Coral";}
+  else if(datapoint.person == "Raymond")
+  { return "OrangeRed";}
+  else if(datapoint.person == "Adam")
+  { return "BlueViolet";}
+  else if(datapoint.person == "Amber")
+  { return "LightGreen";}
+  else if(datapoint.person == "Ethan")
+  { return "Olive";}
+  else if(datapoint.person == "Kyle")
+  { return "SteelBlue";}
+  else if(datapoint.person == "Boss")
+  { return "Yellow";}
+  else if(datapoint.person == "Li Hu")
+  { return "Khaki";}
+  else if(datapoint.person == "Erik")
+  { return "Sienna";}
+  else if(datapoint.person == "Lily")
+  { return "SaddleBrown";}
+  else if(datapoint.person == "Monika")
+  { return "Maroon";}
+  else if(datapoint.person == "Rasa")
+  { return "CadetBlue";}
+  else if(datapoint.person == "Anita")
+  { return "Turquoise";}
+  else if(datapoint.person == "Jasmine")
+  { return "Aquamarine";}
+  else if(datapoint.person == "Edward")
+  { return "PaleTurquoise";}
+  else if(datapoint.person == "Ceceilia")
+  { return "PowderBlue";}
+  else if(datapoint.person == "Robert")
+  { return "LightSteelBlue";}
+  else if(datapoint.person == "Thomas")
+  { return "DarkSlateGrey";}
+  else if(datapoint.person == "Xiaoyan")
+  { return "SeaGreen";}
+  else if(datapoint.person == "Silvia")
+  { return "Green";}
+  else if(datapoint.person == "Isabella")
+  { return "MediumPurple";}
+  else if(datapoint.person == "Jenny")
+  { return "Honeydew";}
+  else if(datapoint.person == "Jenya")
+  { return "Goldenrod";}
+  else if(datapoint.person == "Dad")
+  { return "MediumVioletRed";}
+  else if(datapoint.person == "Bobi")
+  { return "AliceBlue";}
+  else if(datapoint.person == "Berk")
+  { return "MintCream";}
+  else if(datapoint.person == "Emily Hancock")
+  { return "WhiteSmoke";}
+  else if(datapoint.person == "Eva")
+  { return "Peru";}
+  else if(datapoint.person == "Damian")
+  { return "RosyBrown";}
+  else if(datapoint.person == "Marcela")
+  { return "LightGray";}
+  return "datapoint.person";
 
-          return datapoint.time;
-        //scale the X values then to fit in the Zine... but then you need something like:
-        //let paddingSide = 8;
-        // let xScale = d3.scaleLinear().domain([0,100]).range([paddingSide,(w - paddingSide)]);
-        // function xPosition(d, i){
-        //   return xScale(i);
-//var parser = d3.time.format("%m/%d/%Y");
-//time = d3.time.format("%x %X").parse("01/02/2014 08:22:05");
-//console.log(time);
-      // maybe Y is the date and x is the time???
-        }
+function gotData(incomingData){
+  // all the data:
+  console.log(incomingData);
 
-      function getColor (datapoint,i) {
-        console.log(datapoint.person);
-        if(datapoint.person == "Mom")
-        { return "DeepPink";}
-        else if(datapoint.person == "Sarah Barber")
-        { return "DarkSlateBlue";}
-        else if(datapoint.person == "Dora")
-        { return "Lime";}
-        else if(datapoint.person == "Katie")
-        { return "MediumSlateBlue";}
-        else if(datapoint.person == "Corey")
-        { return "MediumSpringGreen";}
-        else if(datapoint.person == "Sinead")
-        { return "MediumSeaGreen";}
-        else if(datapoint.person == "Emily")
-        { return "Brown";}
-        else if(datapoint.person == "Riya")
-        { return "DarkGreen";}
-        else if(datapoint.person == "Yvonne")
-        { return "Indigo";}
-        else if(datapoint.person == "Paul")
-        { return "OliveDrab";}
-        else if(datapoint.person == "Stella")
-        { return "MediumAquamarine";}
-        else if(datapoint.person == "Amy")
-        { return "DarkSeaGreen";}
-        else if(datapoint.person == "Gordon")
-        { return "Red";}
-        else if(datapoint.person == "Elisa")
-        { return "Crimson";}
-        else if(datapoint.person == "Lilla")
-        { return "PaleVioletRed";}
-        else if(datapoint.person == "Corbin")
-        { return "Purple";}
-        else if(datapoint.person == "Kevin")
-        { return "MidnightBlue";}
-        else if(datapoint.person == "Ding")
-        { return "Navy";}
-        else if(datapoint.person == "Karesh")
-        { return "Orange";}
-        else if(datapoint.person == "Shannelle")
-        { return "Blue";}
-        else if(datapoint.person == "Sarah Brooker")
-        { return "LimeGreen";}
-        else if(datapoint.person == "Adele")
-        { return "DarkOliveGreen";}
-        else if(datapoint.person == "Fiona")
-        { return "Cyan";}
-        else if(datapoint.person == "Lindsay")
-        { return "Teal";}
-        else if(datapoint.person == "Sienna")
-        { return "RebeccaPurple";}
-        else if(datapoint.person == "Eleonora")
-        { return "DarkRed";}
-        else if(datapoint.person == "Akos")
-        { return "LightCoral";}
-        else if(datapoint.person == "Sabina")
-        { return "RoyalBlue";}
-        else if(datapoint.person == "Linda")
-        { return "SlateGrey";}
-        else if(datapoint.person == "Konrad")
-        { return "DimGrey";}
-        else if(datapoint.person == "Jessica")
-        { return "CornflowerBlue";}
-        else if(datapoint.person == "Ben")
-        { return "DodgerBlue";}
-        else if(datapoint.person == "Jenya")
-        { return "Gold";}
-        else if(datapoint.person == "Tristan")
-        { return "Silver";}
-        else if(datapoint.person == "Leon")
-        { return "Tomato";}
-        else if(datapoint.person == "Ellen")
-        { return "YellowGreen";}
-        else if(datapoint.person == "Sarah Nelson")
-        { return "DeepSkyBlue";}
-        else if(datapoint.person == "Angelina")
-        { return "SpringGreen";}
-        else if(datapoint.person == "Naitra")
-        { return "DarkViolet";}
-        else if(datapoint.person == "Èva")
-        { return "IndianRed";}
-        else if(datapoint.person == "Sheldon")
-        { return "SkyBlue";}
-        else if(datapoint.person == "Jackie")
-        { return "LightSeaGreen";}
-        else if(datapoint.person == "Dan")
-        { return "Coral";}
-        else if(datapoint.person == "Raymond")
-        { return "OrangeRed";}
-        else if(datapoint.person == "Adam")
-        { return "BlueViolet";}
-        else if(datapoint.person == "Amber")
-        { return "LightGreen";}
-        else if(datapoint.person == "Ethan")
-        { return "Olive";}
-        else if(datapoint.person == "Kyle")
-        { return "SteelBlue";}
-        else if(datapoint.person == "Boss")
-        { return "Yellow";}
-        else if(datapoint.person == "Li Hu")
-        { return "Khaki";}
-        else if(datapoint.person == "Erik")
-        { return "Sienna";}
-        else if(datapoint.person == "Lily")
-        { return "SaddleBrown";}
-        else if(datapoint.person == "Monika")
-        { return "Maroon";}
-        else if(datapoint.person == "Rasa")
-        { return "CadetBlue";}
-        else if(datapoint.person == "Anita")
-        { return "Turquoise";}
-        else if(datapoint.person == "Jasmine")
-        { return "Aquamarine";}
-        else if(datapoint.person == "Edward")
-        { return "PaleTurquoise";}
-        else if(datapoint.person == "Ceceilia")
-        { return "PowderBlue";}
-        else if(datapoint.person == "Robert")
-        { return "LightSteelBlue";}
-        else if(datapoint.person == "Thomas")
-        { return "DarkSlateGrey";}
-        else if(datapoint.person == "Xiaoyan")
-        { return "SeaGreen";}
-        else if(datapoint.person == "Silvia")
-        { return "Green";}
-        else if(datapoint.person == "Isabella")
-        { return "MediumPurple";}
-        else if(datapoint.person == "Jenny")
-        { return "Honeydew";}
-        else if(datapoint.person == "Jenya")
-        { return "Goldenrod";}
-        else if(datapoint.person == "Dad")
-        { return "MediumVioletRed";}
-        else if(datapoint.person == "Bobi")
-        { return "AliceBlue";}
-        else if(datapoint.person == "Berk")
-        { return "MintCream";}
-        else if(datapoint.person == "Emily Hancock")
-        { return "WhiteSmoke";}
-        else if(datapoint.person == "Eva")
-        { return "Peru";}
-        else if(datapoint.person == "Damian")
-        { return "RosyBrown";}
-        else if(datapoint.person == "Marcela")
-        { return "LightGray";}
-        return "datapoint.person";
-          // console.log(datapoint.medium);
-          // if(datapoint.medium == "Viber")
-          // { return "purple";}
-          // else if(datapoint.medium == "Snapchat")
-          // { return "yellow";}
-          // else if(datapoint.medium == "Instagram")
-          // { return "magenta";}
-          // else if(datapoint.medium == "WeChat")
-          // { return "lime";}
-          // else if(datapoint.medium == "Facebook")
-          // { return "blue";}
-          // else if(datapoint.medium == "Email")
-          // { return "orange";}
-          // return "datapoint.medium";
-      };
-      function getStroke (datapoint,i) {
-          //maybe underline it with the location?
+  // filter the data:
+  function filterFunction(datapoint){
+    if(datapoint.Code == "USA" || datapoint.Code == "CHN"){
+      return true; //if the filter function returns true, the data point will be accepted
+    }else{
+      return false; // if the filter function returns false, the data point will be filtered out
+    }
+  }
+  let filteredData = incomingData.filter(filterFunction);
+  console.log(filteredData);
 
 
-      };
-      function gotData(incomingData) {
-          console.log(incomingData)
+  // the "timestamp" of each data point looks like this:
+  // Year: "2006"
+  // next we create a function that allows us to easily turn this into
+  // a javascript date object
+  // to do this we use a d3 method which returns a function. it's exactly
+  // like what happened when we work with scales: we us a d3 method which
+  // then returns a function that we can use as many time as we want. when creating
+  // it, we specify how it should behave:
+  let yearToDateObjectConverter = d3.timeParse("%Y");
+  // that's it, we asked d3 to create a function for us to which we can
+  // supply a year in this format: "2007" and it creates a JavaScript Date Object
+  // for us. We specified this by using the "%Y" when we create the function. Look for
+  // more such key letters here: https://github.com/d3/d3-time-format#locale_format
+  // Let's test it:
+  let test = yearToDateObjectConverter("2007");
+  // check your console:
+  console.log(test);
+  console.log(typeof(test));
 
-  viz.selectAll("circle").data(incomingData)
-      .enter()
-      .append("circle")
-      .attr("cx",randomNumber)
-      .attr("cy", 50)
-      .attr("r", 20)
-      .attr("fill", getColor)
-      .attr("stroke", getStroke)
-      .attr("strokeWeight", 30)
-      ;
+  // next we can create an x scale. we want the x axis to sretch all the way from
+  // the first year (min) of HIV measurement in our data set to the most recent (max) one.
+  // then we want this information in this format:
+  // [first-year-of-measurement, most-recent-year-of-measurement]
+  // in order to define it as our x Scales input Domain.
+  // d3 gives us useful methods to do this:
+  // We can get the minimum/maximum value of any key in any array of objects or values. It doesn't
+  // matter how complex out data is structured because we can tell d3 precisely
+  // where to look for the value of which we want to know the minimum/maximum.
+  // take a look:
+  let minYear = d3.min(filteredData, function(d){
+    let year = d.Year;
+    let properlyFormatted = yearToDateObjectConverter(year);
+    console.log(properlyFormatted);
+    //IMPORTANT: whatever we return will be the value of which d3 will
+    // look for the minimum. Ultimately it returns the ONE minimum value of all data points.
+    return properlyFormatted;
+  });
+  // Let's see what we got:
+  console.log(minYear);
+  // this returns this Date object:
+  // Mon Jan 01 1990 00:00:00 GMT+0800 (China Standard Time)
+  // 1990! looks good!
+  // the maximum
+  let maxYear = d3.max(filteredData, function(d){
+    return yearToDateObjectConverter(d.Year);
+  });
+  // the only thing that changed is the word "max"
+  console.log(maxYear);
+  // Sun Jan 01 2017 00:00:00 GMT+0800 (China Standard Time)
+  // 2017! Great, now we can put them into a domain array that we supply to constructing the xScale
+  let xDomain = [minYear, maxYear];
+  // this will work perfectly well. But because it is needed so often
+  // and requires the same code with only one word changed (min->max),
+  // there is an even better method that directly returns min AND max in an array:
+  let alternativeXDomain = d3.extent(filteredData, function(d){
+    return yearToDateObjectConverter(d.Year);
+  })
+  // check it out
+  console.log(alternativeXDomain);
+  // [Mon Jan 01 1990 00:00:00 GMT+0800 (China Standard Time), Sun Jan 01 2017 00:00:00 GMT+0800 (China Standard Time)]
+  // You see? the exact same, just much shorter!
+  // so right now the variables xDomain and alternativeXDomain have the exact same value.
+  // the only difference is that we create alternativeXDomain much smarter.
+  // X scale (as learned in week4's Lab)
+  let xPadding = 50;
+  // reference: https://github.com/d3/d3-scale#time-scales
+  let xScale = d3.scaleTime().domain(alternativeXDomain).range([xPadding, w-(xPadding*2)]);
+  console.log(xScale(yearToDateObjectConverter("2004")))
+  // Next, let's draw an x axis. This is new for us, but luckily D3 makes it incredibly
+  // easy.
+  // reference: https://github.com/d3/d3-axis
+  // All an axis realy needs is to know our scale
+  var xAxis = d3.axisBottom(xScale);
+  // d3 works with the default svg shapes, an axis is put together of many of them.
+  // it makes A LOT of sense to group all these elements in a group
+  let xAxisGroup = viz.append("g").attr("class", "xaxis");
+  // then we tell D3 to construct an axis in this group:
+  xAxisGroup.call(xAxis);
+  // take a look, do you see the axis at the top of your svg?
+  // looks good no? The "Bottom" in "d3.axisBottom(xScale);" refers to the side on which
+  // the axis text appear, not where the axis as a whole is located,
+  // we have to take care of that ourselves:
+  let xAxisYPos = h - 30;
+  xAxisGroup.attr("transform", "translate(0,"+xAxisYPos+")");
+  // excuse me please, but this. looks. mesmerizing.
+
+
+  // y scale and axis
+  // let's do the same on the y axis, for the value of the:
+  // "Incidence - HIV/AIDS - Sex: Both - Age: All Ages (Number) (new cases of HIV)"
+  // -key. What an annoyingly long key. If you are confused look at the datapoints
+  // we console.logged above. Let's save the key in a variable to make it less annoying:
+  let valueKey = "Incidence - HIV/AIDS - Sex: Both - Age: All Ages (Number) (new cases of HIV)";
+
+  // Now let's do it, but faster than above!
+  // y Scale:
+  let topPadding = 30;
+  let yScale = d3.scaleLinear().domain(d3.extent(filteredData, function(d){return d[valueKey]})).range([xAxisYPos, topPadding]);
+  // Wow, please consider this one carfully. We get the min max extent right in place.
+  // we access the values NOT WITH A DOT NOTATATION like d.Year!!!!!! This is confusing, but
+  // extremely IMPORTANT to know. We use our string (variable) in []-brackets instead.
+  // then, our range: we want the lowest value to be scaled to the pixel where our X AXIS starts
+  // so we use the xAxisYPos for the min of the range, and a little padding for the top.
+
+  // next, axis:
+  var yAxis = d3.axisLeft(yScale);
+  let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
+  yAxisgroup.attr("transform", "translate("+xPadding+",0)");
+
+  // now that was quick. six lines of code?? Oh my, this is so neat.
+
+
+  // now let's plot
+  // to keep things seperated let's make a group for all shapes:
+  let vizGroup = viz.append("g").attr("class", "vizgroup");
+
+  // bind data and create groups for each datapoint:
+  let dataGroups = vizGroup.selectAll(".datagroup").data(filteredData).enter()
+      .append("g")
+      .attr("class", "datagroup")
+  ;
+
+
+  // OPTION 1 circles
+
+  // append circles to the groups
+
+  let circles = dataGroups.append("circle")
+      .attr("cx", 0)
+      .attr("cy", 0)
+      .attr("r", 5)
+  ;
+
+
+
+  // OPTION 2 graphics
+  // i don't want circles / for jerry
+  // note the variable at the bottom of this file
+  // it's svg code exported from Adobe Illustrator
+
+  // dataGroups.html(svgInsta);
+  // dataGroups.selectAll("path").attr("transform", "scale(0.1)");
+
+
+  // translate function in which we are using our scales
+  // NOTE: the xScale expect us to supply a properly formatted date object
+  function getTranslate(d, i){
+    let properlyFormattedDate = yearToDateObjectConverter(d.Year);
+    let value = d[valueKey];
+    return "translate("+xScale(properlyFormattedDate)+","+yScale(value)+")";
+  }
+  // translate the position of each group:
+  dataGroups.attr("transform", getTranslate);
+  // this looks great, compare it with this graph from the website we got our data from:
+  // https://ourworldindata.org/grapher/new-cases-of-hiv-infection?tab=chart&time=1990..2017&country=CHN
+
+
+  // what next?
+
+
+  // try changing the country Code in our filer function. E.g. to USA
+  // Everything will automatically adjust to the new data. See the y Axis changing?
+
+  // next we could adjust our filter to "let in" data from another country.
+  //  (datapoint.Code == "USA" || datapoint.Code == "CHN")
+  // then leave all code as it is, but color each circle depending on its Code value
+  // that way each country would have its own color. Try it!
+
 }
 
-//same main idea with the coloring.... make stroke thickness the freq of messages?
+d3.json("full-data.json").then(gotData);
+
+  let svgWeChat = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 220.500 68.551 C 216.650 69.280, 211.624 69.905, 209.331 69.939 C 207.038 69.972, 202.538 70.627, 199.331 71.392 C 196.124 72.158, 189.900 73.546, 185.500 74.476 C 181.100 75.407, 176.375 76.547, 175 77.010 C 173.625 77.472, 169.125 78.818, 165 80 C 157.196 82.236, 153.567 83.452, 148.500 85.530 C 146.850 86.207, 143.025 87.756, 140 88.972 C 133.819 91.457, 111.911 102.265, 107.858 104.829 C 106.405 105.748, 102.355 108.273, 98.858 110.441 C 85.664 118.619, 72.023 129.818, 57.770 144.174 C 49.668 152.334, 42.254 160.246, 41.295 161.755 C 40.336 163.265, 37.232 167.650, 34.398 171.500 C 27.606 180.725, 19.642 195.186, 12.919 210.500 C 9.042 219.332, 3.654 238.822, 2.484 248.250 C 2.091 251.412, 1.371 254, 0.885 254 C 0.396 254, 0 264.750, 0 278 C 0 291.284, 0.396 302, 0.886 302 C 1.374 302, 2.070 304.137, 2.434 306.750 C 4.328 320.357, 9.897 338.703, 16.089 351.729 C 18.240 356.256, 20 360.203, 20 360.501 C 20 362.417, 37.313 389.060, 41.182 393.097 C 41.921 393.869, 44.850 397.425, 47.690 401 C 53.033 407.725, 66.244 420.999, 71.500 424.924 C 77.570 429.456, 83.616 434.616, 88.097 439.087 C 94.517 445.495, 94.963 450.282, 90.601 466 C 84.160 489.214, 81 502.074, 81 505.073 C 81 506.944, 81.933 509.024, 83.455 510.545 C 86.911 514.002, 91.100 514.126, 96.359 510.927 C 98.087 509.877, 100.175 508.705, 101 508.323 C 101.825 507.941, 105.650 505.778, 109.500 503.515 C 113.350 501.252, 117.175 499.080, 118 498.689 C 118.825 498.298, 120.850 497.088, 122.500 496 C 124.150 494.912, 126.175 493.712, 127 493.334 C 127.825 492.956, 130.159 491.613, 132.186 490.351 C 141.187 484.746, 152.631 478.890, 157.280 477.509 C 161.790 476.170, 163.212 476.173, 170.419 477.539 C 174.863 478.381, 180.075 479.500, 182 480.026 C 183.925 480.551, 187.975 481.458, 191 482.041 C 194.025 482.625, 199.650 483.777, 203.500 484.602 C 213.085 486.655, 243.322 489.072, 255.500 488.758 L 265.500 488.500 265.819 485.174 C 265.995 483.344, 265.458 479.519, 264.626 476.674 C 258.802 456.739, 257.736 428.449, 261.963 406 C 263.258 399.122, 268.348 381.546, 270.506 376.500 C 273.489 369.525, 279.154 358.148, 281.958 353.500 C 283.616 350.750, 285.293 347.825, 285.684 347 C 286.075 346.175, 289.048 341.900, 292.292 337.500 C 308.401 315.650, 327.724 297.788, 350.532 283.666 C 360.159 277.705, 380.034 267.571, 389 264.052 C 392.025 262.864, 395.400 261.515, 396.500 261.052 C 400.173 259.509, 409.364 256.686, 423 252.915 C 425.475 252.230, 429.525 251.343, 432 250.942 C 434.475 250.542, 438.975 249.737, 442 249.155 C 455.859 246.485, 463.812 245.711, 481.500 245.308 C 491.950 245.071, 500.997 244.718, 501.605 244.525 C 503.688 243.863, 500.243 229.431, 494.199 213.500 C 488.895 199.520, 477.269 178.502, 468.214 166.522 C 458.527 153.707, 442.136 136.458, 432.797 129.254 C 430.833 127.739, 427.263 124.876, 424.863 122.891 C 409.318 110.034, 378.163 92.757, 357.500 85.536 C 354.750 84.575, 351.600 83.424, 350.500 82.979 C 337.674 77.789, 310.089 71.526, 287 68.563 C 271.399 66.560, 231.043 66.553, 220.500 68.551 M 157.419 179.420 C 146.176 184.315, 138.565 193.081, 136.823 203.141 C 135.485 210.868, 135.486 211.179, 136.857 217.761 C 139.289 229.441, 150.115 240.217, 161.496 242.286 C 168.016 243.472, 168.397 243.470, 175.802 242.186 C 185.870 240.442, 195.381 232.329, 199.400 222.057 C 201.625 216.369, 201.634 205.424, 199.418 198.753 C 197.143 191.903, 187.483 182.200, 180.496 179.745 C 174.511 177.643, 161.908 177.465, 157.419 179.420 M 327.707 178.698 C 322.199 180.128, 313.787 186.528, 310.175 192.037 C 308.539 194.533, 306.424 199.668, 305.476 203.450 C 303.848 209.940, 303.847 210.724, 305.455 217.413 C 306.639 222.340, 308.328 226.054, 310.997 229.598 C 315.631 235.752, 324.627 242, 328.854 242 C 330.513 242, 332.912 242.396, 334.185 242.879 C 336.979 243.940, 346.062 242.479, 351 240.174 C 363.546 234.319, 370.633 222.212, 369.831 208.009 C 369.153 196.019, 361.968 185.687, 350.640 180.413 C 346.471 178.472, 343.988 178.040, 337.500 178.126 C 333.100 178.184, 328.693 178.442, 327.707 178.698 M 471 261.542 C 447.384 263.379, 436.631 265.440, 412.500 272.754 C 391.591 279.092, 365.367 292.795, 346.149 307.426 C 323.965 324.314, 302.373 350.419, 292.964 371.726 C 291.804 374.352, 290.263 377.850, 289.539 379.500 C 280.853 399.286, 276.785 425.989, 278.911 449.256 C 280.824 470.204, 284.876 484.639, 294.138 503.500 C 302.214 519.947, 312.250 534.039, 325.364 547.346 C 343.053 565.296, 359.415 577.042, 382.500 588.363 C 401.921 597.888, 409.156 600.335, 441 608.147 C 451.500 610.722, 482.929 613.264, 495 612.513 C 511.372 611.495, 531.214 609.254, 534.315 608.072 C 535.863 607.483, 538.299 607, 539.727 607 C 541.156 607, 544.614 606.354, 547.412 605.565 C 556.880 602.893, 564.492 602.084, 569.112 603.256 C 572.669 604.159, 583.313 609.649, 590 614.030 C 590.825 614.571, 592.175 615.320, 593 615.696 C 593.825 616.071, 598.453 618.768, 603.285 621.689 C 608.117 624.610, 612.260 627, 612.491 627 C 612.723 627, 615.202 628.350, 618 630 C 624.677 633.937, 628.207 633.923, 631.038 629.947 C 633.374 626.666, 633.344 625.876, 630.492 615.500 C 620.755 580.076, 620.640 579.313, 624.250 573.958 C 625.487 572.123, 630.325 567.525, 635 563.742 C 656.448 546.384, 673.107 525.956, 684.317 503.261 C 690.440 490.869, 696.265 473.625, 697.497 464.251 C 697.877 461.364, 698.595 458.750, 699.094 458.442 C 700.304 457.694, 700.282 415, 699.072 415 C 698.562 415, 697.855 412.413, 697.502 409.250 C 697.149 406.087, 696.475 402.375, 696.004 401 C 695.534 399.625, 694.146 395.125, 692.920 391 C 691.693 386.875, 690.326 382.825, 689.880 382 C 689.191 380.724, 687.077 375.846, 684.680 370 C 684.341 369.175, 682.706 366.250, 681.045 363.500 C 679.385 360.750, 677.719 357.825, 677.342 357 C 676.149 354.383, 664.947 338.863, 661.175 334.600 C 643.753 314.912, 621.075 297.494, 597.367 285.590 C 591.244 282.515, 585.912 280, 585.518 280 C 585.124 280, 583.384 279.388, 581.651 278.641 C 575.323 275.910, 572.697 274.921, 566.659 272.993 C 556.551 269.766, 550.935 268.251, 542.500 266.476 C 538.100 265.551, 532.680 264.406, 530.456 263.934 C 526.976 263.195, 516.520 262.276, 493 260.641 C 489.975 260.431, 480.075 260.836, 471 261.542 M 410.703 354.381 C 400.823 358.065, 395.353 364.164, 392.399 374.789 C 390.878 380.260, 390.881 381.079, 392.444 386.455 C 395.617 397.370, 401.076 403.103, 411.764 406.745 C 419.814 409.488, 431.394 406.458, 438.168 399.836 C 439.787 398.253, 442.207 394.606, 443.546 391.729 C 449.868 378.150, 444.071 362.590, 430.045 355.486 C 425.426 353.147, 415.528 352.582, 410.703 354.381 M 551 354.803 C 540.513 358.812, 535.138 364.763, 533.057 374.668 C 531.583 381.688, 532.725 388.981, 536.204 394.750 C 540.380 401.678, 551.496 408, 559.500 408 C 564.132 408, 571.987 405.095, 576.148 401.844 C 578.154 400.277, 581.236 396.748, 582.998 394.004 C 585.959 389.388, 586.200 388.373, 586.200 380.500 C 586.200 372.627, 585.959 371.612, 582.998 366.996 C 575.401 355.158, 562.716 350.325, 551 354.803 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgViber = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 311 29.984 C 207.971 34.160, 143.513 55.436, 97.388 100.494 C 66.499 130.668, 45.063 174.589, 36.407 225.438 C 35.570 230.355, 34.705 234.668, 34.486 235.023 C 34.266 235.378, 33.120 244.856, 31.938 256.084 C 28.843 285.504, 28.830 329.807, 31.910 356.500 C 35.347 386.295, 38.932 403.308, 46.975 428 C 55.795 455.075, 71.164 482.583, 88.434 502.206 C 109.732 526.407, 132.185 542.602, 162.500 555.628 L 174.500 560.785 175.039 598.642 C 175.607 638.613, 175.710 639.527, 180.742 649.472 C 184.322 656.546, 194.608 666.479, 201.683 669.695 C 206.608 671.933, 208.957 672.350, 217 672.411 C 225.139 672.472, 227.530 672.081, 233.688 669.678 C 244.332 665.524, 248.639 662.163, 259 649.925 C 268.860 638.279, 316.374 584.453, 317.402 583.765 C 318.006 583.361, 333.286 583.024, 351.358 583.015 C 400.348 582.992, 444.010 579.645, 475 573.535 C 548.086 559.126, 597.443 529.195, 629.241 480 C 635.685 470.030, 640.951 460.247, 645.122 450.500 C 646.770 446.650, 648.529 442.600, 649.032 441.500 C 650.956 437.290, 656.251 420.903, 659.372 409.500 C 666.429 383.713, 671.002 342.944, 670.998 305.850 C 670.988 203.288, 643.639 130.758, 588.421 86.855 C 569.956 72.174, 551.587 62.113, 525.543 52.417 C 506.475 45.318, 484.253 39.961, 455.500 35.532 C 424.941 30.824, 355.784 28.169, 311 29.984 M 302 59.278 C 301.725 59.533, 296.775 60.006, 291 60.329 C 210.800 64.822, 156.808 83.169, 120.296 118.337 C 102.142 135.822, 90.969 152.665, 78.728 181 C 72.046 196.467, 64.561 227.641, 61.921 251 C 59.497 272.443, 59.070 280.748, 59.036 307.043 C 58.878 428.926, 95.534 497.773, 178.011 530.504 C 184.241 532.977, 189.796 535, 190.354 535 C 193.106 535, 200.158 539.519, 201.962 542.439 C 203.931 545.624, 204 547.213, 204 589.303 C 204 614.004, 204.406 633.938, 204.938 635.337 C 206.618 639.755, 212.535 643.339, 218.914 643.800 C 225.655 644.288, 223.584 646.126, 248.549 617.500 C 257.184 607.600, 265.433 598.150, 266.882 596.500 C 268.330 594.850, 276.584 585.394, 285.223 575.486 C 293.862 565.578, 302.253 556.691, 303.870 555.736 C 306.505 554.179, 310.458 553.994, 342.154 553.943 C 403.453 553.845, 442.617 550.875, 479 543.566 C 491.384 541.078, 508.251 536.071, 520.500 531.247 C 544.726 521.706, 563.708 510.021, 579.379 495.004 C 607.537 468.023, 624.435 435.115, 634.328 388 C 640.317 359.476, 642.764 321.175, 641.010 283.407 C 640.421 270.705, 639.525 256.980, 639.020 252.907 C 631.368 191.133, 613.004 149.177, 579.678 117.322 C 564.808 103.110, 540.458 88.084, 519.987 80.489 C 496.702 71.849, 461.134 64.367, 432 61.978 C 425.125 61.415, 417.700 60.688, 415.500 60.364 C 410.670 59.653, 302.711 58.619, 302 59.278 M 344.500 118.403 C 334.023 123.027, 332.939 137.327, 342.586 143.648 C 344.394 144.833, 349.590 145.710, 360.322 146.642 C 391.892 149.384, 416.725 158.450, 439.500 175.548 C 446.214 180.588, 460.881 194.770, 464.789 200 C 471.688 209.232, 476.664 217.400, 481.371 227.219 C 489.849 244.903, 493.646 259.336, 495.127 279.500 C 495.693 287.200, 496.352 294.504, 496.592 295.732 C 497.296 299.329, 502.569 304.538, 506.982 305.994 C 510.634 307.199, 511.556 307.139, 515.681 305.421 C 523.669 302.095, 524.514 300.038, 524.414 284.164 C 523.998 217.857, 474.834 151.509, 408.232 127.374 C 385.506 119.138, 353.151 114.584, 344.500 118.403 M 210.500 147.927 C 187.225 154.851, 165.989 173.065, 155.257 195.311 C 149.374 207.506, 146.004 221.463, 146.001 233.643 C 145.993 271.478, 192.479 358.025, 237 403.065 C 254.636 420.907, 276.972 437.919, 306.274 455.830 C 335.655 473.789, 365.881 487.539, 387.664 492.854 C 404.763 497.026, 408.015 497.308, 418.651 495.542 C 441.178 491.800, 456.924 483.852, 471.919 468.654 C 480.208 460.252, 484.190 454.720, 489.328 444.471 C 494.946 433.264, 496 427.504, 496 408.007 C 496 389.315, 495.197 385.669, 490.383 382.515 C 489.039 381.634, 473.916 373.920, 456.778 365.373 C 423.008 348.532, 419.858 347.463, 408.669 349.047 C 397.252 350.664, 380.378 359.838, 366.745 371.841 L 360.989 376.908 357.110 375.539 C 347.715 372.224, 330.487 362.551, 319 354.140 C 307.272 345.553, 292.523 329.979, 283.805 316.976 C 276.082 305.457, 266.041 286.094, 266.014 282.666 C 266.006 281.658, 268.641 277.608, 271.869 273.666 C 287.607 254.451, 293.469 241.737, 293.389 227 L 293.343 218.500 276.344 184.500 C 255.411 142.635, 259.131 146.009, 234 146.088 C 220.233 146.131, 215.220 146.523, 210.500 147.927 M 214.466 176.983 C 194.614 183.855, 181.440 198.578, 176.940 218.923 C 175.897 223.640, 175.034 229.300, 175.022 231.500 C 174.995 236.414, 177.468 249.754, 179.656 256.500 C 192.346 295.627, 228.213 353.302, 258.965 384.031 C 284.302 409.349, 334.857 442.495, 369.500 456.504 C 386.830 463.511, 392.924 465.145, 404.356 465.848 C 424.504 467.087, 437.735 462.886, 449.979 451.363 C 457.678 444.116, 464.266 432.628, 465.918 423.566 C 467.148 416.820, 467.335 404.998, 466.235 403.499 C 465.831 402.949, 453.855 396.684, 439.622 389.576 L 413.744 376.654 409.122 377.873 C 402.385 379.651, 395.334 384.710, 382.597 396.907 C 368.443 410.460, 367.093 410.830, 352.331 405.202 C 327.590 395.770, 302.647 380.232, 284.809 363.139 C 264.756 343.923, 248.739 319.519, 237.633 291.257 C 232.940 279.316, 232.795 273.964, 237.006 268.150 C 238.660 265.868, 240.438 264, 240.957 264 C 241.476 264, 245.681 259.710, 250.302 254.466 C 259.076 244.506, 265 234.640, 265 229.985 C 265 228.477, 259.133 215.540, 251.911 201.126 L 238.822 175 229.161 175.120 C 222.850 175.198, 217.754 175.844, 214.466 176.983 M 343.556 177.267 C 336.418 181.310, 333.730 189.709, 337.339 196.689 C 339.928 201.695, 344.312 203.685, 354.500 204.478 C 392.285 207.420, 418.809 226.431, 432.427 260.332 C 434.386 265.207, 436.995 279.082, 437.976 289.834 C 438.879 299.743, 440.617 302.630, 447.373 305.444 C 451.497 307.161, 452.475 307.234, 455.770 306.074 C 466.879 302.163, 469.142 293.669, 464.915 271.742 C 460.336 247.990, 449.916 228.824, 431.563 210.396 C 412.905 191.662, 393.747 181.551, 368.081 176.892 C 354.219 174.375, 348.507 174.463, 343.556 177.267 M 341.898 236.357 C 333.616 242.137, 333.708 254.095, 342.079 260.056 C 344.279 261.623, 347.467 262.500, 352.978 263.056 C 357.359 263.497, 362.460 264.713, 364.634 265.833 C 372.654 269.965, 378.935 279.507, 378.978 287.625 C 379.031 297.600, 382.932 303.701, 390.755 306.045 C 394.463 307.156, 395.488 307.084, 399.090 305.459 C 401.350 304.440, 404.391 302.042, 405.849 300.130 C 408.144 297.120, 408.485 295.757, 408.385 289.987 C 408.011 268.343, 390.993 245.857, 368 236.627 C 365.370 235.571, 359.760 234.618, 354.500 234.332 C 346.100 233.877, 345.260 234.012, 341.898 236.357 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgText = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 325.500 0.495 C 324.950 0.722, 318.200 1.615, 310.500 2.480 C 202.631 14.596, 107.761 75.494, 50.307 169.500 C 24.933 211.018, 8.942 257.961, 2.276 310.500 C -0.171 329.792, -0.182 369.894, 2.255 389.926 C 6.763 426.976, 15.428 458.700, 30.101 491.869 C 67.156 575.640, 135.096 641.177, 220.500 675.536 C 250.555 687.627, 287.282 696.386, 318.924 699.009 C 334.017 700.260, 367.426 700.249, 382 698.988 C 452.745 692.868, 524.170 662.773, 577.500 616.615 C 647.386 556.126, 688.788 476.774, 699.128 383.500 C 700.541 370.753, 701.375 324.650, 700.179 325.389 C 699.690 325.691, 699.030 321.790, 698.712 316.719 C 697.036 290.030, 687.380 249.940, 675.536 220.500 C 632.641 113.878, 540.630 34.847, 429.500 9.172 C 402.026 2.825, 383.752 0.752, 352 0.380 C 337.975 0.216, 326.050 0.267, 325.500 0.495 M 323 189.614 C 270.106 195.983, 230.187 214.266, 199.409 246.221 C 181.282 265.041, 170.937 283.589, 164.952 308 C 161.589 321.715, 161.584 346.266, 164.940 359.944 C 170.977 384.546, 184.842 408.245, 203.606 426.036 C 207.398 429.631, 211.727 433.513, 213.228 434.663 C 217.054 437.595, 218 440.825, 218 450.960 C 218 466.368, 213.187 477.908, 202.718 487.601 C 197.265 492.649, 192.580 495.380, 181.684 499.859 C 179.416 500.792, 178.930 501.550, 179.184 503.758 C 179.630 507.633, 184.425 509.649, 196.274 510.945 C 225.716 514.166, 258.679 502.616, 287.558 478.961 L 294.616 473.179 300.558 474.537 C 309.007 476.468, 333.373 479, 343.500 479 C 355.312 479, 378.151 476.365, 391.664 473.444 C 408.440 469.816, 422.773 464.716, 439.500 456.422 C 483.140 434.781, 511.875 401.227, 522.070 360 C 525.298 346.949, 525.411 320.754, 522.294 308.476 C 515.733 282.638, 504.699 263.327, 485.305 243.743 C 458.496 216.670, 424.050 199.767, 379.500 191.824 C 368.880 189.930, 332.268 188.499, 323 189.614 M 0.432 350 C 0.432 363.475, 0.574 368.988, 0.747 362.250 C 0.920 355.512, 0.920 344.488, 0.747 337.750 C 0.574 331.012, 0.432 336.525, 0.432 350 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgSnap = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 328.500 29.085 C 270.983 32.312, 210.871 53.944, 162.500 88.821 C 136.315 107.701, 107.701 136.315, 88.821 162.500 C 60.074 202.369, 39.669 251.618, 32.473 298.500 C 29.317 319.059, 28.818 326.103, 28.820 350 C 28.822 374.071, 29.416 382.559, 32.492 402.500 C 39.979 451.039, 61.771 502.162, 92.381 542.998 C 116.825 575.607, 149.266 605.043, 183.598 625.763 C 234.497 656.481, 290.381 672.003, 350 671.980 C 434.481 671.948, 512.875 640.489, 572.892 582.534 C 628.109 529.215, 661.099 462.806, 670.028 387 C 674.512 348.936, 671.488 305.405, 661.866 269.500 C 658.655 257.519, 650.291 232.106, 649.030 230.500 C 648.598 229.950, 647.910 228.375, 647.500 227 C 644.634 217.383, 628.265 187.286, 616.333 169.697 C 594.588 137.643, 563.318 106.377, 530.500 83.874 C 483.115 51.384, 426.656 32.257, 368.500 28.993 C 349.838 27.945, 348.777 27.947, 328.500 29.085 M 321 43.685 C 313.711 44.228, 290.187 48.051, 281 50.185 C 260.890 54.856, 238.277 62.678, 219.297 71.528 C 168.565 95.184, 123.007 135.035, 91.743 183.101 C 72.939 212.011, 58.363 246.075, 50.494 279.500 C 45.480 300.797, 43.838 315.036, 43.286 342.001 C 42.713 370.013, 43.567 384.092, 46.997 403.197 C 55.004 447.789, 70.234 485.396, 95.477 522.904 C 127.855 571.015, 175.052 610.179, 227.500 632.456 C 233.550 635.026, 239.400 637.537, 240.500 638.036 C 243.595 639.440, 256.544 643.663, 266.500 646.516 C 329.193 664.476, 399.760 661.148, 461.500 637.319 C 475.771 631.811, 499.406 619.888, 513 611.339 C 603.647 554.331, 657.965 456.614, 657.992 350.500 C 658.011 279.782, 634.676 213.523, 590.078 157.655 C 539.205 93.927, 461.468 51.582, 381.500 44.039 C 371.508 43.097, 331.994 42.865, 321 43.685 M 320.684 162.077 C 286.227 169.414, 261.429 188.586, 246.049 219.778 C 238.993 234.086, 238.500 237.882, 238.500 277.864 L 238.500 313.229 233.262 312.688 C 230.381 312.390, 224.995 310.935, 221.293 309.454 C 215.660 307.200, 213.529 306.844, 208.228 307.270 C 195.625 308.281, 186.911 317.254, 188.465 327.618 C 189.797 336.500, 198.227 342.812, 218.500 350.105 C 229.326 354, 233.390 356.488, 235.603 360.577 C 237.537 364.150, 236.833 367.245, 231.753 377.500 C 217.001 407.279, 191.232 429.329, 162.725 436.564 C 151.848 439.325, 149 441.720, 149 448.105 C 149 456.997, 155.747 463.633, 170.169 468.923 C 176.013 471.067, 189.769 474.419, 197.278 475.529 C 202.678 476.327, 203.121 476.902, 204.954 485.500 C 207.107 495.597, 210.430 500.220, 216.398 501.424 C 217.992 501.746, 224.967 501.061, 231.898 499.902 C 241.267 498.335, 246.809 497.941, 253.500 498.365 C 268.791 499.334, 274.837 501.941, 296 516.691 C 315.852 530.527, 329.045 535, 350.002 535 C 370.793 535, 381.033 531.446, 403.532 516.420 C 421.956 504.117, 426.652 501.944, 438.036 500.455 C 447.792 499.179, 456.489 499.603, 470.274 502.024 C 474 502.678, 478.578 502.927, 480.447 502.576 C 484.806 501.758, 489.517 496.461, 490.416 491.367 C 491.656 484.339, 494.102 478.102, 495.815 477.599 C 496.742 477.326, 500.425 476.606, 504 475.997 C 521.340 473.046, 537.498 466.614, 542.833 460.538 C 550.559 451.739, 548.641 440.054, 539.207 438.440 C 526.558 436.277, 512.303 430.254, 501.500 422.509 C 482.966 409.220, 460 377.178, 460 364.608 C 460 359.843, 465.734 355.077, 475.791 351.483 C 497.819 343.612, 508 335.396, 508 325.492 C 508 321.673, 504.474 315.463, 500.647 312.544 C 492.529 306.352, 482.459 305.580, 472 310.346 C 466.889 312.674, 463.488 313.370, 458.492 313.106 C 456.555 313.004, 456.512 312.589, 457.270 301.250 C 458.491 282.974, 458.418 252.340, 457.132 243.480 C 455.605 232.960, 452.433 224.111, 446.411 213.564 C 430.990 186.560, 405.976 168.786, 373.848 162.004 C 361.039 159.301, 333.546 159.339, 320.684 162.077 M 323.500 173.014 C 307.029 176.813, 295.728 182.109, 283.881 191.582 C 270.501 202.281, 259.444 218.393, 254.816 233.935 C 252.293 242.408, 251.357 272.152, 252.834 296.935 C 253.537 308.749, 253.545 314.982, 252.857 316.268 C 252.298 317.312, 249.514 319.249, 246.670 320.573 C 239.613 323.859, 230.702 323.839, 220.288 320.513 C 216.005 319.145, 211.233 318.020, 209.684 318.013 C 205.945 317.996, 203 319.665, 203 321.801 C 203 324.057, 212.200 330.071, 218 331.607 C 256.989 341.927, 259.716 364.661, 226.927 406.037 C 212.003 424.870, 192.427 438.890, 172.250 445.194 C 168.263 446.440, 165 447.754, 165 448.113 C 165 449.830, 183.613 455.862, 197 458.483 C 201.675 459.399, 206.625 460.678, 208 461.326 C 210.990 462.736, 214.181 468.875, 217.055 478.748 C 218.936 485.208, 219.401 485.946, 221.333 485.535 C 233.888 482.860, 255.870 482.055, 265.589 483.914 C 275.206 485.753, 285.471 490.956, 297.728 500.204 C 308.787 508.548, 320.093 514.872, 327.525 516.871 C 340.857 520.455, 356.692 520.937, 367.500 518.087 C 378.200 515.265, 382.119 513.214, 400.599 500.770 C 419.324 488.162, 425.269 485.430, 437.419 483.852 C 446.109 482.723, 463.974 483.372, 472.085 485.112 C 477.763 486.329, 480 485.304, 480 481.483 C 480 480.233, 480.889 476.333, 481.975 472.816 C 484.904 463.332, 487.111 461.739, 501 459.088 C 507.325 457.881, 514.750 456.215, 517.500 455.387 C 523.980 453.434, 532 449.861, 532 448.926 C 532 448.524, 528.901 447.253, 525.112 446.103 C 498.018 437.873, 471.241 414.462, 455.142 384.928 C 446.733 369.501, 445.177 360.456, 449.381 351.429 C 453.201 343.225, 460.342 338.425, 477.500 332.530 C 488.871 328.623, 495 325.240, 495 322.871 C 495 321.545, 489.329 319, 486.375 319 C 484.876 319, 480.244 320.176, 476.081 321.613 C 469.641 323.835, 467.278 324.160, 460.240 323.791 C 453.047 323.413, 451.417 322.967, 447.734 320.365 L 443.500 317.374 444 303.937 C 444.275 296.547, 444.477 280.150, 444.449 267.500 C 444.391 241.209, 443.296 234.140, 437.522 222.774 C 423.743 195.651, 402.950 179.589, 373 172.932 C 361.255 170.322, 334.983 170.365, 323.500 173.014 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgFB = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 103.829 0.504 C 103.552 0.781, 100.749 1.484, 97.599 2.066 C 56.850 9.599, 19.671 42.499, 5.934 83.181 C 0.130 100.369, 0.562 80.240, 0.253 348 L -0.031 593.500 2.112 602.950 C 7.375 626.157, 15.373 642.039, 30.491 659.305 C 46.639 677.747, 66.623 690.111, 91.969 697.342 C 99.468 699.482, 100.032 699.492, 224.750 699.768 L 350 700.045 350 568.033 L 350 436.022 307.750 435.761 L 265.500 435.500 265.500 377.500 L 265.500 319.500 307.750 319.239 L 350 318.978 350.031 297.239 C 350.068 270.374, 351.188 254.616, 354.025 241.030 C 361.943 203.114, 384.040 168.622, 414.274 146.987 C 421.572 141.765, 439.789 132.510, 447 130.361 C 462.728 125.674, 461.978 125.726, 520.250 125.286 L 576 124.865 576 182.933 L 576 241 528.750 241.006 C 497.759 241.009, 480.124 241.386, 477.500 242.102 C 472.246 243.535, 464.149 251.859, 461.544 258.508 C 459.807 262.940, 459.546 266.612, 459.223 291.242 L 458.859 318.984 517.180 319.242 L 575.500 319.500 575.500 377.500 L 575.500 435.500 517.250 435.758 L 459 436.016 459 568.046 L 459 700.075 530.250 699.754 L 601.500 699.432 611 696.689 C 630.222 691.141, 650.901 678.965, 664.933 664.933 C 679.764 650.102, 691.862 629.080, 696.545 610 C 697.962 604.225, 699.544 598.118, 700.061 596.429 C 701.273 592.466, 701.338 102.673, 700.126 103.422 C 699.646 103.719, 698.949 101.676, 698.579 98.882 C 697.069 87.500, 689.893 69.168, 682.220 57.091 C 676.643 48.314, 667.381 37.562, 659.305 30.491 C 642.066 15.396, 626.292 7.462, 602.711 2.026 C 594.013 0.021, 591.414 0, 349.128 0 C 214.491 0, 104.107 0.227, 103.829 0.504 M 0.492 350 C 0.492 485.575, 0.608 541.037, 0.750 473.250 C 0.892 405.462, 0.892 294.537, 0.750 226.750 C 0.608 158.962, 0.492 214.425, 0.492 350 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgEmail = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 344 16.689 C 334.175 17.723, 317.129 21.620, 305.075 25.586 C 248.403 44.235, 207.935 82.727, 187.560 137.364 C 183.593 148.003, 178.853 166.099, 176.983 177.750 L 175.819 185 87.910 185 L 0 185 0 434.001 L 0 683.003 350.250 682.751 L 700.500 682.500 700.752 433.500 L 701.004 184.500 613.725 184.761 L 526.445 185.022 526.824 181.049 C 527.433 174.664, 525.086 150.363, 522.876 140.160 C 516.377 110.163, 503.454 86.355, 482.051 64.945 C 455.357 38.241, 420.638 21.933, 380.026 17.024 C 372.056 16.061, 351.757 15.872, 344 16.689 M 346.035 46.087 C 291.473 51.340, 243.986 83.758, 221.590 131.043 C 203.238 169.789, 197.647 225.195, 208.375 262 C 219.792 301.171, 249.887 330.772, 292.697 344.939 C 309.228 350.410, 321.395 352.328, 339.500 352.317 C 362.950 352.304, 381.538 347.582, 397.930 337.476 C 401.994 334.970, 405.626 333.275, 406 333.710 C 406.373 334.144, 410.434 339.187, 415.023 344.915 L 423.366 355.331 420.234 357.946 C 411.869 364.929, 394.415 372.185, 376.183 376.258 C 367.811 378.128, 363.453 378.418, 344 378.404 C 323.337 378.389, 320.439 378.164, 308.500 375.647 C 251.670 363.664, 208.930 332.804, 187.934 288.593 C 178.910 269.591, 175.616 256.296, 173.850 231.750 L 172.645 215 111.573 215 L 50.501 215 200.250 364.750 L 350 514.499 499.750 364.750 L 649.499 215 586.400 215 L 523.302 215 520.506 225.746 C 511.403 260.737, 492.378 283.934, 466.500 291.597 C 458.521 293.960, 444.473 293.962, 436.552 291.602 C 419.560 286.538, 403.161 273.283, 392.505 256 C 390.979 253.525, 389.572 251.318, 389.378 251.096 C 389.183 250.873, 385.080 254.473, 380.259 259.096 C 365.859 272.904, 348.245 283.123, 329.500 288.545 C 319.053 291.567, 300.809 292.857, 292 291.196 C 269.182 286.895, 253.460 272.113, 244.994 247 C 241.845 237.662, 241.117 219.087, 243.480 208.383 C 251.151 173.633, 282.110 136.537, 318.849 118.074 C 341.977 106.451, 371.874 100.677, 396.950 102.991 C 407.724 103.985, 423.448 107.319, 425.324 109.007 C 425.778 109.415, 422.688 132.868, 418.459 161.124 C 409.184 223.094, 409.258 222.356, 411.493 230.611 C 416.620 249.553, 436.401 265, 455.532 265 C 474.286 265, 487.596 245.721, 494.179 209.020 C 497.163 192.384, 497.818 163.590, 495.525 149.803 C 485.533 89.713, 440.840 51.533, 374 45.986 C 361.099 44.915, 358.096 44.926, 346.035 46.087 M 364.597 133.607 C 348.549 136.505, 330.439 143.939, 315.635 153.707 C 305.471 160.413, 287.407 178.734, 281.522 188.306 C 274.585 199.590, 270.936 210.863, 270.868 221.221 C 270.802 231.419, 272.236 237.504, 276.777 246.285 C 283.693 259.662, 293.548 265.525, 309 265.456 C 330.894 265.358, 354.687 250.234, 370.867 226.131 C 376.879 217.175, 380.647 209.868, 381.871 204.795 C 382.715 201.296, 393 134.331, 393 132.335 C 393 131.402, 371.466 132.366, 364.597 133.607 M 0.492 434 C 0.492 571.225, 0.608 627.363, 0.750 558.750 C 0.892 490.138, 0.892 377.863, 0.750 309.250 C 0.608 240.638, 0.492 296.775, 0.492 434 M 29 434 L 29 632.499 128.249 533.249 L 227.499 434 128.249 334.751 L 29 235.501 29 434 M 571.499 335.001 L 472.503 434.001 571.751 533.250 L 671 632.499 671 434.249 C 671 325.212, 670.887 236, 670.748 236 C 670.610 236, 625.948 280.550, 571.499 335.001 M 149.499 554.001 L 50.504 653 350 653 L 649.496 653 550.501 554.001 L 451.506 455.002 400.753 505.747 L 350 556.493 299.247 505.747 L 248.494 455.002 149.499 554.001 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
+
+  let svgInsta = '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700"><path d="M 169 1.662 C 122.663 9.214, 87.622 26.573, 57.098 57.098 C 31.297 82.898, 13.248 115.144, 5.658 149 C -0.297 175.561, -0 164.995, -0 350.500 C -0 536.184, -0.281 526.266, 5.695 551.500 C 19.318 609.021, 58.329 657.024, 111.500 681.690 C 131.263 690.858, 143.774 694.656, 165.500 698.082 C 176.930 699.884, 185.687 699.974, 350 699.980 C 514.197 699.986, 523.102 699.895, 535 698.093 C 577.246 691.695, 613.488 673.442, 643.465 643.465 C 673.124 613.806, 690.641 579.318, 698.301 535.500 C 700.369 523.675, 700.404 520.977, 700.718 350.500 C 700.916 243.322, 700.678 176.739, 700.093 175.500 C 699.573 174.400, 698.618 169.675, 697.969 165 C 692.336 124.377, 671.439 83.735, 641.400 54.980 C 615.163 29.864, 585.964 13.857, 551.500 5.695 C 526.213 -0.294, 536.444 -0.013, 349.185 0.138 C 208.148 0.252, 175.983 0.524, 169 1.662 M 176 63.666 C 146.415 68.326, 121.416 80.832, 101.124 101.124 C 83.656 118.592, 72.782 137.955, 65.814 164 L 63.540 172.500 63.213 345.500 C 62.873 524.853, 62.868 524.630, 66.979 540.500 C 77.538 581.264, 108.758 615.373, 148.931 630.034 C 157.694 633.232, 161.997 634.328, 174.500 636.545 C 186.777 638.722, 514.580 638.652, 527 636.470 C 553.066 631.890, 574.415 621.864, 593.201 605.380 C 616.447 584.982, 630.875 558.846, 636.470 527 C 638.652 514.580, 638.722 186.777, 636.545 174.500 C 633.314 156.279, 629.841 145.986, 621.911 131.136 C 605.587 100.564, 574.922 76.075, 542 67.319 C 525.389 62.901, 529.733 62.995, 349.500 63.138 C 255.450 63.212, 177.375 63.450, 176 63.666 M 533 117.660 C 513.670 120.655, 499.638 132.678, 494.386 150.745 C 492.194 158.283, 492.896 171.616, 495.886 179.240 C 502.474 196.044, 517.595 206.846, 535.841 207.784 C 549.865 208.505, 560.978 204.196, 570.755 194.247 C 584.398 180.365, 587.489 159.740, 578.566 142.131 C 570.305 125.828, 550.148 115.003, 533 117.660 M 324 171.897 C 302.178 175.394, 285.347 180.975, 266.035 191.116 C 249.947 199.564, 236.473 209.554, 223.014 223.014 C 194.414 251.614, 177.132 286.630, 171.446 327.500 C 169.504 341.462, 169.932 366.011, 172.362 380 C 184.771 451.431, 237.523 508.168, 307.500 525.346 C 322.505 529.029, 332.708 530.169, 350.446 530.145 C 400.059 530.076, 442.604 512.464, 477.534 477.534 C 505.758 449.310, 522.552 416.189, 528.528 376.962 C 530.436 364.444, 530.672 337.995, 528.983 325.946 C 518.900 253.971, 466.450 194.595, 396.500 175.969 C 375.052 170.258, 344.820 168.560, 324 171.897 M 0.489 350.500 C 0.489 446.200, 0.606 485.202, 0.750 437.171 C 0.894 389.140, 0.894 310.840, 0.750 263.171 C 0.606 215.502, 0.489 254.800, 0.489 350.500 M 332.306 233.532 C 291.723 240.955, 259.999 264.983, 243.061 301.129 C 230.312 328.334, 228.743 358.221, 238.516 387.671 C 242.719 400.334, 246.203 407.279, 253.479 417.500 C 270.422 441.300, 292.110 456.382, 321.500 464.804 C 329.757 467.170, 332.110 467.387, 350 467.428 C 365.607 467.464, 370.798 467.121, 376 465.710 C 400.074 459.180, 417.158 449.672, 432.976 434 C 449.493 417.636, 458.972 400.840, 465.710 376 C 467.121 370.798, 467.464 365.607, 467.428 350 C 467.387 332.110, 467.170 329.757, 464.804 321.500 C 456.385 292.119, 441.351 270.496, 417.500 253.460 C 393.742 236.491, 359.686 228.525, 332.306 233.532 " stroke="none" fill="black" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg"/><path stroke="black" stroke-width="1" d=""/></svg>'
