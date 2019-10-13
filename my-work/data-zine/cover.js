@@ -5,19 +5,7 @@ let outerRadius = Math.min(w, h) / 2;   // the outerRadius goes from the middle 
 let paddingSide = 200;
 let paddingOther = 100;
 let padding = 8;
-// let bandwidth = 20;
-/// SO I WANT TO DO THIS CIRCLE BAR GRAPH
-//That would be super cool for the cover I think...
-//Ideally I want four (like name/freguency, region/frequency, medium/frequency, day/frequency)
-//do I need for div's then? Not sure... maybe I do? I'm currently just playing around with the data set
 
-//https://www.d3-graph-gallery.com/circular_barplot
-
-// var margin = {top: 10, right: 10, bottom: 10, left: 10},
-//     width = 1200 - margin.left - margin.right,
-//     height = 800 - margin.top - margin.bottom,
-//     innerRadius = 80,
-//     outerRadius = Math.min(width, height) / 2;   // the outerRadius goes from the middle of the SVG area to the border
 
 // append the svg object to the body of the page
 let viz = d3.select("#container")

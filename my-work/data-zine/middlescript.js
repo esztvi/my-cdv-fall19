@@ -240,18 +240,10 @@ yAxisGroup.call(yAxis);
 
 yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
 
-  // // Wow, please consider this one carfully. We get the min max extent right in place.
-  // // we access the values NOT WITH A DOT NOTATATION like d.Year!!!!!! This is confusing, but
-  // // extremely IMPORTANT to know. We use our string (variable) in []-brackets instead.
-  // // then, our range: we want the lowest value to be scaled to the pixel where our X AXIS starts
-  // // so we use the xAxisYPos for the min of the range, and a little padding for the top.
-  //
-  // // next, axis:
    var yAxis = d3.axisLeft(yScale);
   let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
-  // now that was quick. six lines of code?? Oh my, this is so neat.
   function randomTranslate(datapoint, i){
     let x = properlyFormatted;
     let y = correctlyFormatted;
