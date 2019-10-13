@@ -16,5 +16,23 @@ My initial idea was to actually be able to change color as you hovered over it w
 The samples I found with Leon were also for a different version of d3... and sometimes it made it difficult to understand, but slowly as I started meshing the code, it came together (with professor help).
 The Color Scale idea was sort of a compromise with the hover idea... I'm not actually THAT upset about the cover anymore. It's okay, not what I initially planned, especially since initially I wanted to be able to display four of those graphs (one that looks like the cover now, one with locations, one with mediums of communication, and one with content)... I also ditched that idea because honestly... I completely changed the organization of the Zine...
 
+Source: https://www.d3-graph-gallery.com/graph/circular_barplot_basic.html
+
 Final Cover:
 ![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/screenshots-zine/cover.png)
+
+Middle:
+UGH
+Final MiddleSpread:
+Non existent :)
+
+Back:
+I originally wanted to load all of the countries, but then the idea was loading only the countries I received messages from and then coloring them according to the amount of messages received.
+I had to work with OGR2OGR which was kinda challenging. I worked off of a guide to get it to work.
+I did have to ask for coloring help because the same color scale formatting didn't work for the mapping.
+I also had to consult Konrad for help nesting the two data sets (the country polygon data and the amount of messages).
+
+Source: http://datawanderings.com/2018/10/28/making-a-map-in-d3-js-v-5/
+
+Final Back:
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/screenshots-zine/back.png)
