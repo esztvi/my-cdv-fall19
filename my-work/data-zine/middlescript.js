@@ -190,7 +190,7 @@ function gotData(incomingData){
   // reference: https://github.com/d3/d3-scale#time-scales
   let xScale = d3.scaleTime().domain(xDomain).range([xPadding, w-(xPadding*2)]);
 
-  var xAxis = d3.axisBottom(xScale);
+  var xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%H:%M"));
 
   let xAxisGroup = viz.append("g").attr("class", "xaxis");
 
@@ -233,16 +233,13 @@ let yAxisXPos = h - 50;
 let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
 
 
-   var yAxis = d3.axisLeft(yScale);
+   var yAxis = d3.axisLeft(yScale).tickFormat(d3.timeFormat("%m-%d"));
   let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
-  function randomTranslate(datapoint, i){
-    let x = properlyFormatted;
-    let y = correctlyFormatted;
-    return "translate(" + x + "," + y + ")";
-  };
-
+   function randomTranslate(datapoint, i){
+     return "translate(" + xScale(formatTime(d.time)) + "," + yScale(formatDay(d.date)) + ")";
+   };
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
   let vizGroup = viz.append("g").attr("class", "vizgroup");
