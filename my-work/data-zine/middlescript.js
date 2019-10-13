@@ -237,8 +237,8 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
-   function randomTranslate(datapoint, i){
-     return "translate(" + xScale(formatTime(d.time)) + "," + yScale(formatDay(d.date)) + ")";
+   function randomTranslate(d, i){
+     return "translate(" + (xScale(formatTime(d.time))+ 20) + "," + yScale(formatDay(d.date)) + ")";
    };
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
@@ -258,6 +258,7 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   let circles = dataGroups.append("circle")
       // .attr("cx", formatTime)
       // .attr("cy", formatDay)
+      .attr("transform", randomTranslate)
       .attr("r", 20)
       .attr("fill", getColor)
   ;
