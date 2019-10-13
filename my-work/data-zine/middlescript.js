@@ -285,4 +285,4 @@ let yScale = d3.scaleLinear().domain(d3.extent(incomingData, function(d){return 
 
 d3.json("full-data.json").then(gotData);
 
-console.log("lol");
+console.log("eszter can't code");
