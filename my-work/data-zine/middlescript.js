@@ -274,8 +274,8 @@ yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
   // // append circles to the groups
   //
   let circles = dataGroups.append("circle")
-      .attr("cx", x)
-      .attr("cy", y)
+      .attr("x", time)
+      .attr("y", correctlyFormatted)
       .attr("r", 20)
       .attr("fill", getColor)
   ;
@@ -290,30 +290,6 @@ yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
   // dataGroups.html(svgInsta);
   // dataGroups.selectAll("path").attr("transform", "scale(0.1)");
 
-
-  // translate function in which we are using our scales
-  // // NOTE: the xScale expect us to supply a properly formatted date object
-  // function getTranslate(d, i){
-  //   let properlyFormattedDate = yearToDateObjectConverter(d.Year);
-  //   let value = d[valueKey];
-  //   return "translate("+xScale(properlyFormattedDate)+","+yScale(value)+")";
-  // }
-  // // translate the position of each group:
-  // dataGroups.attr("transform", getTranslate);
-  // // this looks great, compare it with this graph from the website we got our data from:
-  // // https://ourworldindata.org/grapher/new-cases-of-hiv-infection?tab=chart&time=1990..2017&country=CHN
-
-
-  // what next?
-
-
-  // try changing the country Code in our filer function. E.g. to USA
-  // Everything will automatically adjust to the new data. See the y Axis changing?
-
-  // next we could adjust our filter to "let in" data from another country.
-  //  (datapoint.Code == "USA" || datapoint.Code == "CHN")
-  // then leave all code as it is, but color each circle depending on its Code value
-  // that way each country would have its own color. Try it!
 
 }
 
