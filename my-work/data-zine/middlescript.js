@@ -7,7 +7,27 @@ let viz = d3.select("#container")
     .attr("height", h)
     .style("background-color", "whitesmoke")
 ;
+function getStroke(datapoint,i) {
 
+    console.log(datapoint.medium);
+    if(datapoint.medium == "Viber")
+    { return "purple";}
+    else if(datapoint.medium == "Snapchat")
+    { return "yellow";}
+    else if(datapoint.medium == "Instagram")
+    { return "magenta";}
+    else if(datapoint.medium == "WeChat")
+    { return "lime";}
+    else if(datapoint.medium == "Facebook")
+    { return "blue";}
+    else if(datapoint.medium == "Email")
+    { return "orange";}
+    else if(datapoint.medium == "Text")
+    { return "red";}
+    else if(datapoint.medium == "Scaling")
+    { return "whitesmoke";}
+    return "datapoint.medium";
+};
 function getColor (datapoint,i) {
   console.log(datapoint.person);
   if(datapoint.person == "Mom")
@@ -155,7 +175,7 @@ function getColor (datapoint,i) {
   else if(datapoint.person == "Marcela")
   { return "LightGray";}
   else if(datapoint.person == "Scaling")
-  { return "WhiteSmoke";}
+  { return "whitesmoke";}
   return "datapoint.person";
 }
 function gotData(incomingData){
@@ -238,8 +258,10 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
    function randomTranslate(d, i){
-     return "translate(" + (xScale(formatTime(d.time))+ 20) + "," + yScale(formatDay(d.date)) + ")";
+     return "translate(" + (xScale(formatTime(d.time))+ 25) + "," + yScale(formatDay(d.date)) + ")";
    };
+
+   
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
   let vizGroup = viz.append("g").attr("class", "vizgroup");
@@ -256,11 +278,12 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   // // append circles to the groups
   //
   let circles = dataGroups.append("circle")
-      // .attr("cx", formatTime)
-      // .attr("cy", formatDay)
+
       .attr("transform", randomTranslate)
       .attr("r", 20)
       .attr("fill", getColor)
+      .attr("stroke-width", 5)
+      .attr("stroke", getStroke)
   ;
   //
 
