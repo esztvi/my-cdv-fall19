@@ -1,6 +1,6 @@
 
-<span style="color:orange;">Project Summary:
-My project is a summary of all the incoming messages I received on my phone over the course of five days. I would have done longer, but I was concerned over the sheer number of data points after five days so I didn't continue collecting data.The chose to collect this data because I have a habit of saying "I literally don't talk to anyone". I just really wanted to see how accurate that statement was.</span>
+Project Summary:
+My project is a summary of all the incoming messages I received on my phone over the course of five days. I would have done longer, but I was concerned over the sheer number of data points after five days so I didn't continue collecting data.The chose to collect this data because I have a habit of saying "I literally don't talk to anyone". I just really wanted to see how accurate that statement was.
 
 Overall Issues:
 The data set was massive! It broke Atom a little bit, but it's all good now (I hope?).
