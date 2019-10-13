@@ -163,16 +163,16 @@ function gotData(incomingData){
 
 
 
-    let mdToDateObjectConverter = d3.utcParse("%Y-%m-%dT%H:%M:%S.%LZ");
-  var formatMonth = d3.timeFormat("%m"),
-    formatDay = d3.timeFormat("%d"),
-    formatTime = d3.timeFormat("%H:%M"),
+    let mdToDateObjectConverter = d3.timeParse("%H:%M"),
+  var formatMonth = d3.timeParse("%m"),
+  //   formatDay = d3.timeFormat("%d"),
+    formatTime = d3.timeParse("%H:%M"),
     time = new Date(formatTime); // Thu May 01 2014 00:00:00 GMT-0700 (PDT)
-  let xDomain = d3.extent(time, function(d){
+  let xDomain = d3.extent(incomingData, function(d){
     // let day = d.time(mdToDateObjectConverter);
     console.log(d);
-    console.log(mdToDateObjectConverter(time));
-    let properlyFormatted = mdToDateObjectConverter(time)
+    console.log(mdToDateObjectConverter(d.time));
+    let properlyFormatted = mdToDateObjectConverter(d.time)
     console.log(properlyFormatted);
     //IMPORTANT: whatever we return will be the value of which d3 will
     // look for the minimum. Ultimately it returns the ONE minimum value of all data points.
@@ -205,12 +205,12 @@ formatTime(time);
   // "Incidence - HIV/AIDS - Sex: Both - Age: All Ages (Number) (new cases of HIV)"
   // -key. What an annoyingly long key. If you are confused look at the datapoints
   // we console.logged above. Let's save the key in a variable to make it less annoying:
-  let valueKey = new Date(formatDay);
-  //
-  // // Now let's do it, but faster than above!
-  // // y Scale:
-let topPadding = 30;
-let yScale = d3.scaleLinear().domain(d3.extent(incomingData, function(d){return d[valueKey]})).range([xAxisYPos, topPadding]);
+//   let valueKey = new Date(formatDay);
+//   //
+//   // // Now let's do it, but faster than above!
+//   // // y Scale:
+// let topPadding = 30;
+// let yScale = d3.scaleLinear().domain(d3.extent(incomingData, function(d){return d[valueKey]})).range([xAxisYPos, topPadding]);
   // // Wow, please consider this one carfully. We get the min max extent right in place.
   // // we access the values NOT WITH A DOT NOTATATION like d.Year!!!!!! This is confusing, but
   // // extremely IMPORTANT to know. We use our string (variable) in []-brackets instead.
@@ -283,6 +283,6 @@ let yScale = d3.scaleLinear().domain(d3.extent(incomingData, function(d){return 
 
 }
 
-d3.json("full-data.json").then(gotData);
+d3.json("middle.json").then(gotData);
 
 console.log("eszter can't code");
