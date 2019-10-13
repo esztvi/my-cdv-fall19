@@ -51,11 +51,34 @@ function gotData(incomingData){
   let circleChartGroup = viz.append("g")
     .classed("circleChartGroup",true)
     .attr("transform",getGroupTranslation)
-  ;
 
+  ;
+let title = circleChartGroup
+.append("text")
+  .attr("x", -10)
+  .attr("y", -350)
+  .attr("text-anchor", "left")
+  .style("font-size", "20px")
+  .attr("font-family", "zapfino")
+  .style("fill","midnightblue")
+  .style("text-decoration", "underline")
+  .text("Incoming Messages Over the Course of Five Days")
+  ;
+  let subtitle = circleChartGroup
+  .append("text")
+    .attr("x", 300)
+    .attr("y", -300)
+    .attr("text-anchor", "left")
+    .style("font-size", "15px")
+    .attr("font-family", "zapfino")
+    .style("fill","midnightblue")
+    .style("text-decoration", "underline")
+    .text("(September 10 - September 15)")
+    ;
   let datagroups = circleChartGroup.selectAll(".datagroup").data(incomingData).enter()
     .append("g")
       .classed("datagroup", true)
+
   ;
 
 function getName (d) {
@@ -93,8 +116,9 @@ function getName (d) {
   .attr("transform", function(d) { return (xScale(d.Name) + xScale.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
         .style("font-size", "11px")
       .attr("alignment-baseline", "middle")
-  // .attr("x",xScale)
+      ;
 
+  // .attr("x",xScale)
 
   // datagroups.attr("transform", getGroupTranslation);
 }
