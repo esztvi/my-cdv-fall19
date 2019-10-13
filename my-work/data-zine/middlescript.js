@@ -231,14 +231,7 @@ function gotData(incomingData){
 let topPadding = 50;
 let yAxisXPos = h - 50;
 let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
-var yAxis = d3.axisLeft(yScale);
 
-let yAxisGroup = viz.append("g").attr("class", "yaxis");
-
-yAxisGroup.call(yAxis);
-
-
-yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
 
    var yAxis = d3.axisLeft(yScale);
   let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
