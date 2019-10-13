@@ -154,6 +154,8 @@ function getColor (datapoint,i) {
   { return "RosyBrown";}
   else if(datapoint.person == "Marcela")
   { return "LightGray";}
+  else if(datapoint.person == "Scaling")
+  { return "WhiteSmoke";}
   return "datapoint.person";
 }
 function gotData(incomingData){
@@ -184,7 +186,7 @@ function gotData(incomingData){
 
 // formatDay(date);
 // formatTime(d.time);
-  let xPadding = 30;
+  let xPadding = 50;
   // reference: https://github.com/d3/d3-scale#time-scales
   let xScale = d3.scaleTime().domain(xDomain).range([xPadding, w-(xPadding*2)]);
 
@@ -194,7 +196,7 @@ function gotData(incomingData){
 
   xAxisGroup.call(xAxis);
 
-  let xAxisYPos = h - 30;
+  let xAxisYPos = h - 50;
   xAxisGroup.attr("transform", "translate(0,"+xAxisYPos+")");
 
 
@@ -226,8 +228,8 @@ function gotData(incomingData){
 //   //
 //   // // Now let's do it, but faster than above!
 //   // // y Scale:
-let topPadding = 30;
-let yAxisXPos = h - 30;
+let topPadding = 50;
+let yAxisXPos = h - 50;
 let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
 var yAxis = d3.axisLeft(yScale);
 
