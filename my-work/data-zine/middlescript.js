@@ -253,7 +253,7 @@ let yAxisXPos = h - 50;
 let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
 
 
-   var yAxis = d3.axisLeft(yScale).tickFormat(d3.timeFormat("%m-%d"));
+   var yAxis = d3.axisLeft(yScale).tickFormat(d3.timeFormat("%m-%d")).ticks(d3.timeHour.every(24));
   let yAxisgroup = viz.append("g").attr("class", "yaxis").call(yAxis);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
@@ -261,7 +261,7 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
      return "translate(" + (xScale(formatTime(d.time))+ 25) + "," + yScale(formatDay(d.date)) + ")";
    };
 
-   
+
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
   let vizGroup = viz.append("g").attr("class", "vizgroup");
