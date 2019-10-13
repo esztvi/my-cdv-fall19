@@ -266,8 +266,8 @@ yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
   // // append circles to the groups
   //
   let circles = dataGroups.append("circle")
-      .attr("x", time)
-      .attr("y", correctlyFormatted)
+      .attr("x", formatTime)
+      .attr("y", formatDay)
       .attr("r", 20)
       .attr("fill", getColor)
   ;
