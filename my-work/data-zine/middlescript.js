@@ -161,18 +161,16 @@ function gotData(incomingData){
   console.log(incomingData);
 
 
-
-
-    let mdToDateObjectConverter = d3.timeParse("%H:%M"),
-  var formatMonth = d3.timeParse("%m"),
-  //   formatDay = d3.timeFormat("%d"),
-    formatTime = d3.timeParse("%H:%M"),
-    time = new Date(formatTime); // Thu May 01 2014 00:00:00 GMT-0700 (PDT)
-  let xDomain = d3.extent(incomingData, function(d){
-    // let day = d.time(mdToDateObjectConverter);
+    let timeToDateObjectConverter = d3.timeParse("%H:%M"),
+  // var formatMonth = d3.timeParse("%m"),
+ // formatDay = d3.timeFormat("%d"),
+ formatTime = d3.timeParse("%H:%M"),
+    // time = new Date(formatTime); // Thu May 01 2014 00:00:00 GMT-0700 (PDT)
+ xDomain = d3.extent(incomingData, function(d){
+    let time = d.time;
     console.log(d);
-    console.log(mdToDateObjectConverter(d.time));
-    let properlyFormatted = mdToDateObjectConverter(d.time)
+    console.log(timeToDateObjectConverter(d.time));
+    let properlyFormatted = timeToDateObjectConverter(d.time)
     console.log(properlyFormatted);
     //IMPORTANT: whatever we return will be the value of which d3 will
     // look for the minimum. Ultimately it returns the ONE minimum value of all data points.
@@ -180,11 +178,12 @@ function gotData(incomingData){
   });
 
 
+
   console.log(xDomain);
 
 
 // formatDay(date);
-formatTime(time);
+// formatTime(d.time);
   let xPadding = 30;
   // reference: https://github.com/d3/d3-scale#time-scales
   let xScale = d3.scaleTime().domain(xDomain).range([xPadding, w-(xPadding*2)]);
@@ -205,12 +204,40 @@ formatTime(time);
   // "Incidence - HIV/AIDS - Sex: Both - Age: All Ages (Number) (new cases of HIV)"
   // -key. What an annoyingly long key. If you are confused look at the datapoints
   // we console.logged above. Let's save the key in a variable to make it less annoying:
-//   let valueKey = new Date(formatDay);
+  let dateToDateObjectConverter = d3.timeParse("%m-%d"),
+  // var formatMonth = d3.timeParse("%m"),
+  // formatDay = d3.timeFormat("%d"),
+  formatDay = d3.timeParse("%m-%d"),
+  // time = new Date(formatTime); // Thu May 01 2014 00:00:00 GMT-0700 (PDT)
+  yDomain = d3.extent(incomingData, function(d){
+  // let day = d.time(mdToDateObjectConverter);
+  console.log(d);
+  console.log(dateToDateObjectConverter(d.date));
+  let correctlyFormatted = dateToDateObjectConverter(d.date)
+  console.log(correctlyFormatted);
+  //IMPORTANT: whatever we return will be the value of which d3 will
+  // look for the minimum. Ultimately it returns the ONE minimum value of all data points.
+  return correctlyFormatted;
+  });
+
+
+  console.log(yDomain);
+// let valueKey = "date";
 //   //
 //   // // Now let's do it, but faster than above!
 //   // // y Scale:
-// let topPadding = 30;
-// let yScale = d3.scaleLinear().domain(d3.extent(incomingData, function(d){return d[valueKey]})).range([xAxisYPos, topPadding]);
+let topPadding = 30;
+let yAxisXPos = h - 30;
+let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
+var yAxis = d3.axisLeft(yScale);
+
+let yAxisGroup = viz.append("g").attr("class", "yaxis");
+
+yAxisGroup.call(yAxis);
+
+
+yAxisGroup.attr("transform", "translate(0,"+yAxisXPos+")");
+
   // // Wow, please consider this one carfully. We get the min max extent right in place.
   // // we access the values NOT WITH A DOT NOTATATION like d.Year!!!!!! This is confusing, but
   // // extremely IMPORTANT to know. We use our string (variable) in []-brackets instead.
@@ -223,28 +250,33 @@ formatTime(time);
    yAxisgroup.attr("transform", "translate("+xPadding+",0)");
 
   // now that was quick. six lines of code?? Oh my, this is so neat.
-
+  function randomTranslate(datapoint, i){
+    let x = properlyFormatted;
+    let y = correctlyFormatted;
+    return "translate(" + x + "," + y + ")";
+  };
 
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
-  // let vizGroup = viz.append("g").attr("class", "vizgroup");
+  let vizGroup = viz.append("g").attr("class", "vizgroup");
   //
   // // bind data and create groups for each datapoint:
-  // let dataGroups = vizGroup.selectAll(".datagroup").data(filteredData).enter()
-  //     .append("g")
-  //     .attr("class", "datagroup")
-  // ;
+  let dataGroups = vizGroup.selectAll(".datagroup").data(incomingData).enter()
+      .append("g")
+      .attr("class", "datagroup")
+  ;
   //
   //
   // // OPTION 1 circles
   //
   // // append circles to the groups
   //
-  // let circles = dataGroups.append("circle")
-  //     .attr("cx", 0)
-  //     .attr("cy", 0)
-  //     .attr("r", 5)
-  // ;
+  let circles = dataGroups.append("circle")
+      .attr("cx", x)
+      .attr("cy", y)
+      .attr("r", 20)
+      .attr("fill", getColor)
+  ;
   //
 
 
