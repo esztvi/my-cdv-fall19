@@ -7,7 +7,7 @@ let viz = d3.select("#container")
     .attr("height", h)
     .style("background-color", "whitesmoke")
 ;
-function getStroke(datapoint,i) {
+function getStroke(datapoint,i,data) {
 
     console.log(datapoint.medium);
     if(datapoint.medium == "Viber")
