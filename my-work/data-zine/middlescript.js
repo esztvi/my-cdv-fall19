@@ -256,8 +256,8 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   // // append circles to the groups
   //
   let circles = dataGroups.append("circle")
-      .attr("x", formatTime)
-      .attr("y", formatDay)
+      // .attr("cx", formatTime)
+      // .attr("cy", formatDay)
       .attr("r", 20)
       .attr("fill", getColor)
   ;
