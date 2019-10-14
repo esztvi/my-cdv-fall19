@@ -27,7 +27,7 @@ This page was the worst, hands down. Essentially I was trying to do the same thi
 
 Sources: https://github.com/d3/d3-time-format , https://bl.ocks.org/loveice622/023b5c20e8a25d88958e6e8b8110aa01 , https://stackoverflow.com/questions/44111608/d3js-makes-date-duplicates , https://stackoverflow.com/questions/44878164/d3-js-display-image-as-circle
 Final MiddleSpread:
-Non existent :)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/screenshots-zine/Screen%20Shot%202019-10-14%20at%2011.57.00%20AM.png)
 
 Back:
 I originally wanted to load all of the countries, but then the idea was loading only the countries I received messages from and then coloring them according to the amount of messages received.
