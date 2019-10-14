@@ -22,8 +22,6 @@ function getStroke (datapoint,i) {
     { return "blue";}
     else if(datapoint.medium == "Email")
     { return "orange";}
-    else if(datapoint.medium == "Text")
-    { return "red";}
     return "datapoint.medium";
 };
 function getIcon(datapoint,i) {
@@ -300,36 +298,42 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
 
   // now let's plot
   // to keep things seperated let's make a group for all shapes:
-  let vizGroup = viz.append("g").attr("class", "vizgroup");
+  let vizGroup = viz.append("g").attr("class", "vizgroup")
+  ;
+  let title= viz.append("text").text("Messages Sent Categorized Person Over Five Days").attr("id","title").attr("x",20).attr("y",20)
+  ;
+  let subtitle= viz.append("text").text("Family: Pink, People Who Pay Me: Yellow, Lilla's Friends: Brown, Friends From Home: Purple, People I Don't Like That Much: Red, IMA People: Grey, Class of 2021: Green, Other Classes: Blue").attr("id","subtitle").attr("x",20).attr("y",40)
+  ;
   //
   // // bind data and create groups for each datapoint:
 
   let dataGroups = vizGroup.selectAll(".datagroup").data(incomingData).enter()
       .append("g")
       .attr("class", "datagroup")
-      // .attr("fill", getColor)
-      // .attr("height","10")
-      // .attr("width","10")
-      // .attr("background-size", (20,30))
-      // .attr("transform", randomTranslate)
+      .attr("fill", getColor)
+      .attr("height","10")
+      .attr("width","10")
+      .attr("background-size", (20,30))
+      .attr("transform", randomTranslate)
   ;
-    // dataGroups.html(getIcon)
+    dataGroups.html(getIcon)
+    dataGroups.selectAll("path").attr("transform","scale(0.05)");
   //
   //
   // // OPTION 1 circles
   //
   // // append circles to the groups
   //
-  let circles = dataGroups.append("circle")
-      .attr("stroke", getStroke)
-      .attr("transform", randomTranslate)
-      // .attr("width", 10)
-      // .attr("height", 10)
-      .attr("r", 20)
-      .attr("fill", getColor)
-      .attr("stroke-width", 5)
-      // .attr("stroke", getStroke)
-  ;
+  // let circles = dataGroups.append("path")
+  //     .attr("d", getIcon)
+  //     .attr("transform", randomTranslate)
+  //     .attr("width", 10)
+  //     .attr("height", 10)
+  //     .attr("r", 20)
+  //     .attr("fill", getColor)
+  //     .attr("stroke-width", 5)
+  //     // .attr("stroke", getStroke)
+  // ;
 
 //   let Instagram = dataGroups.select("Instagram").data(incomingData).enter().append("Instagram");
 //
