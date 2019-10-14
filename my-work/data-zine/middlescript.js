@@ -284,11 +284,14 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   let vizGroup = viz.append("g").attr("class", "vizgroup");
   //
   // // bind data and create groups for each datapoint:
+
   let dataGroups = vizGroup.selectAll(".datagroup").data(incomingData).enter()
       .append("g")
       .attr("class", "datagroup")
-      .append(htmlToElement(getIcon))
+      .attr("fill", getColor)
+      .attr("transform", randomTranslate)
   ;
+    dataGroups.html(getIcon)
   //
   //
   // // OPTION 1 circles
@@ -306,62 +309,62 @@ let yScale = d3.scaleTime().domain(yDomain).range([yAxisXPos, topPadding]);
   //     // .attr("stroke", getStroke)
   // ;
 
-  let Instagram = dataGroups.select("Instagram").data(incomingData).enter().append("Instagram");
-
-Instagram.html(getIcon,"Instagram");
-Instagram.selectAll("Instagram").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Insta")
-;
-let Viber = dataGroups.select("Viber").data(incomingData).enter().append("Viber");
-
-Viber.html(getIcon,"Viber");
-Viber.selectAll("Viber").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Viber")
-;
-let Texting = dataGroups.select("Text").data(incomingData).enter().append("Texting");
-
-Texting.html(getIcon,"Text");
-Texting.selectAll("Instagram").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Text")
-;
-let Email = dataGroups.select("Email").data(incomingData).enter().append("Email");
-
-Email.html(getIcon, "Email");
-Email.selectAll("Email").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Email")
-;
-let Facebook = dataGroups.select("Facebook").data(incomingData).enter().append("Facebook");
-
-Facebook.html(getIcon, "Facebook");
-Facebook.selectAll("Facebook").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Facebook")
-;
-let Snapchat = dataGroups.select("Snapchat").data(incomingData).enter().append("Snapchat");
-
-Snapchat.html(getIcon, "Snapchat");
-Snapchat.selectAll("Snapchat").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Snapchat")
-;
-let WeChat = dataGroups.select("WeChat").data(incomingData).enter().append("WeChat");
-
-WeChat.html(getIcon, "WeChat");
-WeChat.selectAll("WeChat").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running WeChat")
-;
-let Scaling = dataGroups.select("Scaling").data(incomingData).enter().append("Scaling");
-
-Scaling.html(getIcon, "Scaling");
-Scaling.selectAll("Scaling").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
-
-console.log("running Scaling")
-;
+//   let Instagram = dataGroups.select("Instagram").data(incomingData).enter().append("Instagram");
+//
+// Instagram.html(getIcon,"Instagram");
+// Instagram.selectAll("Instagram").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Insta")
+// ;
+// let Viber = dataGroups.select("Viber").data(incomingData).enter().append("Viber");
+//
+// Viber.html(getIcon,"Viber");
+// Viber.selectAll("Viber").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Viber")
+// ;
+// let Texting = dataGroups.select("Text").data(incomingData).enter().append("Texting");
+//
+// Texting.html(getIcon,"Text");
+// Texting.selectAll("Instagram").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Text")
+// ;
+// let Email = dataGroups.select("Email").data(incomingData).enter().append("Email");
+//
+// Email.html(getIcon, "Email");
+// Email.selectAll("Email").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Email")
+// ;
+// let Facebook = dataGroups.select("Facebook").data(incomingData).enter().append("Facebook");
+//
+// Facebook.html(getIcon, "Facebook");
+// Facebook.selectAll("Facebook").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Facebook")
+// ;
+// let Snapchat = dataGroups.select("Snapchat").data(incomingData).enter().append("Snapchat");
+//
+// Snapchat.html(getIcon, "Snapchat");
+// Snapchat.selectAll("Snapchat").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Snapchat")
+// ;
+// let WeChat = dataGroups.select("WeChat").data(incomingData).enter().append("WeChat");
+//
+// WeChat.html(getIcon, "WeChat");
+// WeChat.selectAll("WeChat").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running WeChat")
+// ;
+// let Scaling = dataGroups.select("Scaling").data(incomingData).enter().append("Scaling");
+//
+// Scaling.html(getIcon, "Scaling");
+// Scaling.selectAll("Scaling").selectAll("path").attr("stroke", "none").attr("fill", getColor).attr("transform", randomTranslate,"scale(0.1)");
+//
+// console.log("running Scaling")
+// ;
   //
 
 
