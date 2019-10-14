@@ -23,7 +23,7 @@ Final Cover:
 ![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/screenshots-zine/cover.png)
 
 Middle:
-UGH
+This page was the worst, hands down. Essentially I was trying to do the same thing I did as with my append <g> homework, but then of course because it's me and I need to go everything as complicated as possible I amended that idea and decided I wanted to color social media icons as opposed to circles. ... I'll also say that that while that has been hard to sort out, what is the most difficult is actually understanding the whole timeParse thing. I ended up re-manually separating my data because I just couldn't get the data to work in the way I wanted it to... I'm lucky because while time consuming, it was way easier to wrap my head around what was happening. (Low key, if the icons don't work by 11:30, I'm turning in the circle version... I'm serious, something has to just go in at this point.)
 Final MiddleSpread:
 Non existent :)
 
