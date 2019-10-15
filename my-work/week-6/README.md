@@ -21,4 +21,4 @@ Source: https://ec.europa.eu/eurostat/statistics-explained/index.php/Migration_a
 ![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.20%20PM.png)
 ![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.29%20PM.png)
 ![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.51%20PM.png)
-![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.55.00%20PM.png)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/nepszava_9.jpg)
