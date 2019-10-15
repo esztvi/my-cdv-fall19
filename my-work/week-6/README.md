@@ -12,3 +12,13 @@ Article 2: Migration and migrant population statistics
  --> There are 2017 summary graphs comparing other EU countries in terms of their migrant rates, granted these aren't those televised migrant situations necessarily, but it's a starting point for sure.
 --> There is a data chart with demography, projections, and migration patterns also explained.
 Source: https://ec.europa.eu/eurostat/statistics-explained/index.php/Migration_and_migrant_population_statistics
+
+(I'm including meme-ed versions of the ugly blue billboards along with the real ones... because it makes going through this tragic data more enjoyable)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/000_TI6V1.jpg)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/7nBktkqTURBXy9hYTI4NmZkZDAyYjgzNGRiNDA3N2YzNTY5ODFhYTJmNC5qcGVnkpUDAM0Bps0O580IYZMFzQMgzQHC.jpg)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/r.jpg)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/soros-plakat.jpg)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.20%20PM.png)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.29%20PM.png)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.54.51%20PM.png)
+![image](https://github.com/esztvi/my-cdv-fall19/blob/master/my-work/week-6/img_readme/Screen%20Shot%202019-10-15%20at%208.55.00%20PM.png)
