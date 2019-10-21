@@ -1,11 +1,23 @@
 let w = 1200;
 let h = 800;
-
+// let drawViz;
 // for convenience
 let datafile = "data.json";
 
+let dataArray;
+
 // function to retrieve only the data points
 // belonging to one step in time:
+function getName(data, name){
+  return data.filter(function(datapoint){
+    if(datapoint.name == name){
+      return true;
+    }else{
+      return false;
+    }
+  });
+}
+
 function getStep(data, step){
   return data.filter(function(datapoint){
     if(datapoint.step == step){
@@ -28,10 +40,12 @@ let viz = d3.select("#container")
 
 
 function gotData(incomingData){
+
+  dataArray = incomingData;
   // checking out our data
-  console.log(incomingData);
+  console.log(incomingData, "A");
   // testing the filter function defined above
-  console.log(getStep(incomingData, 0));
+  console.log(getStep(incomingData, "A"));
 
   let xDomain = d3.extent(incomingData, function(datapoint){
   return datapoint.x;
@@ -67,52 +81,58 @@ let yAxisGroup = viz.append("g").attr("class", "yaxis");
 yAxisGroup.call(yAxis);
 yAxisGroup.attr("transform", "translate("+padding+",0)");
 
-let vizgroup= viz.append("g").attr("class","vizgroup");
-let step = 140;
+// let step = 140;
 // drawViz();
-setInterval(function(){
- step += 10;
-drawViz();
-},1000);
-;
+// setInterval(function(){
+//  step += 10;
+// },1000);
+// ;
 
-function drawViz(){
+
+
+function drawViz(name){
 console.log('drawViz runs');
-let data = getStep(incomingData, step);
-console.log(data);
-d3.shuffle(data);
-console.log(data);
+let data = getName(dataArray, name);
+// console.log(data);
+// d3.shuffle(data);
+// console.log(data);
+let vizgroup= viz.append("g").attr("class","vizgroup");
 
 let datagroups = vizgroup.selectAll(".datagroup").data(data,function(d){
-  return d.name;
+  return d.step;
 })
-;
+
+datagroups.transition().attr("transform", function (d, i) {
+  return "translate(" + xScale(d.x) + ", " + yScale(d.y) + ")"
+});
 let enteringDataGroup = datagroups.enter()
 .append("g")
 .attr("class", "datagroup")
 ;
 enteringDataGroup.append("circle")
     .attr("r", 5)
-    .attr("fill", "white")
+.attr("fill", "WhiteSmoke")
 ;
-enteringDataGroup.append("text")
-    .text(function(d,i){
-      console.log(d);
-      return d.name;
-    })
-.attr("x",8)
-.attr("y",5)
-.attr("fill", "white")
-    ;
-;
-datagroups.attr("transform", function(d, i){
+
+// enteringDataGroup.append("text")
+//     .text(function(d,i){
+//       console.log(d);
+//       return d.name;
+    // })
+// .attr("x",8)
+// .attr("y",5)
+// .attr("fill", "whitesmoke")
+    // ;
+// ;
+enteringDataGroup.attr("transform", function(d, i){
   return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
 });
-datagroups.transition().attr("transform", function(d, i){
-  return "translate("+ xScale(d.x) + ", " + yScale(d.y) + ")"
-});
+
 }
+drawViz("A");
+
 }
+
 
 
 
