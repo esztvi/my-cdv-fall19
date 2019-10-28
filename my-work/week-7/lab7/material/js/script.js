@@ -312,7 +312,7 @@ document.getElementById("buttonA").addEventListener("click", add);
 
 function remove(){
   removeDatapoints(1);
-  .remove() <--- This needs to happen 
+  .remove() <--- This needs to happen
 }
 document.getElementById("buttonB").addEventListener("click", remove);
 
