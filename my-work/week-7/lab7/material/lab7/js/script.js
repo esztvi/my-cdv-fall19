@@ -37,6 +37,18 @@ console.log(allNames);
 // returns a number (pixel location on the x axis (the range)) for each of the names.
 // oh, and could you make sure that this functions calculates in some
 // distance (passingInner) between each of thos points (bands)?"
+let update = () => {
+
+  // before we get back to dealing with the bars, we need to update
+  // out scales (and axis) to match the enw data.
+  // scales are like machines we get custom made. and like machines,
+  // after using them for a bit, we can adjust their inner workings
+  // here we adjust the xScale we already defined and used. all
+  // we want to change about it is the domain.
+  // we get the updated list of keys for our data set that has changed:
+  allNames = data.map(function (d) {
+    return d.key
+  });
 let xScale = d3.scaleBand()
 .domain(allNames)
 .range([padding, w-padding])
@@ -156,7 +168,7 @@ dataGroups
 })
 .attr("fill", "black")
 ;
-
+}
 
 
 // binding functions to the buttons on the page
@@ -312,21 +324,176 @@ document.getElementById("buttonA").addEventListener("click", add);
 
 function remove(){
   removeDatapoints(1);
-  .remove() <--- This needs to happen
+  console.log("new data", data)
+
+  // before we get back to dealing with the bars, we need to update
+  // out scales (and axis) to match the enw data.
+  // scales are like machines we get custom made. and like machines,
+  // after using them for a bit, we can adjust their inner workings
+  // here we adjust the xScale we already defined and used. all
+  // we want to change about it is the domain.
+  // we get the updated list of keys for our data set that has changed:
+  allNames = data.map(function(d){return d.key});
+  // and adjust the domain of xScale:
+  xScale.domain(allNames);
+  // done, the xScale is "fixed" and ready to help us to position elements
+  // for our new data
+  // as you can see, we only adjust selectively the bits that depend
+  // on our data. the same is true for the axis:
+  xAxis = d3.axisBottom(xScale); //we adjust this because it uses the new xScale
+  xAxis.tickFormat(d=>{return data.filter(dd=>dd.key==d)[0].name;}); // we adjust this because it uses the new data
+  xAxisGroup.call(xAxis).selectAll("text").attr("font-size", 18); // we adjust this to bring the new axis onto the page
+
+  // y scale...
+  yMax = d3.max(data, function(d){return d.value});
+  yDomain = [0, yMax+yMax*0.1];
+  yScale.domain(yDomain);
+
+  // do you see how the axis adjusts to the new data at this point? you can animate
+  // this transition inside the statement where you use ".call(xAxis)"...
+  xAxisGroup.transition().duration(1000).call(xAxis).selectAll("text").attr("font-size", 18); // we adjust this to bring the new axis onto the page
+  xAxisGroup.selectAll("line").remove();
+  // we add new code below:
+console.log("new data", data)
+// what we essentially do now is the following:
+// each element on the page is associated with one datapoint
+// of the OLD data array. With our new data, we will now overwite
+// those associations. let's start by setting up the full situation:
+theSituation = graphGroup.selectAll(".datapoint").data(data);
+// note, we don't need "let" because the variable already exists
+console.log("the NEW full situation:", theSituation);
+// look at this, it's slightly unexpected at first, but fold out
+// the enter, exit and _group ("update") subsections:
+// you will see that enter has.... ONE element! it's the one we
+// just added to the array!!
+// exit has zero elements, no elements is leaving, because we reuse
+// all the elements that are on the page and...
+// ...update them! as is seen in the _group ("update") array where there is 10 elements (the ones that are on the page already)
+// in other words: "10 elements are on the page, we would like to show 11 (amount of points in our data). therefore we reuse the 10 (update them) and add one more (it enters)".
+// WOW
+// so cool :D
+// again, we can now exactly define, how each subgroup should
+// behave
+// in the end, the incoming bar will appear on the right side. for that
+// to look great, let's move over the updating elements first.
+// to recap, we extract the entering elments like so:
+enteringElements = theSituation.enter();
+// and the exiting ones like so:
+exitingElements = theSituation.exit();
+// note: i don't use "let" because this variables already exists
+// ...after extracting those subgroups, what's left in theSituation
+// are the elements that update.
+// let's try it:
+theSituation.attr("transform", function(d, i){
+  return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+});
+// try it
+// oh my, it works. You can animate the transition in the same way as you did
+// with the x axis before
+theSituation.transition().duration(1000).attr("transform", function(d, i){
+  return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+});
+// we aren't done with the updating setion yet
+// the width needs to adjust, and even the height (as incoming data points MIGHT
+// set a new maximum value and every other bar goes down a little)
+theSituation.select("rect")
+ .transition()
+ .delay(1000)
+ .duration(200)
+ .attr("width", function(){
+    return xScale.bandwidth();
+ })
+ .attr("y", function(d,i){
+   return -yScale(d.value);
+ })
+ .attr("height", function(d, i){
+   return yScale(d.value);
+ })
+;
+// first note, I added a new feature, the .delay() impact the transtition, you can guess
+// in which way.
+// second, again, we only update the things that are impacted by the new data situation
+// lastly, we can deal with the elements that enter
+// we already extracted the enteringElements from the situation above
+// what do we want to do with incoming elements?
+// much the same we always do
+// we append a group to the empty placeholder:
+let incomingDataGroups = exitingElements
+  .remove("g")
+    .classed("datapoint", true)
+
+;
+// position the groups:
+incomingDataGroups.attr("transform", function(d, i){
+  return "translate("+ xScale(d.key)+ "," + (h - padding) + ")"
+});
+// and append rectangles
+// incomingDataGroups
+//   .append("rect")
+//     .attr("width", function(){
+//       return xScale.bandwidth();
+//     })
+//     .attr("y", function(d,i){
+//       return -yScale(d.value);
+//     })
+//     .attr("height", function(d, i){
+//       return yScale(d.value);
+//     })
+//     .attr("fill", "black")
+//  ;
+ // works, but looks boring! let's transition from no height
+ // at all to the actual height and from a different color towards
+ // black.
+ incomingDataGroups
+  .append("rect")
+    .attr("y", function(d,i){
+      return 0;
+    })
+    .attr("height", function(d, i){
+      return 0;
+    })
+    .attr("width", function(){
+      return xScale.bandwidth();
+    })
+    .attr("fill", "#F27294")
+    .transition()
+    .delay(1000)
+    .duration(2000)
+    .attr("y", function(d,i){
+      return -yScale(d.value);
+    })
+    .attr("height", function(d, i){
+      return yScale(d.value);
+    })
+    .attr("fill", "black")
+ ;
 }
 document.getElementById("buttonB").addEventListener("click", remove);
 
 function removeAndAdd(){
   removeAndAddDatapoints(1,1);
+  update();
+    // removeDatapoints(1);
+    //   addDatapoints(1);
+
+
 }
 document.getElementById("buttonC").addEventListener("click", removeAndAdd);
 
 function sortData(){
   sortDatapoints();
+  update();
 }
 document.getElementById("buttonD").addEventListener("click", sortData);
 
 function shuffleData(){
   shuffleDatapoints();
+  update();
 }
-document.getElementById("buttonE").addEventListener("click", sortData);
+document.getElementById("buttonE").addEventListener("click", shuffleData);
+function randomButton(){
+  coolData();
+  update();
+}
+
+document.getElementById("buttonF").addEventListener("click", coolData);
