@@ -123,12 +123,12 @@ addDatapoints(1);
 
 function removeDatapoints(num){
   for(let i = 0; i < num; i++){
-    let randomIndex = Math.floor(Math.random()*data.length)
-    data.splice(randomIndex, 1);
-  }
+  //   let randomIndex = Math.floor(Math.random()*data.length)
+  //   data.splice(randomIndex, 1);
+  // }
   console.log("removed", num, "datapoints. data:", data);
-  // data.pop(newDatapoint())
-  // console.log("removed", num, "datapoints. data:", data);
+  data.pop(newDatapoint())
+  console.log("removed", num, "datapoints. data:", data);
 }
 // test it!
 removeDatapoints(1);
