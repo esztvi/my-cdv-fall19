@@ -22,6 +22,7 @@ function gotData(incomingData){
   console.log(incomingData);
 
   // initital data - USA or CHN
+  let cn = incomingData[0];
   let data = incomingData[1];
   console.log(data);
 
@@ -48,7 +49,42 @@ function gotData(incomingData){
   ;
   yAxisGroup.call(yAxis);
 
+function getX(d){
+  return xScale(d.year);
+}
+function getY(d){
+  return yScale(d.birthsPerThousand);
+}
+//STUFF I DO
+if (incomingData ==1) {
+  let lineMaker = d3.line()
+  .x(getX)
+  .y(getY)
+  ;
+  let test= lineMaker(data);
+  console.log(test);
 
+  let theSituation = viz.datum(data)
+  theSituation.append("path")
+  .attr("d",lineMaker)
+  .attr("fill", "none")
+  .attr("stroke", "seagreen")
+  ;
+}else if (incomingData ==0) {
+  let lineMaker = d3.line()
+  .x(getX)
+  .y(getY)
+  ;
+  let test= lineMaker(cn);
+  console.log(test);
+
+  let theSituation = viz.datum(cn)
+  theSituation.append("path")
+  .attr("d",lineMaker)
+  .attr("fill", "none")
+  .attr("stroke", "seagreen")
+  ;
+}
 
 
 
