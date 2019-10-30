@@ -37,7 +37,7 @@ console.log(allNames);
 // returns a number (pixel location on the x axis (the range)) for each of the names.
 // oh, and could you make sure that this functions calculates in some
 // distance (passingInner) between each of thos points (bands)?"
-let update = () => {
+// let update = () => {
 
   // before we get back to dealing with the bars, we need to update
   // out scales (and axis) to match the enw data.
@@ -168,7 +168,7 @@ dataGroups
 })
 .attr("fill", "black")
 ;
-}
+// }
 
 
 // binding functions to the buttons on the page
@@ -196,7 +196,6 @@ function add(){
   xAxis = d3.axisBottom(xScale); //we adjust this because it uses the new xScale
   xAxis.tickFormat(d=>{return data.filter(dd=>dd.key==d)[0].name;}); // we adjust this because it uses the new data
   xAxisGroup.call(xAxis).selectAll("text").attr("font-size", 18); // we adjust this to bring the new axis onto the page
-
   // y scale...
   yMax = d3.max(data, function(d){return d.value});
   yDomain = [0, yMax+yMax*0.1];
@@ -471,10 +470,10 @@ incomingDataGroups.attr("transform", function(d, i){
 document.getElementById("buttonB").addEventListener("click", remove);
 
 function removeAndAdd(){
-  removeAndAddDatapoints(1,1);
-  update();
-    // removeDatapoints(1);
-    //   addDatapoints(1);
+  // removeAndAddDatapoints(1,1);
+  // update();
+    removeDatapoints(1);
+      addDatapoints(1);
 
 
 }
@@ -482,18 +481,18 @@ document.getElementById("buttonC").addEventListener("click", removeAndAdd);
 
 function sortData(){
   sortDatapoints();
-  update();
+  // update();
 }
 document.getElementById("buttonD").addEventListener("click", sortData);
 
 function shuffleData(){
   shuffleDatapoints();
-  update();
+  // update();
 }
 document.getElementById("buttonE").addEventListener("click", shuffleData);
 function randomButton(){
   coolData();
-  update();
+  // update();
 }
 
 document.getElementById("buttonF").addEventListener("click", coolData);
