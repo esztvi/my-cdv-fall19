@@ -369,8 +369,8 @@ let average = [
 let data = lowball;
 
 // global variables that we need at various spots:
-let w = 900;
-let h = 500;
+let w = 1800;
+let h = 600;
 let xpadding = 150;
 let ypadding = 80;
 
