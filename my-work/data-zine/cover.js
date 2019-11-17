@@ -34,7 +34,7 @@ function gotData(incomingData){
 
   let xScale = d3.scaleBand().domain(incomingData.map(function(d) {return d.Name})).range([0, 2 * Math.PI]);
   // Y scale
-  let yScale = d3.scaleRadial().domain([0, 26]).range([innerRadius, outerRadius]);
+  let yScale = d3.scaleBand().domain([0, 26]).range([innerRadius, outerRadius]);
 
   let circleChartGroup = viz.append("g")
     .classed("circleChartGroup",true)
