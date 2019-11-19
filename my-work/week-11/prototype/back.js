@@ -1,5 +1,6 @@
 let w = 1200;
 let h = 800;
+let padding = 50;
 // let color= (2,139,211);
 let viz = d3.select("#container").append("svg")
     .style("width", w)
@@ -13,8 +14,18 @@ let viz = d3.select("#container").append("svg")
 // }
 
 function gotData(incomingData){
-  console.log(incomingData);
-  let xScale = d3.scaleBand().domain(incomingData.map(function(d) {return d.area})).range([100, 1100]);
+  // console.log(incomingData);
+  let allAreas = incomingData.map(function(d){return d.area});
+  // check it:
+  console.log(allAreas);
+  let xScale = d3.scaleBand()
+  .domain(allAreas)
+  .range([padding, w-padding])
+  .paddingInner(0.1)
+  ;
+  let xAxis = d3.axisBottom(xScale)
+  xAxis.tickFormat(d=>{return data.filter(dd=>dd.area==d)[0].area;});
+  // let xScale = d3.scaleBand().domain(incomingData.map(function(d) {return d.area})).range([100, 1100]);
   // console.log(xScale);
   let yScale = d3.scaleBand().domain([22205,1757618]).range([100, 800]);
   let ChartGroup = viz.append("g")
