@@ -20,20 +20,26 @@ h3 {
 body {
   background-image: url("background.jpg");
 }
-
-.container {
-  margin-top: 20px;
+rect:hover{
+	fill: whitesmoke;
 }
-.panel {
-  background-color: #D9D1C7;
+#ahhhh{
+  color: whitesmoke
+}
+#DivForHoverItem {
+    /*just so we can see it*/
+    width: 600;
+    height: 25;
+    fill: none;
+    font-size: 24;
+    color: whitesmoke;
+
 }
 
-.axis path {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+#HiddenText {
+    display: none;
 }
 
-.bar {
-  fill: black;
+#DivForHoverItem:hover #HiddenText {
+    display:block;
 }

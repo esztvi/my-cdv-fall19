@@ -17,22 +17,20 @@
     <!-- Use D3 to place your svg(s) in it, too -->
     <div id="container">
       <!-- <img src="1.png" alt="background"> -->
-<div class="gradient" ></div>
-<div class="row">
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <form role="form" class="categories">
-        </form>
+      <div id="DivForHoverItem">
+          <div id="HiddenText"><p>Area</p></div>
       </div>
     </div>
-  </div>
-  <div class="col-md-8">
-    <div class="graph"></div>
-  </div>
-</div>
+    <div id=ahhhh width="50%">
+      <fieldset>
+        <legend>Select the transition to apply</legend>
+        <input id="HU" type="checkbox" name="HU" value="HU" />Remove Outliers<br />
+        <input id="OTHER" type="checkbox" name="OTHER" value="OTHER" />Order By Population<br />
+        <input id="both" type="checkbox" name="both" value="both" />Color by Country<br /><br />
+        <button onclick="runTransitions()">Run transitions</button>
+        <button onclick="removeTransitions()">Remove transitions</button>
+      </fieldset>
     </div>
-
 
     <script type="text/javascript" src="back.js"></script>
 

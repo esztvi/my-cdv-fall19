@@ -13,9 +13,16 @@ let viz = d3.select("#container").append("svg")
 //   return "translate(" + w / 2 + "," + ( h/2)+ ")"; // Add 100 on Y translation, cause upper bars are longer
 //
 // }
+function getColor (datapoint,i) {
 
+    console.log(datapoint.location);
+    if(datapoint.location == "Hungary")
+    { return "rgb(250,26,9)";}
+    else if(datapoint.location == "Abroad")
+    { return "rgb(9,130,71)";}
+};
 function gotData(incomingData){
-  // console.log(incomingData);
+  console.log(incomingData);
   let allAreas = incomingData.map(function(d){return d.area});
 
   console.log(allAreas);
@@ -39,16 +46,24 @@ let graphGroup = viz.append("g").classed("graphGroup", true);
 let dataGroups = graphGroup.append("g").classed("dataGroups", true);
 // position the group along the x axis (check the inspector tool to see
 // what we are doing):
-dataGroups.append("rect").attr("width", function(){
+dataGroups.selectAll('.rect').data(incomingData).enter().append("rect").attr("width", function(){
   return xScale.bandwidth();
 }).attr("height", function(d, i){
+  console.log(d.population);
   return yScale(d.population);
 }).attr("y", function(d,i){
   return -yScale(d.population);
-}).attr("fill", "black").attr("transform", function(d, i){
+}).attr("fill", getColor).attr("transform", function(d, i){
   return "translate("+ xScale(d.area)+ "," + (h - padding) + ")"
   ;
 })
+d3.select(".dataGroups")
+  .selectAll('.rect')
+    .data(incomingData.sort(function(a, b){return b-a}))
+  .enter().append("div")
+    .style("width", function(d) { return x(d) + "px"; })
+    .text(function(d) { return d; });
 };
+
 
 d3.json("citycomp.json").then(gotData);
