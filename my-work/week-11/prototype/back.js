@@ -4,7 +4,8 @@ let h = 800;
 let viz = d3.select("#container").append("svg")
     .style("width", w)
     .style("height", h)
-    .style("background-color", "lavender")
+    .style("background-color","rgb(2,139,211)")
+    // .style("background-color", #028bd3)
 ;
 function getGroupTranslation(d, i){
   return "translate(" + w / 2 + "," + ( h/2)+ ")"; // Add 100 on Y translation, cause upper bars are longer
@@ -20,13 +21,13 @@ function gotData(incomingData){
     .classed("ChartGroup",true)
     .attr("transform",getGroupTranslation)
 
-    let towers = datagroups
-      .append("path")
+    // let towers = datagroups
+      // .append("path")
       // .classed("arcSlice", true)
-      .attr("height",getHeight)
-      .attr("fill", getColor)
+      // .attr("height",getHeight)
+      // .attr("fill", getColor)
       // .attr("d", arcFunction)
-    ;
+    // ;
 
 
 
