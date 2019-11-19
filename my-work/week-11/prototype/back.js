@@ -35,4 +35,4 @@ function gotData(incomingData){
     return (d.industry)
   }
 }
-d3.json("data.json").then(gotData);
+d3.json("citycomp.json").then(gotData);
