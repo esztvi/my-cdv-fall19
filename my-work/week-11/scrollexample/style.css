@@ -1,0 +1,70 @@
+
+body{
+  margin:0;
+}
+
+
+#wrapper{
+  display: flex;
+}
+#visualization {
+  position: sticky;
+  /* top: 10vh; */
+  /* height: 80vh; */
+  width: 50%;
+  /* background-color: lightgrey; */
+}
+#visualization svg{
+  width: 100%;
+}
+
+#textboxes {
+  width: 50%;
+  /* border: red 1px solid; */
+  height: 100vh;
+  overflow: scroll;
+}
+
+.box{
+  margin-bottom: 60vh;
+  padding:30px;
+  border-top: 1px black solid;
+}
+
+
+
+
+
+/* alternative */
+/* starting point for responsive mobile design */
+/*
+body{
+  margin:0;
+}
+
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+}
+#visualization {
+  position: sticky;
+  top: 0vh;
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+}
+#visualization svg{
+  width: 100%;
+}
+
+#textboxes {
+  width: 100%;
+  border: red 1px solid;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.box {
+  margin-bottom: 60vh;
+} */

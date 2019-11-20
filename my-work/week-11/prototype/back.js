@@ -21,6 +21,15 @@ function getColor (datapoint,i) {
     else if(datapoint.location == "Abroad")
     { return "rgb(9,130,71)";}
 };
+
+function getCountry (datapoint,i) {
+
+    console.log(datapoint.country);
+    if(datapoint.country == "Hungary")
+    { return "rgb(250,26,9)";}
+    else if(datapoint.location == "Abroad")
+    { return "rgb(9,130,71)";}
+};
 function gotData(incomingData){
   console.log(incomingData);
   let allAreas = incomingData.map(function(d){return d.area});

@@ -1,22 +1,4 @@
-/* h1 {
-  color: black;
-  font-family: monospace;
-  font-size: 30px;
-  font-weight: bolder;
-}
-h2 {
-  color: dimgrey;
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: bolder;
-}
 
-h3 {
-  color: grey;
-  font-family: monospace;
-  font-size: 15px;
-  font-weight: bolder;
-} */
 body {
   background-image: url("background.jpg");
 }
