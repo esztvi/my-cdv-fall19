@@ -9,7 +9,7 @@ body{
 }
 #visualization {
   position: sticky;
-  /* top: 10vh; */
+  /* top: 10vh;pushes visualization down  */  
   /* height: 80vh; */
   width: 50%;
   /* background-color: lightgrey; */
