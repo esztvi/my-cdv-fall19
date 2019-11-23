@@ -1,3 +1,9 @@
+
+body {
+  background-image: url("background.jpg");
+  /* background-color: blue; */
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #2b3341;
@@ -9,7 +15,7 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -24,7 +30,4 @@
 .topnav a.active {
   background-color: #ff161a;
   color: white;
-}
-body {
-  background-image: url("background.jpg");
 }
