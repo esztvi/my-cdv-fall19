@@ -25,3 +25,6 @@
   background-color: #ff161a;
   color: white;
 }
+body {
+  background-image: url("background.jpg");
+}
