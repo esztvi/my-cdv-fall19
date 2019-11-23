@@ -1,7 +1,9 @@
 
 body {
   background-image: url("background.jpg");
-  /* background-color: blue; */
+  overflow: hidden;
+  background-size:cover;
+
 }
 
 /* Add a black background color to the top navigation */
@@ -30,4 +32,28 @@ body {
 .topnav a.active {
   background-color: #ff161a;
   color: white;
+}
+a {
+  text-decoration: none;
+    position:absolute;
+    left: 50%;
+top: 220%;
+  padding: 8px 16px;
+
+}
+
+a:hover {
+  background-color: #2b3341;
+  color: black;
+
+}
+
+
+.next {
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+  background-color: #098247;
 }
