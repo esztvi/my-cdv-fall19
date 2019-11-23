@@ -27,4 +27,6 @@
 }
 body {
   background-image: url("background.jpg");
+  overflow: hidden;
+   background-size:cover;
 }
