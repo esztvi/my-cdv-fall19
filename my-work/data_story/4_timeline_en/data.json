@@ -1,0 +1,478 @@
+[
+    {
+        "event": "Treaty of Bucharest",
+        "year": 1916,
+        "country": "Romania",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Treaty of Versailles",
+        "year": 1919,
+        "country": "Romania",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Second Vienna Award",
+        "year": 1940,
+        "country": "Romania",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Magyar Autonomous Region",
+        "year": 1952,
+        "country": "Romania",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1916,
+        "country": "Slovakia",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Hungarian Revolution",
+        "year": 1956,
+        "country": "Slovakia",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "World War I",
+        "year": 1916,
+        "country": "Serbia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Treaty of Trianon",
+        "year": 1920,
+        "country": "Serbia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1940,
+        "country": "Serbia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War I",
+        "year": 1916,
+        "country": "Ukraine",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "First Vienna Award",
+        "year": 1938,
+        "country": "Ukraine",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Recognition of Ukraine's Autonomy",
+        "year": 1991,
+        "country": "Ukraine",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Kingdom of Hungary",
+        "year": 1867,
+        "country": "Austira",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "World War I",
+        "year": 1916,
+        "country": "Austira",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Austira",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Allied-occupied Austria",
+        "year": 1948,
+        "country": "Austira",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Austira",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Croatia is a former part of the Kingdom of Hungary",
+        "year": 1867,
+        "country": "Croatia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Personal Union",
+        "year": 1918,
+        "country": "Croatia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Habsburg Royal Kingdom of Hungary",
+        "year": 1526,
+        "country": "Slovenia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Fleeing Austrians",
+        "year": 1848,
+        "country": "United States ",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Great Economic Migration",
+        "year": 1900,
+        "country": "United States ",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Academic Freedom",
+        "year": 1930,
+        "country": "United States ",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Post-War Displacement",
+        "year": 1946,
+        "country": "United States ",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Post-War Displacement",
+        "year": 1948,
+        "country": "United States ",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Post-War Displacement",
+        "year": 1950,
+        "country": "United States ",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Freedom Fighters",
+        "year": 1956,
+        "country": "United States ",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Labor Migration",
+        "year": 1914,
+        "country": "Canada",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Canada",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Religious Freedom",
+        "year": 1945,
+        "country": "Isreal",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Treaty of Trianon",
+        "year": 1920,
+        "country": "Germany",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Germany",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Germany",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Hungarians from Transylvania",
+        "year": 1975,
+        "country": "Germany",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Fleeing Communism",
+        "year": 1980,
+        "country": "Germany",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Employment Opportunities",
+        "year": 2004,
+        "country": "France",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Brazil",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Economic Application for Passports to Open EU Channels",
+        "year": 2013,
+        "country": "Brazil",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Religious Freedom",
+        "year": 1850,
+        "country": "Brazil",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Political and Economic Interests",
+        "year": 2000,
+        "country": "Russia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Australia",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Australia",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "United Kingdom",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Hungary's Entry into the EU",
+        "year": 2004,
+        "country": "United Kingdom",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Port of Access",
+        "year": 1920,
+        "country": "Chile",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War I",
+        "year": 1916,
+        "country": "Argentina",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Argentina",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Argentina",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Religious Freedom",
+        "year": 1900,
+        "country": "Argentina",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Sweden",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Sweden",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Asylum",
+        "year": 2006,
+        "country": "Sweden",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War I",
+        "year": 1916,
+        "country": "Switzerland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Switzerland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Switzerland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Employment Opportunities",
+        "year": 2004,
+        "country": "Czech Republic",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Visa-free Travel Agreement",
+        "year": 1991,
+        "country": "Ireland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Employment Opportunities",
+        "year": 2004,
+        "country": "Ireland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Religious Freedom",
+        "year": 1960,
+        "country": "Finland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Fleeing Communism",
+        "year": 1980,
+        "country": "Finland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Employment Opportunities",
+        "year": 1990,
+        "country": "Finland",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "New Zealand",
+        "size": 1,
+        "color": "Green "
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "New Zealand",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "American Immigration Quota on Hungarians",
+        "year": 1921,
+        "country": "United States ",
+        "size": 3,
+        "color": "Red"
+    },
+    {
+        "event": "American Immigration Quota on Hungarians",
+        "year": 1924,
+        "country": "United States ",
+        "size": 3,
+        "color": "Red"
+    },
+    {
+        "event": "American Immigration Quota on Hungarians",
+        "year": 1927,
+        "country": "United States ",
+        "size": 3,
+        "color": "Red"
+    },
+    {
+        "event": "Hard Labor Camps",
+        "year": 1960,
+        "country": "Russia",
+        "size": 3,
+        "color": "Red"
+    },
+    {
+        "event": "Deportation ",
+        "year": 2010,
+        "country": "Canada",
+        "size": 1,
+        "color": "Red"
+    }
+]
