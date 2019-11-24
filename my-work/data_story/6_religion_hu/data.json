@@ -1,0 +1,307 @@
+[
+    {
+        "country": "Románia",
+        "religion": "Református",
+        "percentage": 46
+    },
+    {
+        "country": "Románia",
+        "religion": "Római Katolikus",
+        "percentage": 41
+    },
+    {
+        "country": "Románia",
+        "religion": "Unitárius",
+        "percentage": 4
+    },
+    {
+        "country": "Románia",
+        "religion": "Román Ortodox",
+        "percentage": 2
+    },
+    {
+        "country": "Románia",
+        "religion": "Egyéb",
+        "percentage": 7
+    },
+    {
+        "country": "Szlovákia",
+        "religion": "Római Katolikus",
+        "percentage": 73
+    },
+    {
+        "country": "Szlovákia",
+        "religion": "Kálvinizmus",
+        "percentage": 16
+    },
+    {
+        "country": "Szlovákia",
+        "religion": "Egyéb",
+        "percentage": 11
+    },
+    {
+        "country": "Szerbia",
+        "religion": "Katolikus",
+        "percentage": 88
+    },
+    {
+        "country": "Szerbia",
+        "religion": "Protestantizmus",
+        "percentage": 6
+    },
+    {
+        "country": "Szerbia",
+        "religion": "Keleti Ortodox",
+        "percentage": 1
+    },
+    {
+        "country": "Szerbia",
+        "religion": "Egyéb",
+        "percentage": 5
+    },
+    {
+        "country": "Ausztria",
+        "religion": "Római Katolikus",
+        "percentage": 66
+    },
+    {
+        "country": "Ausztria",
+        "religion": "Evangélikus",
+        "percentage": 16
+    },
+    {
+        "country": "Ausztria",
+        "religion": "Calvinism",
+        "percentage": 4
+    },
+    {
+        "country": "Ausztria",
+        "religion": "Egyéb",
+        "percentage": 14
+    },
+    {
+        "country": "Horvátország",
+        "religion": "Katolikus",
+        "percentage": 88
+    },
+    {
+        "country": "Horvátország",
+        "religion": "Kálvinizmus ",
+        "percentage": 2
+    },
+    {
+        "country": "Horvátország",
+        "religion": "Egyéb",
+        "percentage": 10
+    },
+    {
+        "country": "Szlovénia",
+        "religion": "Katolikus",
+        "percentage": 70
+    },
+    {
+        "country": "Szlovénia",
+        "religion": "Evangélikus",
+        "percentage": 15
+    },
+    {
+        "country": "Szlovénia",
+        "religion": "Egyéb",
+        "percentage": 15
+    },
+    {
+        "country": "Egyesült Álamok",
+        "religion": "Kálvinizmus",
+        "percentage": 5
+    },
+    {
+        "country": "Egyesült Álamok",
+        "religion": "Római Katolikus",
+        "percentage": 70
+    },
+    {
+        "country": "Egyesült Álamok",
+        "religion": "Evangélikus",
+        "percentage": 15
+    },
+    {
+        "country": "Egyesült Álamok",
+        "religion": "Egyéb",
+        "percentage": 10
+    },
+    {
+        "country": "Kanada",
+        "religion": "Greek Catholocism",
+        "percentage": 100
+    },
+    {
+        "country": "Izrael",
+        "religion": "Zsidó",
+        "percentage": 100
+    },
+    {
+        "country": "Németország",
+        "religion": "Katolikus",
+        "percentage": 76
+    },
+    {
+        "country": "Németország",
+        "religion": "Kálvinizmus",
+        "percentage": 10
+    },
+    {
+        "country": "Németország",
+        "religion": "Egyéb",
+        "percentage": 14
+    },
+    {
+        "country": "Brazília",
+        "religion": "Katolikus",
+        "percentage": 80
+    },
+    {
+        "country": "Brazília",
+        "religion": "Zsidó",
+        "percentage": 10
+    },
+    {
+        "country": "Brazília",
+        "religion": "Egyéb",
+        "percentage": 10
+    },
+    {
+        "country": "Ausztrália",
+        "religion": "Katolikus",
+        "percentage": 73
+    },
+    {
+        "country": "Ausztrália",
+        "religion": "Egyéb",
+        "percentage": 8
+    },
+    {
+        "country": "Ausztrália",
+        "religion": "Zsidó",
+        "percentage": 7
+    },
+    {
+        "country": "Ausztrália",
+        "religion": "Ateizmus",
+        "percentage": 12
+    },
+    {
+        "country": "Egyesült Királyság",
+        "religion": "Katolikus",
+        "percentage": 66
+    },
+    {
+        "country": "Egyesült Királyság",
+        "religion": "Protestantizmus",
+        "percentage": 21
+    },
+    {
+        "country": "Egyesült Királyság",
+        "religion": "Zsidó",
+        "percentage": 7
+    },
+    {
+        "country": "Egyesült Királyság",
+        "religion": "Egyéb",
+        "percentage": 6
+    },
+    {
+        "country": "Chile",
+        "religion": "Katolikus",
+        "percentage": 78
+    },
+    {
+        "country": "Chile",
+        "religion": "Protestáns",
+        "percentage": 13
+    },
+    {
+        "country": "Chile",
+        "religion": "Zsidó",
+        "percentage": 5
+    },
+    {
+        "country": "Chile",
+        "religion": "Egyéb",
+        "percentage": 4
+    },
+    {
+        "country": "Argentína",
+        "religion": "Katolikus",
+        "percentage": 86
+    },
+    {
+        "country": "Argentína",
+        "religion": "Zsidó",
+        "percentage": 4
+    },
+    {
+        "country": "Argentína",
+        "religion": "Egyéb",
+        "percentage": 10
+    },
+    {
+        "country": "Finnország",
+        "religion": "Katolikus",
+        "percentage": 100
+    },
+    {
+        "country": "Új Zéland",
+        "religion": "Több Keresztény Vallás",
+        "percentage": 85
+    },
+    {
+        "country": "Új Zéland",
+        "religion": "Zsidó",
+        "percentage": 6
+    },
+    {
+        "country": "Új Zéland",
+        "religion": "Egyéb",
+        "percentage": 9
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Római Katolikus",
+        "percentage": 37
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Görög Katolikus",
+        "percentage": 2
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Kálvinizmus",
+        "percentage": 12
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Evangélikus",
+        "percentage": 2
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Nem Vallásos",
+        "percentage": 17
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Ateizmus",
+        "percentage": 2
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Egyéb Keresztény Vallások",
+        "percentage": 1
+    },
+    {
+        "country": "Magyarország",
+        "religion": "Egyéb",
+        "percentage": 27
+    }
+]

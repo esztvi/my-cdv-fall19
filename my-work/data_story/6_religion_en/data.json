@@ -1,0 +1,307 @@
+[
+    {
+        "country": "Romania",
+        "religion": "Reformed",
+        "percentage": 46
+    },
+    {
+        "country": "Romania",
+        "religion": "Roman Catholicism",
+        "percentage": 41
+    },
+    {
+        "country": "Romania",
+        "religion": "Unitarian",
+        "percentage": 4
+    },
+    {
+        "country": "Romania",
+        "religion": "Romanian Orthodox",
+        "percentage": 2
+    },
+    {
+        "country": "Romania",
+        "religion": "Other",
+        "percentage": 7
+    },
+    {
+        "country": "Slovakia",
+        "religion": "Roman Catholicism",
+        "percentage": 73
+    },
+    {
+        "country": "Slovakia",
+        "religion": "Calvinism",
+        "percentage": 16
+    },
+    {
+        "country": "Slovakia",
+        "religion": "Other",
+        "percentage": 11
+    },
+    {
+        "country": "Serbia",
+        "religion": "Catholic",
+        "percentage": 88
+    },
+    {
+        "country": "Serbia",
+        "religion": "Protestantism",
+        "percentage": 6
+    },
+    {
+        "country": "Serbia",
+        "religion": "Eastern Orthodox",
+        "percentage": 1
+    },
+    {
+        "country": "Serbia",
+        "religion": "Other",
+        "percentage": 5
+    },
+    {
+        "country": "Austria",
+        "religion": "Roman Cahtolocism",
+        "percentage": 66
+    },
+    {
+        "country": "Austria",
+        "religion": "Lutheran",
+        "percentage": 16
+    },
+    {
+        "country": "Austria",
+        "religion": "Calvinism",
+        "percentage": 4
+    },
+    {
+        "country": "Austria",
+        "religion": "Other",
+        "percentage": 14
+    },
+    {
+        "country": "Croatia",
+        "religion": "Catholic",
+        "percentage": 88
+    },
+    {
+        "country": "Croatia",
+        "religion": "Calvinism ",
+        "percentage": 2
+    },
+    {
+        "country": "Croatia",
+        "religion": "Other",
+        "percentage": 10
+    },
+    {
+        "country": "Slovenia",
+        "religion": "Catholic",
+        "percentage": 70
+    },
+    {
+        "country": "Slovenia",
+        "religion": "Lutheran",
+        "percentage": 15
+    },
+    {
+        "country": "Slovenia",
+        "religion": "Other ",
+        "percentage": 15
+    },
+    {
+        "country": "United States",
+        "religion": "Calvinism",
+        "percentage": 5
+    },
+    {
+        "country": "United States",
+        "religion": "Roman Catholicism",
+        "percentage": 70
+    },
+    {
+        "country": "United States",
+        "religion": "Lutheran",
+        "percentage": 15
+    },
+    {
+        "country": "United States",
+        "religion": "Other",
+        "percentage": 10
+    },
+    {
+        "country": "Canada",
+        "religion": "Greek Catholocism",
+        "percentage": 100
+    },
+    {
+        "country": "Isreal",
+        "religion": "Jewish ",
+        "percentage": 100
+    },
+    {
+        "country": "Germany",
+        "religion": "Catholic",
+        "percentage": 76
+    },
+    {
+        "country": "Germany",
+        "religion": "Calvinist",
+        "percentage": 10
+    },
+    {
+        "country": "Germany",
+        "religion": "Other",
+        "percentage": 14
+    },
+    {
+        "country": "Brazil",
+        "religion": "Catholic",
+        "percentage": 80
+    },
+    {
+        "country": "Brazil",
+        "religion": "Jewish",
+        "percentage": 10
+    },
+    {
+        "country": "Brazil",
+        "religion": "Other",
+        "percentage": 10
+    },
+    {
+        "country": "Australia",
+        "religion": "Catholic",
+        "percentage": 73
+    },
+    {
+        "country": "Australia",
+        "religion": "Other",
+        "percentage": 8
+    },
+    {
+        "country": "Australia",
+        "religion": "Jewish",
+        "percentage": 7
+    },
+    {
+        "country": "Australia",
+        "religion": "Atheism",
+        "percentage": 12
+    },
+    {
+        "country": "United Kingdom",
+        "religion": "Catholic",
+        "percentage": 66
+    },
+    {
+        "country": "United Kingdom",
+        "religion": "Protestantism",
+        "percentage": 21
+    },
+    {
+        "country": "United Kingdom",
+        "religion": "Jewish",
+        "percentage": 7
+    },
+    {
+        "country": "United Kingdom",
+        "religion": "Other",
+        "percentage": 6
+    },
+    {
+        "country": "Chile",
+        "religion": "Catholic",
+        "percentage": 78
+    },
+    {
+        "country": "Chile",
+        "religion": "Protestant",
+        "percentage": 13
+    },
+    {
+        "country": "Chile",
+        "religion": "Jewish",
+        "percentage": 5
+    },
+    {
+        "country": "Chile",
+        "religion": "Other",
+        "percentage": 4
+    },
+    {
+        "country": "Argentina",
+        "religion": "Catholic",
+        "percentage": 86
+    },
+    {
+        "country": "Argentina",
+        "religion": "Jewish",
+        "percentage": 4
+    },
+    {
+        "country": "Argentina",
+        "religion": "Other",
+        "percentage": 10
+    },
+    {
+        "country": "Finland",
+        "religion": "Catholic",
+        "percentage": 100
+    },
+    {
+        "country": "New Zealand",
+        "religion": "Christianity (broadly)",
+        "percentage": 85
+    },
+    {
+        "country": "New Zealand",
+        "religion": "Jewish ",
+        "percentage": 6
+    },
+    {
+        "country": "New Zealand",
+        "religion": "Other",
+        "percentage": 9
+    },
+    {
+        "country": "Hungary",
+        "religion": "Roman Catholicism",
+        "percentage": 37
+    },
+    {
+        "country": "Hungary",
+        "religion": "Greek Catholicism",
+        "percentage": 2
+    },
+    {
+        "country": "Hungary",
+        "religion": "Calvinism",
+        "percentage": 12
+    },
+    {
+        "country": "Hungary",
+        "religion": "Lutheranism",
+        "percentage": 2
+    },
+    {
+        "country": "Hungary",
+        "religion": "Atheists",
+        "percentage": 2
+    },
+    {
+        "country": "Hungary",
+        "religion": "No Religion",
+        "percentage": 17
+    },
+    {
+        "country": "Hungary",
+        "religion": "Other Christians",
+        "percentage": 1
+    },
+    {
+        "country": "Hungary",
+        "religion": "Undelcared",
+        "percentage": 27
+    }
+]
