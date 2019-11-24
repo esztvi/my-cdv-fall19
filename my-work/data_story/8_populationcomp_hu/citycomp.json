@@ -2,288 +2,288 @@
     {
         "area": "Budapest",
         "population": 1757618,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Debrecen",
         "population": 203914,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Szeged",
         "population": 162593,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Miskolc",
         "population": 159554,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Pécs",
         "population": 145985,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Győr",
         "population": 129372,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Nyíregyháza",
         "population": 118125,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Kecskemét",
         "population": 111836,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Székesfehérvár",
         "population": 98673,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Szombathely",
         "population": 77866,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Szolnok",
         "population": 72786,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Tatabánya",
         "population": 66791,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Érd",
         "population": 63993,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Kaposvár",
         "population": 63742,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Sopron",
         "population": 61390,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Veszprém",
         "population": 60761,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Békéscsaba",
         "population": 60334,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Zalaegerszeg",
         "population": 58959,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Eger",
         "population": 54609,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
         "area": "Nagykanizsa",
         "population": 48241,
-        "location": "Hungary",
-        "country": "Hungary",
+        "location": "Magyarország",
+        "country": "Magyarország",
         "type":"Null"
     },
     {
-        "area": "Romania",
+        "area": "Románia",
         "population": 1431807,
-        "location": "Abroad",
-        "country": "Romania",
+        "location": "Külföld",
+        "country": "Románia",
         "type":"country"
     },
     {
         "area": "Ohio",
         "population": 203417,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
-        "area": "Ukraine",
+        "area": "Ukrajna",
         "population": 156600,
-        "location": "Abroad",
-        "country":"Ukraine",
+        "location": "Külföld",
+        "country":"Ukrajna",
         "type":"country"
     },
     {
         "area": "Ontario",
         "population": 151750,
-        "location": "Abroad",
-        "country": "Canada",
+        "location": "Külföld",
+        "country": "Kanada",
         "type":"state"
     },
     {
         "area": "New York",
         "population": 157863,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
-        "area": "California",
+        "area": "Kalifornia",
         "population": 133988,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
         "area": "Pennsylvania",
         "population": 132184,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
         "area": "New Jersey",
         "population": 115615,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
         "area": "Michigan",
         "population": 98036,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
         "area": "Florida",
         "population": 96885,
-        "location": "Abroad",
-        "country": "United States",
+        "location": "Külföld",
+        "country": "Egyesült Államok",
         "type":"state"
     },
     {
         "area": "London",
         "population": 96000,
-        "location": "Abroad",
+        "location": "Külföld",
         "country": "England",
         "type":"city"
     },
     {
-        "area": "Russia",
+        "area": "Oroszország",
         "population": 76500,
-        "location": "Abroad",
-        "country": "Russia",
+        "location": "Külföld",
+        "country": "Oroszország",
         "type":"country"
     },
     {
-        "area": "Bavaria",
+        "area": "Bajorország",
         "population": 72740,
-        "location": "Abroad",
-        "country": "Germany",
+        "location": "Külföld",
+        "country": "Németország",
         "type":"state"
     },
     {
-        "area": "Australia",
+        "area": "Ausztrália",
         "population": 69160,
-        "location": "Abroad",
-        "country": "Australia",
+        "location": "Külföld",
+        "country": "Ausztrália",
         "type":"country"
     },
     {
-        "area": "Austria",
+        "area": "Ausztria",
         "population": 55038,
-        "location": "Abroad",
-        "country": "Austria",
+        "location": "Külföld",
+        "country": "Ausztria",
         "type":"country"
     },
     {
         "area": "Baden-Württemberg",
         "population": 50025,
-        "location": "Abroad",
-        "country": "Germany",
+        "location": "Külföld",
+        "country": "Németország",
         "type":"state"
     },
     {
         "area": "Alberta",
         "population": 48655,
-        "location": "Abroad",
-        "country": "Canada",
+        "location": "Külföld",
+        "country": "Kanada",
         "type":"state"
     },
     {
-        "area": "British Columbia",
+        "area": "Brit Kolumbia",
         "population": 43515,
-        "location": "Abroad",
-        "country": "Canada",
+        "location": "Külföld",
+        "country": "Kanada",
         "type":"state"
     },
     {
         "area": "Sweden",
         "population": 33018,
-        "location": "Abroad",
+        "location": "Külföld",
         "country": "Sweden",
         "type":"state"
     },
     {
         "area": "Switzerland",
         "population": 25000,
-        "location": "Abroad",
+        "location": "Külföld",
         "country": "Switzerland",
         "type":"country"
     },
     {
         "area": "North Rhine-Westphalia",
         "population": 22205,
-        "location": "Abroad",
-        "country": "Germany",
+        "location": "Külföld",
+        "country": "Németország",
         "type":"state"
     }
 ]
