@@ -266,21 +266,21 @@
         "type":"state"
     },
     {
-        "area": "Sweden",
+        "area": "Svédország",
         "population": 33018,
         "location": "Külföld",
-        "country": "Sweden",
+        "country": "Svédország",
         "type":"state"
     },
     {
-        "area": "Switzerland",
+        "area": "Svájc",
         "population": 25000,
         "location": "Külföld",
-        "country": "Switzerland",
+        "country": "Svájc",
         "type":"country"
     },
     {
-        "area": "North Rhine-Westphalia",
+        "area": "Észak-Rajna-Vesztfália",
         "population": 22205,
         "location": "Külföld",
         "country": "Németország",
