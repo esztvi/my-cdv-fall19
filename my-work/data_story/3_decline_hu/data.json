@@ -1,0 +1,146 @@
+[
+    {
+        "év": 1955,
+        "népesség": 9828494,
+        "termékenységiRáta": 2.69,
+        "átlagosÉletkor": 30.8
+    },
+    {
+        "év": 1960,
+        "népesség": 10000994,
+        "termékenységiRáta": 2.32,
+        "átlagosÉletkor": 32.2
+    },
+    {
+        "év": 1965,
+        "népesség": 10169799,
+        "termékenységiRáta": 1.98,
+        "átlagosÉletkor": 33.5
+    },
+    {
+        "év": 1970,
+        "népesség": 10366105,
+        "termékenységiRáta": 1.98,
+        "átlagosÉletkor": 34.2
+    },
+    {
+        "év": 1975,
+        "népesség": 10526780,
+        "termékenységiRáta": 2.04,
+        "átlagosÉletkor": 34.4
+    },
+    {
+        "év": 1980,
+        "népesség": 10754286,
+        "termékenységiRáta": 2.25,
+        "átlagosÉletkor": 34.4
+    },
+    {
+        "év": 1985,
+        "népesség": 10566323,
+        "termékenységiRáta": 1.81,
+        "átlagosÉletkor": 35
+    },
+    {
+        "év": 1990,
+        "népesség": 10377137,
+        "termékenységiRáta": 1.82,
+        "átlagosÉletkor": 36.4
+    },
+    {
+        "év": 1995,
+        "népesség": 10349302,
+        "termékenységiRáta": 1.74,
+        "átlagosÉletkor": 37.5
+    },
+    {
+        "év": 2000,
+        "népesség": 10220507,
+        "termékenységiRáta": 1.38,
+        "átlagosÉletkor": 38.5
+    },
+    {
+        "év": 2005,
+        "népesség": 10085937,
+        "termékenységiRáta": 1.3,
+        "átlagosÉletkor": 39.1
+    },
+    {
+        "év": 2010,
+        "népesség": 9927370,
+        "termékenységiRáta": 1.33,
+        "átlagosÉletkor": 40.1
+    },
+    {
+        "év": 2015,
+        "népesség": 9777923,
+        "termékenységiRáta": 1.33,
+        "átlagosÉletkor": 41.7
+    },
+    {
+        "év": 2016,
+        "népesség": 9752975,
+        "termékenységiRáta": 1.36,
+        "átlagosÉletkor": 42
+    },
+    {
+        "év": 2017,
+        "népesség": 9729823,
+        "termékenységiRáta": 1.36,
+        "átlagosÉletkor": 42
+    },
+    {
+        "év": 2018,
+        "népesség": 9707499,
+        "termékenységiRáta": 1.36,
+        "átlagosÉletkor": 42
+    },
+    {
+        "év": 2019,
+        "népesség": 9684679,
+        "termékenységiRáta": 1.36,
+        "átlagosÉletkor": 42
+    },
+    {
+        "év": 2020,
+        "népesség": 9660351,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 43.3
+    },
+    {
+        "év": 2025,
+        "népesség": 9514334,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 45.1
+    },
+    {
+        "év": 2030,
+        "népesség": 9338446,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 45.9
+    },
+    {
+        "év": 2035,
+        "népesség": 9131845,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 46.7
+    },
+    {
+        "év": 2040,
+        "népesség": 8906600,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 47.4
+    },
+    {
+        "év": 2045,
+        "népesség": 8681804,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 48
+    },
+    {
+        "év": 2050,
+        "népesség": 8470230,
+        "termékenységiRáta": 1.49,
+        "átlagosÉletkor": 48
+    }
+]
