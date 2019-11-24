@@ -1,0 +1,137 @@
+[
+    {
+        "industry": "Agriculture",
+        "austria": 1064,
+        "romania": 85509
+    },
+    {
+        "industry": "Forestry",
+        "austria": 0,
+        "romania": 3377
+    },
+    {
+        "industry": "Fishery",
+        "austria": 783,
+        "romania": 152
+    },
+    {
+        "industry": "Mining",
+        "austria": 0,
+        "romania": 8657
+    },
+    {
+        "industry": "Processing",
+        "austria": 0,
+        "romania": 161835
+    },
+    {
+        "industry": "Energy",
+        "austria": 1279,
+        "romania": 10125
+    },
+    {
+        "industry": "Building",
+        "austria": 1502,
+        "romania": 30457
+    },
+    {
+        "industry": "Trade",
+        "austria": 4187,
+        "romania": 59203
+    },
+    {
+        "industry": "Hotels & Restaurants",
+        "austria": 20540,
+        "romania": 9060
+    },
+    {
+        "industry": "Transportation",
+        "austria": 696,
+        "romania": 14924
+    },
+    {
+        "industry": "Post & Communications",
+        "austria": 271,
+        "romania": 5289
+    },
+    {
+        "industry": "Financing and Insurance",
+        "austria": 339,
+        "romania": 3843
+    },
+    {
+        "industry": "Real Estate",
+        "austria": 0,
+        "romania": 8819
+    },
+    {
+        "industry": "Public Administration",
+        "austria": 940,
+        "romania": 16205
+    },
+    {
+        "industry": "Education",
+        "austria": 0,
+        "romania": 27513
+    },
+    {
+        "industry": "Health and Social Assistance",
+        "austria": 0,
+        "romania": 22296
+    },
+    {
+        "industry": "Services",
+        "austria": 2647,
+        "romania": 13592
+    },
+    {
+        "industry": "Small Agricultural Activities",
+        "austria": 0,
+        "romania": 1087
+    },
+    {
+        "industry": "Organizations",
+        "austria": 1717,
+        "romania": 23
+    },
+    {
+        "industry": "Undeclared",
+        "austria": 0,
+        "romania": 29
+    },
+    {
+        "industry": "Gas Stations",
+        "austria": 846,
+        "romania": 0
+    },
+    {
+        "industry": "Painting",
+        "austria": 1417,
+        "romania": 0
+    },
+    {
+        "industry": "Pastry Chef/Baker",
+        "austria": 1111,
+        "romania": 0
+    },
+    {
+        "industry": "Aparel",
+        "austria": 827,
+        "romania": 0
+    },
+    {
+        "industry": "Furniture Sales",
+        "austria": 659,
+        "romania": 0
+    },
+    {
+        "industry": "Roofing",
+        "austria": 651,
+        "romania": 0
+    },
+    {
+        "industry": "Work Force Exchange ",
+        "austria": 5902,
+        "romania": 0
+    }
+]
