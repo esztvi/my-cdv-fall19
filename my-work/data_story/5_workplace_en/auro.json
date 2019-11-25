@@ -6,7 +6,7 @@
     },
     {
         "industry": "Forestry",
-        "austria": 0,
+        "austria": null,
         "romania": 3377
     },
     {
@@ -16,12 +16,12 @@
     },
     {
         "industry": "Mining",
-        "austria": 0,
+        "austria": null,
         "romania": 8657
     },
     {
         "industry": "Processing",
-        "austria": 0,
+        "austria": null,
         "romania": 161835
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "industry": "Real Estate",
-        "austria": 0,
+        "austria": null,
         "romania": 8819
     },
     {
@@ -71,12 +71,12 @@
     },
     {
         "industry": "Education",
-        "austria": 0,
+        "austria": null,
         "romania": 27513
     },
     {
         "industry": "Health and Social Assistance",
-        "austria": 0,
+        "austria": null,
         "romania": 22296
     },
     {
@@ -86,7 +86,7 @@
     },
     {
         "industry": "Small Agricultural Activities",
-        "austria": 0,
+        "austria": null,
         "romania": 1087
     },
     {
@@ -96,42 +96,42 @@
     },
     {
         "industry": "Undeclared",
-        "austria": 0,
+        "austria": null,
         "romania": 29
     },
     {
         "industry": "Gas Stations",
         "austria": 846,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Painting",
         "austria": 1417,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Pastry Chef/Baker",
         "austria": 1111,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Aparel",
         "austria": 827,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Furniture Sales",
         "austria": 659,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Roofing",
         "austria": 651,
-        "romania": 0
+        "romania": null
     },
     {
         "industry": "Work Force Exchange ",
         "austria": 5902,
-        "romania": 0
+        "romania": null
     }
 ]

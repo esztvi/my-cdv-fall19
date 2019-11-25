@@ -6,7 +6,7 @@
     },
     {
         "industry": "Erdészet",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 3377
     },
     {
@@ -16,12 +16,12 @@
     },
     {
         "industry": "Bányászat",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 8657
     },
     {
         "industry": "Feldolgozás",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 161835
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "industry": "Ingatlan Közvetítés",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 8819
     },
     {
@@ -71,12 +71,12 @@
     },
     {
         "industry": "Oktatás",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 27513
     },
     {
         "industry": "Egészségügyi és Szociális Segítségnyújtás",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 22296
     },
     {
@@ -86,7 +86,7 @@
     },
     {
         "industry": "Kis Mezőgazdasági Tevékenységek",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 1087
     },
     {
@@ -96,42 +96,42 @@
     },
     {
         "industry": "Bejelentettlen",
-        "Ausztria": 0,
+        "Ausztria": null,
         "Románia": 29
     },
     {
         "industry": "Benzinkútak",
         "Ausztria": 846,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Festés",
         "Ausztria": 1417,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Pékség",
         "Ausztria": 1111,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Ruházati Ipar",
         "Ausztria": 827,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Bútoros",
         "Ausztria": 659,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Tetős",
         "Ausztria": 651,
-        "Románia": 0
+        "Románia": null
     },
     {
         "industry": "Munkaerőcsere",
         "Ausztria": 5902,
-        "Románia": 0
+        "Románia": null
     }
 ]
