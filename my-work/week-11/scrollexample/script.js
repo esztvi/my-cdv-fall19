@@ -23,21 +23,21 @@ let viz = d3.select("#visualization")
 adjustVizHeight();
 function gotData(incomingData){
   console.log(incomingData);
-  let countryData = incomingData.map(function(d){return d.gender});
+  let yearData = incomingData.map(function(d){return d.year});
 
-  console.log(countryData);
+  console.log(yearData);
   let xScale = d3.scaleBand()
-  .domain(countryData)
+  .domain(yearData)
   .range([padding, w-padding])
   .paddingInner(0.1)
   ;
   let xAxis = d3.axisBottom(xScale)
-  xAxis.tickFormat(d=>{return incomingData.filter(dd=>dd.gender==d)[0].gender;});
+  xAxis.tickFormat(d=>{return incomingData.filter(dd=>dd.year==d)[0].year;});
   let xAxisGroup = viz.append("g").classed("xAxis", true);
   xAxisGroup.call(xAxis);
   xAxisGroup.attr("transform", "translate(0,"+ (h-padding) +")").style("color", "black").style("stroke-width","2");
-  let yMax = d3.max(incomingData, function(d){return d["pubdate-yr"]});
-  console.log(d.pubdate_yr);
+  let yMax = d3.max(incomingData, function(d){return d.population});
+  console.log(d.population);
   let yDomain = [0, yMax];
   let yScale = d3.scaleLinear().domain(yDomain).range([0, h-padding*2]);
   let graphGroup = viz.append("g").classed("graphGroup", true);
@@ -87,4 +87,4 @@ function resized(){
 }
 window.addEventListener("resize", resized);
 
-d3.tsv("translatedbooks.tsv").then(gotData);
+d3.tsv("data.json").then(gotData);
