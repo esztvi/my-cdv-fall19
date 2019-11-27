@@ -1,146 +1,303 @@
-[
-    {
-        "year": 1955,
-        "population": 9828494,
-        "fertilityRate": 2.69,
-        "medianAge": 30.8
-    },
-    {
-        "year": 1960,
-        "population": 10000994,
-        "fertilityRate": 2.32,
-        "medianAge": 32.2
-    },
-    {
-        "year": 1965,
-        "population": 10169799,
-        "fertilityRate": 1.98,
-        "medianAge": 33.5
-    },
-    {
-        "year": 1970,
-        "population": 10366105,
-        "fertilityRate": 1.98,
-        "medianAge": 34.2
-    },
-    {
-        "year": 1975,
-        "population": 10526780,
-        "fertilityRate": 2.04,
-        "medianAge": 34.4
-    },
-    {
-        "year": 1980,
-        "population": 10754286,
-        "fertilityRate": 2.25,
-        "medianAge": 34.4
-    },
-    {
-        "year": 1985,
-        "population": 10566323,
-        "fertilityRate": 1.81,
-        "medianAge": 35
-    },
-    {
-        "year": 1990,
-        "population": 10377137,
-        "fertilityRate": 1.82,
-        "medianAge": 36.4
-    },
-    {
-        "year": 1995,
-        "population": 10349302,
-        "fertilityRate": 1.74,
-        "medianAge": 37.5
-    },
-    {
-        "year": 2000,
-        "population": 10220507,
-        "fertilityRate": 1.38,
-        "medianAge": 38.5
-    },
-    {
-        "year": 2005,
-        "population": 10085937,
-        "fertilityRate": 1.3,
-        "medianAge": 39.1
-    },
-    {
-        "year": 2010,
-        "population": 9927370,
-        "fertilityRate": 1.33,
-        "medianAge": 40.1
-    },
-    {
-        "year": 2015,
-        "population": 9777923,
-        "fertilityRate": 1.33,
-        "medianAge": 41.7
-    },
-    {
-        "year": 2016,
-        "population": 9752975,
-        "fertilityRate": 1.36,
-        "medianAge": 42
-    },
-    {
-        "year": 2017,
-        "population": 9729823,
-        "fertilityRate": 1.36,
-        "medianAge": 42
-    },
-    {
-        "year": 2018,
-        "population": 9707499,
-        "fertilityRate": 1.36,
-        "medianAge": 42
-    },
-    {
-        "year": 2019,
-        "population": 9684679,
-        "fertilityRate": 1.36,
-        "medianAge": 42
-    },
-    {
-        "year": 2020,
-        "population": 9660351,
-        "fertilityRate": 1.49,
-        "medianAge": 43.3
-    },
-    {
-        "year": 2025,
-        "population": 9514334,
-        "fertilityRate": 1.49,
-        "medianAge": 45.1
-    },
-    {
-        "year": 2030,
-        "population": 9338446,
-        "fertilityRate": 1.49,
-        "medianAge": 45.9
-    },
-    {
-        "year": 2035,
-        "population": 9131845,
-        "fertilityRate": 1.49,
-        "medianAge": 46.7
-    },
-    {
-        "year": 2040,
-        "population": 8906600,
-        "fertilityRate": 1.49,
-        "medianAge": 47.4
-    },
-    {
-        "year": 2045,
-        "population": 8681804,
-        "fertilityRate": 1.49,
-        "medianAge": 48
-    },
-    {
-        "year": 2050,
-        "population": 8470230,
-        "fertilityRate": 1.49,
-        "medianAge": 48
-    }
-]
+{"metric": "fertilityRate",
+"year":1955,
+"value":2.69
+},
+{"metric": "fertilityRate",
+"year":1960,
+"value":2.32
+},
+
+{"metric": "fertilityRate",
+"year":1965,
+"value":1.98
+},
+
+{"metric": "fertilityRate",
+"year":1970,
+"value":1.98
+},
+
+{"metric": "fertilityRate",
+"year":1975,
+"value":2.04
+},
+
+{"metric": "fertilityRate",
+"year":1980,
+"value":2.25
+},
+
+{"metric": "fertilityRate",
+"year":1985,
+"value":1.81
+},
+
+{"metric": "fertilityRate",
+"year":1990,
+"value":1.82
+},
+
+{"metric": "fertilityRate",
+"year":1995,
+"value":1.74
+},
+
+{"metric": "fertilityRate",
+"year":2000,
+"value":1.38
+},
+
+{"metric": "fertilityRate",
+"year":2005,
+"value":1.30
+},
+{"metric": "fertilityRate",
+"year":2010,
+"value":1.33
+},
+
+{"metric": "fertilityRate",
+"year":2015,
+"value":1.33
+},
+
+{"metric": "fertilityRate",
+"year":2016,
+"value":1.36
+},
+
+{"metric": "fertilityRate",
+"year":2017,
+"value":1.36
+},
+
+{"metric": "fertilityRate",
+"year":2018,
+"value":1.36
+},
+{"metric": "fertilityRate",
+"year":2019,
+"value":1.36
+},
+
+{"metric": "fertilityRate",
+"year":2020,
+"value":1.49
+},
+
+{"metric": "fertilityRate",
+"year":2025,
+"value":1.49
+},
+{"metric": "fertilityRate",
+"year":2030,
+"value":1.49
+},
+{"metric": "fertilityRate",
+"year":2035,
+"value":1.49
+},
+{"metric": "fertilityRate",
+"year":2040,
+"value":1.49
+},
+{"metric": "fertilityRate",
+"year":2045,
+"value":1.49
+},
+{"metric": "fertilityRate",
+"year":2050,
+"value":1.49
+},
+{"metric": "medianAge",
+"year":1955,
+"value":30.8
+},
+{"metric": "medianAge",
+"year":1960,
+"value":32.2
+},
+{"metric": "medianAge",
+"year":1965,
+"value":33.5
+},
+{"metric": "medianAge",
+"year":1970,
+"value":34.2
+},
+{"metric": "medianAge",
+"year":1975,
+"value":34.4
+},
+{"metric": "medianAge",
+"year":1980,
+"value":34.4
+},
+{"metric": "medianAge",
+"year":1985,
+"value":35.0
+},
+{"metric": "medianAge",
+"year":1990,
+"value":36.4
+},
+{"metric": "medianAge",
+"year":1995,
+"value":37.5
+},
+{"metric": "medianAge",
+"year":2000,
+"value":38.5
+},
+{"metric": "medianAge",
+"year":2005,
+"value":39.1
+},
+{"metric": "medianAge",
+"year":2010,
+"value":40.1
+},
+{"metric": "medianAge",
+"year":2015,
+"value":41.7
+},
+{"metric": "medianAge",
+"year":2016,
+"value":42
+},
+{"metric": "medianAge",
+"year":2017,
+"value":42
+},
+{"metric": "medianAge",
+"year":2018,
+"value":42
+},
+{"metric": "medianAge",
+"year":2019,
+"value":42
+},
+{"metric": "medianAge",
+"year":2020,
+"value":43.3
+},
+{"metric": "medianAge",
+"year":2025,
+"value":45.1
+},
+{"metric": "medianAge",
+"year":2030,
+"value":45.9
+},
+{"metric": "medianAge",
+"year":2035,
+"value":46.7
+},
+{"metric": "medianAge",
+"year":2040,
+"value":47.4
+},
+{"metric": "medianAge",
+"year":2045,
+"value":48
+},
+{"metric": "medianAge",
+"year":2050,
+"value":48
+},
+{"metric": "population",
+"year":1955,
+"value":9828494
+},
+{"metric": "population",
+"year":1960,
+"value":10000994
+},
+{"metric": "population",
+"year":1965,
+"value":10169799
+},
+{"metric": "population",
+"year":1970,
+"value":10366105
+},
+{"metric": "population",
+"year":1975,
+"value":10526780
+},
+{"metric": "population",
+"year":1980,
+"value":10754286
+},
+{"metric": "population",
+"year":1985,
+"value":10566323
+},
+{"metric": "population",
+"year":1990,
+"value":10377137
+},
+{"metric": "population",
+"year":1995,
+"value":10349302
+},
+{"metric": "population",
+"year":2000,
+"value":10220507
+},
+{"metric": "population",
+"year":2005,
+"value":10085937
+},
+{"metric": "population",
+"year":2010,
+"value":9927370
+},
+{"metric": "population",
+"year":2015,
+"value":9777923
+},
+{"metric": "population",
+"year":2016,
+"value":9752975
+},
+{"metric": "population",
+"year":2017,
+"value":9729823
+},
+{"metric": "population",
+"year":2018,
+"value":9707499
+},
+{"metric": "population",
+"year":2019,
+"value":9684679
+},
+{"metric": "population",
+"year":2020,
+"value":9660351
+},
+{"metric": "population",
+"year":2025,
+"value":9514334
+},
+{"metric": "population",
+"year":2030,
+"value":9338446
+},
+{"metric": "population",
+"year":2035,
+"value":9131845
+},
+{"metric": "population",
+"year":2040,
+"value":8906600
+},
+{"metric": "population",
+"year":2045,
+"value":8681804
+},
+{"metric": "population",
+"year":2050,
+"value":8470230
+}
