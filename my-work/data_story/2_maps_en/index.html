@@ -1,17 +1,43 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <meta charset="utf-8">
-  <title>Maps</title>
+  <title>Maps</title> -->
 
   <!-- Please leave this following line here -->
   <!-- <script type="text/javascript" src="setup/setup.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="2.css">
+  <!-- <link rel="stylesheet" type="text/css" href="2.css"> -->
   <!-- include the d3 library -->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <style type="text/css">
+
+          * {
+              margin: 0;
+              padding: 0;
+          }
+          body {
+              font-family: Calibri;
+          }
+          h1 {
+              font-weight: 300;
+              font-size: 4em;
+              color: #fff;
+              background-color: #071d36;
+              padding: 300px 0 50px 100px;
+              margin-bottom: 150px;
+          }
+          p {
+              width: 30%;
+              margin: 0 auto 500px auto;
+              font-size: 1.4em;
+              color: #555;
+              font-weight: 300;
+          }
 
 
+      </style>
 </head>
 
 <body>
@@ -31,9 +57,11 @@
 
 
 </div>
-<div id= "words" style="align:right;position:absolute;top:7%;text-align: center;
-    right:5%;font-size: 20px;color:whitesmoke;display: block;">
-  <p><pre>      In order to understand the data,
+<h1 class="fade-scroll">Fade Me Away</h1> -->
+<!-- style="align:right;position:absolute;top:7%;text-align: center;
+    right:5%;font-size: 20px;color:whitesmoke;display: block; -->
+<!-- <div class= "fade-scroll" >
+  <p>     In order to understand the data,
       one must first define who is going to
       be classified as a Hungarian, and in
       order for that to take place, one
@@ -52,8 +80,99 @@
       of Hungary, as you scroll left &
       right you will discover the
       difference in present and
-      historical borders.</pre>  </p>
+      historical borders. </p>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(function() {
+
+                var documentEl = $(document),
+                    fadeElem = $('.fade-scroll');
+
+
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetRight) $this.css('opacity', 1 - (currScrollPos-elemOffsetRight)/400);
+                    });
+                });
+
+            });
+
+        </script>
     <script type="text/javascript" src="2.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scroll Fade</title>
+        <style type="text/css">
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: Calibri;
+            }
+            h1 {
+                font-weight: 300;
+                font-size: 4em;
+                color: #fff;
+                background-color: #071d36;
+                padding: 300px 0 50px 100px;
+                margin-bottom: 150px;
+            }
+            p {
+                width: 30%;
+                margin: 0 auto 500px auto;
+                font-size: 1.4em;
+                color: #555;
+                font-weight: 300;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+
+        <h1 class="fade-scroll">Fade Me Away</h1>
+
+        <p class="fade-scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse odio velit, condimentum vel pulvinar sed, mollis at tortor. Nam congue turpis mi, in ultricies dolor mattis non. Donec molestie ante arcu, eget congue quam tincidunt in. Nullam et dignissim felis. Proin iaculis lectus eget dui tincidunt, laoreet pharetra diam varius. Aliquam ullamcorper volutpat gravida. Sed pharetra ac risus a tristique. Vestibulum et blandit orci, non sollicitudin nunc. Sed ut nulla massa. Fusce nec erat eu neque egestas maximus. Proin sit amet ultrices elit, vitae tempor felis. Vivamus egestas efficitur metus, in elementum odio aliquet et. Vestibulum semper eros orci, non accumsan turpis convallis sit amet. Donec rutrum efficitur velit quis auctor.</p>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(function() {
+
+                var documentEl = $(document),
+                    fadeElem = $('.fade-scroll');
+
+
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
 </html>
