@@ -41,7 +41,7 @@
     },
     {
         "country": "Serbia",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 88
     },
     {
@@ -66,7 +66,7 @@
     },
     {
         "country": "Austria",
-        "religion": "Lutheran",
+        "religion": "Lutheranism",
         "percentage": 16
     },
     {
@@ -86,7 +86,7 @@
     },
     {
         "country": "Croatia",
-        "religion": "Calvinism ",
+        "religion": "Calvinism",
         "percentage": 2
     },
     {
@@ -101,12 +101,12 @@
     },
     {
         "country": "Slovenia",
-        "religion": "Lutheran",
+        "religion": "Lutheranism",
         "percentage": 15
     },
     {
         "country": "Slovenia",
-        "religion": "Other ",
+        "religion": "Other",
         "percentage": 15
     },
     {
@@ -121,7 +121,7 @@
     },
     {
         "country": "United States",
-        "religion": "Lutheran",
+        "religion": "Lutheranism",
         "percentage": 15
     },
     {
@@ -136,17 +136,17 @@
     },
     {
         "country": "Isreal",
-        "religion": "Jewish ",
+        "religion": "Judaism",
         "percentage": 100
     },
     {
         "country": "Germany",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 76
     },
     {
         "country": "Germany",
-        "religion": "Calvinist",
+        "religion": "Calvinism",
         "percentage": 10
     },
     {
@@ -156,12 +156,12 @@
     },
     {
         "country": "Brazil",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 80
     },
     {
         "country": "Brazil",
-        "religion": "Jewish",
+        "religion": "Judaism",
         "percentage": 10
     },
     {
@@ -171,7 +171,7 @@
     },
     {
         "country": "Australia",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 73
     },
     {
@@ -181,7 +181,7 @@
     },
     {
         "country": "Australia",
-        "religion": "Jewish",
+        "religion": "Judaism",
         "percentage": 7
     },
     {
@@ -191,7 +191,7 @@
     },
     {
         "country": "United Kingdom",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 66
     },
     {
@@ -201,7 +201,7 @@
     },
     {
         "country": "United Kingdom",
-        "religion": "Jewish",
+        "religion": "Judaism",
         "percentage": 7
     },
     {
@@ -211,17 +211,17 @@
     },
     {
         "country": "Chile",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 78
     },
     {
         "country": "Chile",
-        "religion": "Protestant",
+        "religion": "Protestantism",
         "percentage": 13
     },
     {
         "country": "Chile",
-        "religion": "Jewish",
+        "religion": "Judaism",
         "percentage": 5
     },
     {
@@ -231,12 +231,12 @@
     },
     {
         "country": "Argentina",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 86
     },
     {
         "country": "Argentina",
-        "religion": "Jewish",
+        "religion": "Judaism",
         "percentage": 4
     },
     {
@@ -246,7 +246,7 @@
     },
     {
         "country": "Finland",
-        "religion": "Catholic",
+        "religion": "Catholicism",
         "percentage": 100
     },
     {
@@ -256,7 +256,7 @@
     },
     {
         "country": "New Zealand",
-        "religion": "Jewish ",
+        "religion": "Judaism",
         "percentage": 6
     },
     {
@@ -281,12 +281,12 @@
     },
     {
         "country": "Hungary",
-        "religion": "Lutheranism",
+        "religion": "Lutheranismism",
         "percentage": 2
     },
     {
         "country": "Hungary",
-        "religion": "Atheists",
+        "religion": "Atheism",
         "percentage": 2
     },
     {

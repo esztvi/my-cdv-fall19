@@ -7,13 +7,20 @@ function getSize(datapoint,i) {
 
     console.log(datapoint.size);
     if(datapoint.size == 1)
-    { return 5;}
-    else if(datapoint.size == 2)
     { return 10;}
+    else if(datapoint.size == 2)
+    { return 15;}
     else if(datapoint.size == 3)
-    { return 20;}
+    { return 30;}
+};
 
-    return "datapoint.medium";
+function getColor(datapoint,i) {
+
+    console.log(datapoint.color);
+    if(datapoint.color == "Red")
+    { return "rgb(255,22,26)";}
+    else if(datapoint.color == "Green")
+    { return "whitesmoke";}
 };
 let viz = d3.select("#container").append("svg")
     .style("width", w)
@@ -38,13 +45,23 @@ d3.json("data.json").then(function(incomingData){
   xScaleYear.domain(extent);
   let xAxisGroup=viz.append("g").attr("class","xaxisgroup").attr("fill","whitesmoke").attr("stroke","whitesmoke").attr("line","whitesmoke");
   let xAxis=d3.axisBottom(xScaleYear);
-  let xAxisYPos = h -50;
+  let xAxisYPos = h -500;
   xAxisGroup.attr("transform", "translate(0,"+xAxisYPos+")");
   xAxisGroup.call(xAxis);
   // let domain=[minvalue,maxvalue];
   incomingData.forEach(d=>{
     d.x= xScaleYear(timeParse(d.year));
-    d.y=h/2
+    d.y=h/7
+
+    // xAxisGroupCountry=viz.append("g").attr("class","xaxisgroup").attr("fill","whitesmoke").attr("stroke","whitesmoke").attr("line","whitesmoke");
+    // let xAxisCountry=d3.axisBottom(xScaleCountry);
+    // let xAxisYPosCountry = h -700;
+    // xAxisGroupCountry.attr("transform", "translate(0,"+xAxisYPosCountry+")");
+    // xAxisGroupCountry.call(xAxisCountry);
+    // // let domain=[minvalue,maxvalue];
+    // incomingData.forEach(d=>{
+    //   d.x= xScaleCountry(d.country);
+    //   d.y=h/4
   })
   // viz.selectAll(".datapoint").data(incomingData).enter().append("circle").attr("class", "datapoint").attr("cx",function(d){return xScaleYear(timeParse(d.year))}).attr("cy",h/2).attr("r",4);
 
@@ -53,7 +70,7 @@ d3.json("data.json").then(function(incomingData){
   //   return xScaleYear(timeParse(d.year))
   // }))
   // .force("forceY",d3.forceY(h/2))
-  .force("collide",d3.forceCollide(20))
+  .force("collide",d3.forceCollide(10))
   // .on("tick", simulationRan)
   .on("end",simulationEnded)
     .tick(100)
@@ -66,7 +83,7 @@ d3.json("data.json").then(function(incomingData){
     })
     .attr("cy",function(d){
       return d.y;
-    }).attr("r",getSize).attr("fill","whitesmoke");
+    }).attr("r",getSize).attr("fill",getColor);
 
   }
 
