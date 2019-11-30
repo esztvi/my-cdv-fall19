@@ -30,3 +30,6 @@ body {
   overflow: hidden;
    background-size:cover;
 }
+ellipse:hover{
+	fill: rgb(9,130,71);
+}
