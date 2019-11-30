@@ -43,7 +43,7 @@ h1 {
     font-weight: 300;
     font-size: 4em;
     color: #fff;
-    background-color: #071d36;
+    /* background-color: #071d36; */
     padding: 300px 0 50px 100px;
     margin-bottom: 150px;
 }
@@ -51,21 +51,21 @@ h2 {
     font-weight: 300;
     font-size: 4em;
     color: #fff;
-    background-color: green;
+    /* background-color: green; */
     margin-bottom: 150px;
 }
 h3 {
     font-weight: 300;
     font-size: 4em;
     color: #fff;
-    background-color: blue;
+    /* background-color: blue; */
     margin-bottom: 150px;
 }
 h4 {
     font-weight: 300;
     font-size: 4em;
     color: #fff;
-    background-color: violet;
+    /* background-color: violet; */
     margin-bottom: 150px;
 }
 p {
@@ -74,5 +74,6 @@ p {
     font-size: 1.4em;
     color: #555;
     font-weight: 300;
+    /* background-color: white; */
     margin-bottom: 150px;
 }
