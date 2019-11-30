@@ -60,5 +60,5 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
 
   });
 
-});
+})
 }}}));
