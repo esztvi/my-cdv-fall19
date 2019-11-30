@@ -30,3 +30,23 @@ body {
   overflow: hidden;
    background-size:cover;
 }
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axisSteelBlue text{
+
+  fill: steelblue;
+}
+
+.axisRed text{
+
+  fill: red;
+}
+
+.axisGreen text{
+
+  fill: green;
+}
