@@ -39,7 +39,13 @@
           .attr("class","continent")
           .attr("d", path)
           .style("fill","whitesmoke")
-
+          viz.append("g")
+              .attr("class", "bubble")
+            .selectAll("circle")
+              .data(CountriesData.feature(path, sovereignt.CountriesData).features)
+            .enter().append("circle")
+              .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+              .attr("r", 1.5);
 
     //   CitiesData.map((country) => {
     //     //console.log("Run")
