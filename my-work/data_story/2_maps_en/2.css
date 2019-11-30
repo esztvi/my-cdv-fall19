@@ -1,11 +1,11 @@
 /* Add a black background color to the top navigation */
-/* .topnav {
+.topnav {
   background-color: #2b3341;
   overflow: hidden;
-} */
+}
 
 /* Style the links inside the navigation bar */
-/* .topnav a {
+.topnav a {
   float: left;
   color: white;
   text-align: center;
@@ -15,18 +15,42 @@
 }
 
 /* Change the color of links on hover */
-/* .topnav a:hover {
+.topnav a:hover {
   background-color: #c5c7c4;
   color: #2b3341;
-} */
+}
 
 /* Add a color to the active/current link */
-/* .topnav a.active {
+.topnav a.active {
   background-color: #ff161a;
   color: white;
-} */
+}
 /* body {
   background-image: url("background.jpg");
   overflow: hidden;
    background-size:cover;
 } */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Calibri;
+      background-image: url("background.jpg");
+       background-size:cover;
+}
+h1 {
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    background-color: #071d36;
+    padding: 300px 0 50px 100px;
+    margin-bottom: 150px;
+}
+p {
+    width: 30%;
+    margin: 0 auto 500px auto;
+    font-size: 1.4em;
+    color: #555;
+    font-weight: 300;
+}
