@@ -52,14 +52,21 @@ h2 {
     font-size: 4em;
     color: #fff;
     background-color: green;
-    margin-bottom: 450px;
+    margin-bottom: 150px;
 }
 h3 {
     font-weight: 300;
     font-size: 4em;
     color: #fff;
     background-color: blue;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
+}
+h4 {
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    background-color: violet;
+    margin-bottom: 150px;
 }
 p {
     width: 30%;
