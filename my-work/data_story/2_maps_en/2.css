@@ -47,10 +47,25 @@ h1 {
     padding: 300px 0 50px 100px;
     margin-bottom: 150px;
 }
+h2 {
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    background-color: green;
+    margin-bottom: 450px;
+}
+h3 {
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    background-color: blue;
+    margin-bottom: 300px;
+}
 p {
     width: 30%;
     margin: 0 auto 500px auto;
     font-size: 1.4em;
     color: #555;
     font-weight: 300;
+    margin-bottom: 150px;
 }
