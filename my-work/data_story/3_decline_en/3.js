@@ -84,16 +84,18 @@ console.log(data);
   // Add the Y0 Axis
   svg.append("g")
       .attr("class", "axisSteelBlue")
-      .call(d3.axisLeft(y0));
-
+      .call(d3.axisLeft(y).ticks(8, "$.0f"))
+      .call(g => g.select(".domain").remove());
   // Add the Y1 Axis
   svg.append("g")
       .attr("class", "axisRed")
       .attr("transform", "translate( " + width + ", 0 )")
-      .call(d3.axisRight(y1));
+      .call(d3.axisRight(y1))
+      .call(g => g.select(".domain").remove());
       // Add the Y2 Axis
       svg.append("g")
           .attr("class", "axisGreen")
           .attr("transform", "translate( " + width + ", 0 )")
-          .call(d3.axisRight(y2));
+          .call(d3.axisRight(y2))
+          .call(g => g.select(".domain").remove());
 });

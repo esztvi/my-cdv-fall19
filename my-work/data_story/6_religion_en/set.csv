@@ -989,20 +989,20 @@ group,variable,value,religion
 84,Germany,6,Calvinism
 85,Germany,6,Calvinism
 86,Germany,6,Calvinism
-87,Germany,6,Other
-88,Germany,6,Other
-89,Germany,6,Other
-90,Germany,6,Other
-91,Germany,6,Other
-92,Germany,6,Other
-93,Germany,6,Other
-94,Germany,6,Other
-95,Germany,6,Other
-96,Germany,6,Other
-97,Germany,6,Other
-98,Germany,6,Other
-99,Germany,6,Other
-100,Germany,6,Other
+87,Germany,5,Other
+88,Germany,5,Other
+89,Germany,5,Other
+90,Germany,5,Other
+91,Germany,5,Other
+92,Germany,5,Other
+93,Germany,5,Other
+94,Germany,5,Other
+95,Germany,5,Other
+96,Germany,5,Other
+97,Germany,5,Other
+98,Germany,5,Other
+99,Germany,5,Other
+100,Germany,5,Other
 1,Brazil,7,Catholicism
 2,Brazil,7,Catholicism
 3,Brazil,7,Catholicism
@@ -1482,14 +1482,14 @@ group,variable,value,religion
 76,Argentina,7,Catholicism
 77,Argentina,7,Catholicism
 78,Argentina,7,Catholicism
-79,Argentina,8,Catholicism
-80,Argentina,8,Catholicism
-81,Argentina,8,Catholicism
-82,Argentina,8,Catholicism
-83,Argentina,8,Catholicism
-84,Argentina,8,Catholicism
-85,Argentina,8,Catholicism
-86,Argentina,8,Catholicism
+79,Argentina,7,Catholicism
+80,Argentina,7,Catholicism
+81,Argentina,7,Catholicism
+82,Argentina,7,Catholicism
+83,Argentina,7,Catholicism
+84,Argentina,7,Catholicism
+85,Argentina,7,Catholicism
+86,Argentina,7,Catholicism
 87,Argentina,13,Judaism
 88,Argentina,13,Judaism
 89,Argentina,13,Judaism
@@ -1604,91 +1604,91 @@ group,variable,value,religion
 98,Finland,7,Catholicism
 99,Finland,7,Catholicism
 100,Finland,7,Catholicism
-1,New Zealand,7,Christianity_(broadly)
-2,New Zealand,7,Christianity_(broadly)
-3,New Zealand,7,Christianity_(broadly)
-4,New Zealand,7,Christianity_(broadly)
-5,New Zealand,7,Christianity_(broadly)
-6,New Zealand,7,Christianity_(broadly)
-7,New Zealand,7,Christianity_(broadly)
-8,New Zealand,7,Christianity_(broadly)
-9,New Zealand,7,Christianity_(broadly)
-10,New Zealand,7,Christianity_(broadly)
-11,New Zealand,7,Christianity_(broadly)
-12,New Zealand,7,Christianity_(broadly)
-13,New Zealand,7,Christianity_(broadly)
-14,New Zealand,7,Christianity_(broadly)
-15,New Zealand,7,Christianity_(broadly)
-16,New Zealand,7,Christianity_(broadly)
-17,New Zealand,7,Christianity_(broadly)
-18,New Zealand,7,Christianity_(broadly)
-19,New Zealand,7,Christianity_(broadly)
-20,New Zealand,7,Christianity_(broadly)
-21,New Zealand,7,Christianity_(broadly)
-22,New Zealand,7,Christianity_(broadly)
-23,New Zealand,7,Christianity_(broadly)
-24,New Zealand,7,Christianity_(broadly)
-25,New Zealand,7,Christianity_(broadly)
-26,New Zealand,7,Christianity_(broadly)
-27,New Zealand,7,Christianity_(broadly)
-28,New Zealand,7,Christianity_(broadly)
-29,New Zealand,7,Christianity_(broadly)
-30,New Zealand,7,Christianity_(broadly)
-31,New Zealand,7,Christianity_(broadly)
-32,New Zealand,7,Christianity_(broadly)
-33,New Zealand,7,Christianity_(broadly)
-34,New Zealand,7,Christianity_(broadly)
-35,New Zealand,7,Christianity_(broadly)
-36,New Zealand,7,Christianity_(broadly)
-37,New Zealand,7,Christianity_(broadly)
-38,New Zealand,7,Christianity_(broadly)
-39,New Zealand,7,Christianity_(broadly)
-40,New Zealand,7,Christianity_(broadly)
-41,New Zealand,7,Christianity_(broadly)
-42,New Zealand,7,Christianity_(broadly)
-43,New Zealand,7,Christianity_(broadly)
-44,New Zealand,7,Christianity_(broadly)
-45,New Zealand,7,Christianity_(broadly)
-46,New Zealand,7,Christianity_(broadly)
-47,New Zealand,7,Christianity_(broadly)
-48,New Zealand,7,Christianity_(broadly)
-49,New Zealand,7,Christianity_(broadly)
-50,New Zealand,7,Christianity_(broadly)
-51,New Zealand,7,Christianity_(broadly)
-52,New Zealand,7,Christianity_(broadly)
-53,New Zealand,7,Christianity_(broadly)
-54,New Zealand,7,Christianity_(broadly)
-55,New Zealand,7,Christianity_(broadly)
-56,New Zealand,7,Christianity_(broadly)
-57,New Zealand,7,Christianity_(broadly)
-58,New Zealand,7,Christianity_(broadly)
-59,New Zealand,7,Christianity_(broadly)
-60,New Zealand,7,Christianity_(broadly)
-61,New Zealand,7,Christianity_(broadly)
-62,New Zealand,7,Christianity_(broadly)
-63,New Zealand,7,Christianity_(broadly)
-64,New Zealand,7,Christianity_(broadly)
-65,New Zealand,7,Christianity_(broadly)
-66,New Zealand,7,Christianity_(broadly)
-67,New Zealand,7,Christianity_(broadly)
-68,New Zealand,7,Christianity_(broadly)
-69,New Zealand,7,Christianity_(broadly)
-70,New Zealand,7,Christianity_(broadly)
-71,New Zealand,7,Christianity_(broadly)
-72,New Zealand,7,Christianity_(broadly)
-73,New Zealand,7,Christianity_(broadly)
-74,New Zealand,7,Christianity_(broadly)
-75,New Zealand,7,Christianity_(broadly)
-76,New Zealand,7,Christianity_(broadly)
-77,New Zealand,7,Christianity_(broadly)
-78,New Zealand,7,Christianity_(broadly)
-79,New Zealand,8, Christianity (broadly)
-80,New Zealand,8,Christianity_(broadly)
-81,New Zealand,8,Christianity_(broadly)
-82,New Zealand,8,Christianity_(broadly)
-83,New Zealand,8,Christianity_(broadly)
-84,New Zealand,8,Christianity_(broadly)
-85,New Zealand,8,Christianity_(broadly)
+1,New Zealand,14,Christianity_(broadly)
+2,New Zealand,14,Christianity_(broadly)
+3,New Zealand,14,Christianity_(broadly)
+4,New Zealand,14,Christianity_(broadly)
+5,New Zealand,14,Christianity_(broadly)
+6,New Zealand,14,Christianity_(broadly)
+7,New Zealand,14,Christianity_(broadly)
+8,New Zealand,14,Christianity_(broadly)
+9,New Zealand,14,Christianity_(broadly)
+10,New Zealand,14,Christianity_(broadly)
+11,New Zealand,14,Christianity_(broadly)
+12,New Zealand,14,Christianity_(broadly)
+13,New Zealand,14,Christianity_(broadly)
+14,New Zealand,14,Christianity_(broadly)
+15,New Zealand,14,Christianity_(broadly)
+16,New Zealand,14,Christianity_(broadly)
+17,New Zealand,14,Christianity_(broadly)
+18,New Zealand,14,Christianity_(broadly)
+19,New Zealand,14,Christianity_(broadly)
+20,New Zealand,14,Christianity_(broadly)
+21,New Zealand,14,Christianity_(broadly)
+22,New Zealand,14,Christianity_(broadly)
+23,New Zealand,14,Christianity_(broadly)
+24,New Zealand,14,Christianity_(broadly)
+25,New Zealand,14,Christianity_(broadly)
+26,New Zealand,14,Christianity_(broadly)
+27,New Zealand,14,Christianity_(broadly)
+28,New Zealand,14,Christianity_(broadly)
+29,New Zealand,14,Christianity_(broadly)
+30,New Zealand,14,Christianity_(broadly)
+31,New Zealand,14,Christianity_(broadly)
+32,New Zealand,14,Christianity_(broadly)
+33,New Zealand,14,Christianity_(broadly)
+34,New Zealand,14,Christianity_(broadly)
+35,New Zealand,14,Christianity_(broadly)
+36,New Zealand,14,Christianity_(broadly)
+37,New Zealand,14,Christianity_(broadly)
+38,New Zealand,14,Christianity_(broadly)
+39,New Zealand,14,Christianity_(broadly)
+40,New Zealand,14,Christianity_(broadly)
+41,New Zealand,14,Christianity_(broadly)
+42,New Zealand,14,Christianity_(broadly)
+43,New Zealand,14,Christianity_(broadly)
+44,New Zealand,14,Christianity_(broadly)
+45,New Zealand,14,Christianity_(broadly)
+46,New Zealand,14,Christianity_(broadly)
+47,New Zealand,14,Christianity_(broadly)
+48,New Zealand,14,Christianity_(broadly)
+49,New Zealand,14,Christianity_(broadly)
+50,New Zealand,14,Christianity_(broadly)
+51,New Zealand,14,Christianity_(broadly)
+52,New Zealand,14,Christianity_(broadly)
+53,New Zealand,14,Christianity_(broadly)
+54,New Zealand,14,Christianity_(broadly)
+55,New Zealand,14,Christianity_(broadly)
+56,New Zealand,14,Christianity_(broadly)
+57,New Zealand,14,Christianity_(broadly)
+58,New Zealand,14,Christianity_(broadly)
+59,New Zealand,14,Christianity_(broadly)
+60,New Zealand,14,Christianity_(broadly)
+61,New Zealand,14,Christianity_(broadly)
+62,New Zealand,14,Christianity_(broadly)
+63,New Zealand,14,Christianity_(broadly)
+64,New Zealand,14,Christianity_(broadly)
+65,New Zealand,14,Christianity_(broadly)
+66,New Zealand,14,Christianity_(broadly)
+67,New Zealand,14,Christianity_(broadly)
+68,New Zealand,14,Christianity_(broadly)
+69,New Zealand,14,Christianity_(broadly)
+70,New Zealand,14,Christianity_(broadly)
+71,New Zealand,14,Christianity_(broadly)
+72,New Zealand,14,Christianity_(broadly)
+73,New Zealand,14,Christianity_(broadly)
+74,New Zealand,14,Christianity_(broadly)
+75,New Zealand,14,Christianity_(broadly)
+76,New Zealand,14,Christianity_(broadly)
+77,New Zealand,14,Christianity_(broadly)
+78,New Zealand,14,Christianity_(broadly)
+79,New Zealand,14,Christianity_(broadly)
+80,New Zealand,14,Christianity_(broadly)
+81,New Zealand,14,Christianity_(broadly)
+82,New Zealand,14,Christianity_(broadly)
+83,New Zealand,14,Christianity_(broadly)
+84,New Zealand,14,Christianity_(broadly)
+85,New Zealand,14,Christianity_(broadly)
 86,New Zealand,13,Judaism
 87,New Zealand,13,Judaism
 88,New Zealand,13,Judaism
