@@ -21,6 +21,20 @@ let viz = d3.select("#container")
 ;
 d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(CountriesData){
   d3.csv("data.csv").then(function(CitiesData){
+    console.log(CitiesData);
+
+
+    CountriesData.features.forEach(gjd=>{
+      // console.log(gjd.properties.name);
+      let nameToFind = gjd.properties.name;
+      let correlated = CitiesData.filter(element=>element.Name == nameToFind)[0];
+      // console.log(correlated);
+      // console.log(gjd);
+      gjd.properties.correlatedData = correlated;
+      // console.log("-----");
+    })
+    // console.log(CountriesData);
+
     viz.selectAll("path")
         .data(CountriesData.features)
         .enter()
@@ -30,18 +44,21 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
         .attr("d", path)
         .on("mouseover",function(d,i){
           d3.select(this).attr("fill","grey").attr("stroke-width",2);
-          return tooltip.style("hidden", false).html(d.name);
-      })
-      .on("mousemove",function(d){
-          tooltip.classed("hidden", false)
-                 .style("top", (d3.event.pageY) + "px")
-                 .style("left", (d3.event.pageX + 10) + "px")
-                 .html(d.name);
-      })
-      .on("mouseout",function(d,i){
-          d3.select(this).attr("fill","white").attr("stroke-width",1);
-          tooltip.classed("hidden", true);
-      });
+          // which county are we hovering
+          console.log(d.properties.correlatedData[" City"] + " -> " + d.properties.correlatedData[" Correlating Area"]);
+          // return tooltip.style("hidden", false).html(d.name);
+        })
+        .on("mousemove",function(d){
+            // tooltip.classed("hidden", false)
+            //        .style("top", (d3.event.pageY) + "px")
+            //        .style("left", (d3.event.pageX + 10) + "px")
+            //        .html(d.name);
+        })
+        .on("mouseout",function(d,i){
+            d3.select(this).attr("fill","white").attr("stroke-width",1);
+            // tooltip.classed("hidden", true);
+        })
+    ;
 
     //     viz.selectAll("path")
     //         .data(CitiesData.features)
@@ -52,13 +69,15 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
     //         .attr("d", path)
     // });
     function ready(CitiesData) {
-    if (error) throw error;
-    var countries1 = geojson.feature(world, world.objects.countries).features;
+      if (error) throw error;
+      var countries1 = geojson.feature(world, world.objects.countries).features;
       countries = countries1.filter(function(d) {
-      return names.some(function(n) {
-        if (d.name == n.name) return n.city;
+        return names.some(function(n) {
+          if (d.name == n.name) return n.city;
+        });
+      });
+    }
+
 
   });
-
-})
-}}}));
+});

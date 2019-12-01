@@ -7,11 +7,11 @@ function getSize(datapoint,i) {
 
     console.log(datapoint.size);
     if(datapoint.size == 1)
-    { return 10;}
+    { return 5;}
     else if(datapoint.size == 2)
-    { return 15;}
+    { return 10;}
     else if(datapoint.size == 3)
-    { return 30;}
+    { return 20;}
 };
 
 function getColor(datapoint,i) {
@@ -70,7 +70,9 @@ d3.json("data.json").then(function(incomingData){
   //   return xScaleYear(timeParse(d.year))
   // }))
   // .force("forceY",d3.forceY(h/2))
-  .force("collide",d3.forceCollide(10))
+  .force("collide",d3.forceCollide(function(d){
+    return getSize(d)
+  }))
   // .on("tick", simulationRan)
   .on("end",simulationEnded)
     .tick(100)
@@ -78,12 +80,18 @@ d3.json("data.json").then(function(incomingData){
   function simulationEnded(){
     // console.log("just ran");
     // console.log(incomingData[0].x);
-    viz.selectAll(".datapoint").data(incomingData).enter().append("circle").transition().attr("cx",function(d){
+    viz.selectAll(".datapoint").data(incomingData).enter().append("circle").attr("cx",function(d){
       return d.x;
     })
+    .attr("r",getSize).attr("fill",getColor)
+    .attr("cy",function(d){
+      return h -500;
+    })
+    .transition()
     .attr("cy",function(d){
       return d.y;
-    }).attr("r",getSize).attr("fill",getColor);
+    })
+    ;
 
   }
 

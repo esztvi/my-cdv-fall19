@@ -28,6 +28,7 @@ let valueline2 = d3.line()
         .x(function(d) { return x(d.year); })
         .y(function(d) { return y2(d.medianAge); });
 
+
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
@@ -40,7 +41,7 @@ let svg = d3.select("#container").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.json("data.json", function(data) {
+d3.json("data.json").then(function(data) {
 console.log(data);
   // format the data
   data.forEach(function(d) {
