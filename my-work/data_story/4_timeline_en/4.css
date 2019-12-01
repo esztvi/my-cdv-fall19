@@ -15,7 +15,7 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:focus {
   background-color: #c5c7c4;
   color: #2b3341;
 }
