@@ -21,7 +21,7 @@
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav a:active {
   background-color: #ff161a;
   color: white;
 }
