@@ -25,7 +25,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
 
   // Labels of row and columns
   var myGroups = d3.range(1,101).map(d=>String(d));
-  var myVars = ["United States", "United Kingdom", "Slovenia", "Slovakia", "Serbia", "Romania", "New Zealand", "Israel", "Hungary", "Germany","Finland", "Croatia", "Chile", "Canada", "Brazil", "Aurtia","Australia","Argentina"]
+  var myVars = ["United States", "United Kingdom", "Slovenia", "Slovakia", "Serbia", "Romania", "New Zealand", "Israel", "Hungary", "Germany","Finland", "Croatia", "Chile", "Canada", "Brazil", "Austria","Australia","Argentina"]
 
   // Build X scales and axis:
 
@@ -39,6 +39,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
     .call(d3.axisBottom(x))
     .call(g => g.select(".domain")
         .remove())
+
 
   // Build X scales and axis:
   var y = d3.scaleBand()
@@ -54,31 +55,31 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
 
       console.log(datapoint.value);
       if(datapoint.value == "1")
-      { return "lime green";}
+      { return "limegreen";}
       else if(datapoint.value == "2")
-      { return "hot pink";}
+      { return "hotpink";}
       else if(datapoint.value == "3")
-      { return "lawn green";}
+      { return "aquamarine";}
       else if(datapoint.value == "4")
       { return "indigo";}
       else if(datapoint.value == "5")
-      { return "light steel blue";}
+      { return "lightsteelblue";}
       else if(datapoint.value == "6")
-      { return "spring green";}
+      { return "seagreen";}
       else if(datapoint.value == "7")
-      { return "pale violet red";}
+      { return "palevioletred";}
       else if(datapoint.value == "8")
       { return "green";}
       else if(datapoint.value == "9")
-      { return "blue violet";}
+      { return "blueviolet";}
       else if(datapoint.value == "10")
-      { return "light green";}
+      { return "lightgreen";}
       else if(datapoint.value == "11")
-      { return "deep pink";}
+      { return "deeppink";}
       else if(datapoint.value == "12")
-      { return "marroon";}
+      { return "maroon";}
       else if(datapoint.value == "13")
-      { return "dodger blue";}
+      { return "dodgerblue";}
       else if(datapoint.value == "14")
       { return "yellow";}
       else if(datapoint.value == "15")

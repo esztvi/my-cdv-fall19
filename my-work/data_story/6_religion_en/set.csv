@@ -48,6 +48,7 @@ group,variable,value,religion
 47,Romania,2,Roman_Catholicism
 48,Romania,2,Roman_Catholicism
 49,Romania,2,Roman_Catholicism
+50,Romania,2,Roman_Catholicism
 51,Romania,2,Roman_Catholicism
 52,Romania,2,Roman_Catholicism
 53,Romania,2,Roman_Catholicism
@@ -1002,86 +1003,86 @@ group,variable,value,religion
 98,Germany,6,Other
 99,Germany,6,Other
 100,Germany,6,Other
-1,Brazil, 7,Catholicism
-2,Brazil, 7,Catholicism
-3,Brazil, 7,Catholicism
-4,Brazil, 7,Catholicism
-5,Brazil, 7,Catholicism
-6,Brazil, 7,Catholicism
-7,Brazil, 7,Catholicism
-8,Brazil, 7,Catholicism
-9,Brazil, 7,Catholicism
-10,Brazil, 7,Catholicism
-11,Brazil, 7,Catholicism
-12,Brazil, 7,Catholicism
-13,Brazil, 7,Catholicism
-14,Brazil, 7,Catholicism
-15,Brazil, 7,Catholicism
-16,Brazil, 7,Catholicism
-17,Brazil, 7,Catholicism
-18,Brazil, 7,Catholicism
-19,Brazil, 7,Catholicism
-20,Brazil, 7,Catholicism
-21,Brazil, 7,Catholicism
-22,Brazil, 7,Catholicism
-23,Brazil, 7,Catholicism
-24,Brazil, 7,Catholicism
-25,Brazil, 7,Catholicism
-26,Brazil, 7,Catholicism
-27,Brazil, 7,Catholicism
-28,Brazil, 7,Catholicism
-29,Brazil, 7,Catholicism
-30,Brazil, 7,Catholicism
-31,Brazil, 7,Catholicism
-32,Brazil, 7,Catholicism
-33,Brazil, 7,Catholicism
-34,Brazil, 7,Catholicism
-35,Brazil, 7,Catholicism
-36,Brazil, 7,Catholicism
-37,Brazil, 7,Catholicism
-38,Brazil, 7,Catholicism
-39,Brazil, 7,Catholicism
-40,Brazil, 7,Catholicism
-41,Brazil, 7,Catholicism
-42,Brazil, 7,Catholicism
-43,Brazil, 7,Catholicism
-44,Brazil, 7,Catholicism
-45,Brazil, 7,Catholicism
-46,Brazil, 7,Catholicism
-47,Brazil, 7,Catholicism
-48,Brazil, 7,Catholicism
-49,Brazil, 7,Catholicism
-50,Brazil, 7,Catholicism
-51,Brazil, 7,Catholicism
-52,Brazil, 7,Catholicism
-53,Brazil, 7,Catholicism
-54,Brazil, 7,Catholicism
-55,Brazil, 7,Catholicism
-56,Brazil, 7,Catholicism
-57,Brazil, 7,Catholicism
-58,Brazil, 7,Catholicism
-59,Brazil, 7,Catholicism
-60,Brazil, 7,Catholicism
-61,Brazil, 7,Catholicism
-62,Brazil, 7,Catholicism
-63,Brazil, 7,Catholicism
-64,Brazil, 7,Catholicism
-65,Brazil, 7,Catholicism
-66,Brazil, 7,Catholicism
-67,Brazil, 7,Catholicism
-68,Brazil, 7,Catholicism
-69,Brazil, 7,Catholicism
-70,Brazil, 7,Catholicism
-71,Brazil, 7,Catholicism
-72,Brazil, 7,Catholicism
-73,Brazil, 7,Catholicism
-74,Brazil, 7,Catholicism
-75,Brazil, 7,Catholicism
-76,Brazil, 7,Catholicism
-77,Brazil, 7,Catholicism
-78,Brazil, 7,Catholicism
-79,Brazil, 7,Catholicism
-80,Brazil, 7,Catholicism
+1,Brazil,7,Catholicism
+2,Brazil,7,Catholicism
+3,Brazil,7,Catholicism
+4,Brazil,7,Catholicism
+5,Brazil,7,Catholicism
+6,Brazil,7,Catholicism
+7,Brazil,7,Catholicism
+8,Brazil,7,Catholicism
+9,Brazil,7,Catholicism
+10,Brazil,7,Catholicism
+11,Brazil,7,Catholicism
+12,Brazil,7,Catholicism
+13,Brazil,7,Catholicism
+14,Brazil,7,Catholicism
+15,Brazil,7,Catholicism
+16,Brazil,7,Catholicism
+17,Brazil,7,Catholicism
+18,Brazil,7,Catholicism
+19,Brazil,7,Catholicism
+20,Brazil,7,Catholicism
+21,Brazil,7,Catholicism
+22,Brazil,7,Catholicism
+23,Brazil,7,Catholicism
+24,Brazil,7,Catholicism
+25,Brazil,7,Catholicism
+26,Brazil,7,Catholicism
+27,Brazil,7,Catholicism
+28,Brazil,7,Catholicism
+29,Brazil,7,Catholicism
+30,Brazil,7,Catholicism
+31,Brazil,7,Catholicism
+32,Brazil,7,Catholicism
+33,Brazil,7,Catholicism
+34,Brazil,7,Catholicism
+35,Brazil,7,Catholicism
+36,Brazil,7,Catholicism
+37,Brazil,7,Catholicism
+38,Brazil,7,Catholicism
+39,Brazil,7,Catholicism
+40,Brazil,7,Catholicism
+41,Brazil,7,Catholicism
+42,Brazil,7,Catholicism
+43,Brazil,7,Catholicism
+44,Brazil,7,Catholicism
+45,Brazil,7,Catholicism
+46,Brazil,7,Catholicism
+47,Brazil,7,Catholicism
+48,Brazil,7,Catholicism
+49,Brazil,7,Catholicism
+50,Brazil,7,Catholicism
+51,Brazil,7,Catholicism
+52,Brazil,7,Catholicism
+53,Brazil,7,Catholicism
+54,Brazil,7,Catholicism
+55,Brazil,7,Catholicism
+56,Brazil,7,Catholicism
+57,Brazil,7,Catholicism
+58,Brazil,7,Catholicism
+59,Brazil,7,Catholicism
+60,Brazil,7,Catholicism
+61,Brazil,7,Catholicism
+62,Brazil,7,Catholicism
+63,Brazil,7,Catholicism
+64,Brazil,7,Catholicism
+65,Brazil,7,Catholicism
+66,Brazil,7,Catholicism
+67,Brazil,7,Catholicism
+68,Brazil,7,Catholicism
+69,Brazil,7,Catholicism
+70,Brazil,7,Catholicism
+71,Brazil,7,Catholicism
+72,Brazil,7,Catholicism
+73,Brazil,7,Catholicism
+74,Brazil,7,Catholicism
+75,Brazil,7,Catholicism
+76,Brazil,7,Catholicism
+77,Brazil,7,Catholicism
+78,Brazil,7,Catholicism
+79,Brazil,7,Catholicism
+80,Brazil,7,Catholicism
 81,Brazil,13,Judaism
 82,Brazil,13,Judaism
 83,Brazil,13,Judaism
@@ -1102,79 +1103,79 @@ group,variable,value,religion
 98,Brazil,5,Other
 99,Brazil,5,Other
 100,Brazil,5,Other
-1,Australia, 7,Catholicism
-2,Australia, 7,Catholicism
-3,Australia, 7,Catholicism
-4,Australia, 7,Catholicism
-5,Australia, 7,Catholicism
-6,Australia, 7,Catholicism
-7,Australia, 7,Catholicism
-8,Australia, 7,Catholicism
-9,Australia, 7,Catholicism
-10,Australia, 7,Catholicism
-11,Australia, 7,Catholicism
-12,Australia, 7,Catholicism
-13,Australia, 7,Catholicism
-14,Australia, 7,Catholicism
-15,Australia, 7,Catholicism
-16,Australia, 7,Catholicism
-17,Australia, 7,Catholicism
-18,Australia, 7,Catholicism
-19,Australia, 7,Catholicism
-20,Australia, 7,Catholicism
-21,Australia, 7,Catholicism
-22,Australia, 7,Catholicism
-23,Australia, 7,Catholicism
-24,Australia, 7,Catholicism
-25,Australia, 7,Catholicism
-26,Australia, 7,Catholicism
-27,Australia, 7,Catholicism
-28,Australia, 7,Catholicism
-29,Australia, 7,Catholicism
-30,Australia, 7,Catholicism
-31,Australia, 7,Catholicism
-32,Australia, 7,Catholicism
-33,Australia, 7,Catholicism
-34,Australia, 7,Catholicism
-35,Australia, 7,Catholicism
-36,Australia, 7,Catholicism
-37,Australia, 7,Catholicism
-38,Australia, 7,Catholicism
-39,Australia, 7,Catholicism
-40,Australia, 7,Catholicism
-41,Australia, 7,Catholicism
-42,Australia, 7,Catholicism
-43,Australia, 7,Catholicism
-44,Australia, 7,Catholicism
-45,Australia, 7,Catholicism
-46,Australia, 7,Catholicism
-47,Australia, 7,Catholicism
-48,Australia, 7,Catholicism
-49,Australia, 7,Catholicism
-50,Australia, 7,Catholicism
-51,Australia, 7,Catholicism
-52,Australia, 7,Catholicism
-53,Australia, 7,Catholicism
-54,Australia, 7,Catholicism
-55,Australia, 7,Catholicism
-56,Australia, 7,Catholicism
-57,Australia, 7,Catholicism
-58,Australia, 7,Catholicism
-59,Australia, 7,Catholicism
-60,Australia, 7,Catholicism
-61,Australia, 7,Catholicism
-62,Australia, 7,Catholicism
-63,Australia, 7,Catholicism
-64,Australia, 7,Catholicism
-65,Australia, 7,Catholicism
-66,Australia, 7,Catholicism
-67,Australia, 7,Catholicism
-68,Australia, 7,Catholicism
-69,Australia, 7,Catholicism
-70,Australia, 7,Catholicism
-71,Australia, 7,Catholicism
-72,Australia, 7,Catholicism
-73,Australia, 7,Catholicism
+1,Australia,7,Catholicism
+2,Australia,7,Catholicism
+3,Australia,7,Catholicism
+4,Australia,7,Catholicism
+5,Australia,7,Catholicism
+6,Australia,7,Catholicism
+7,Australia,7,Catholicism
+8,Australia,7,Catholicism
+9,Australia,7,Catholicism
+10,Australia,7,Catholicism
+11,Australia,7,Catholicism
+12,Australia,7,Catholicism
+13,Australia,7,Catholicism
+14,Australia,7,Catholicism
+15,Australia,7,Catholicism
+16,Australia,7,Catholicism
+17,Australia,7,Catholicism
+18,Australia,7,Catholicism
+19,Australia,7,Catholicism
+20,Australia,7,Catholicism
+21,Australia,7,Catholicism
+22,Australia,7,Catholicism
+23,Australia,7,Catholicism
+24,Australia,7,Catholicism
+25,Australia,7,Catholicism
+26,Australia,7,Catholicism
+27,Australia,7,Catholicism
+28,Australia,7,Catholicism
+29,Australia,7,Catholicism
+30,Australia,7,Catholicism
+31,Australia,7,Catholicism
+32,Australia,7,Catholicism
+33,Australia,7,Catholicism
+34,Australia,7,Catholicism
+35,Australia,7,Catholicism
+36,Australia,7,Catholicism
+37,Australia,7,Catholicism
+38,Australia,7,Catholicism
+39,Australia,7,Catholicism
+40,Australia,7,Catholicism
+41,Australia,7,Catholicism
+42,Australia,7,Catholicism
+43,Australia,7,Catholicism
+44,Australia,7,Catholicism
+45,Australia,7,Catholicism
+46,Australia,7,Catholicism
+47,Australia,7,Catholicism
+48,Australia,7,Catholicism
+49,Australia,7,Catholicism
+50,Australia,7,Catholicism
+51,Australia,7,Catholicism
+52,Australia,7,Catholicism
+53,Australia,7,Catholicism
+54,Australia,7,Catholicism
+55,Australia,7,Catholicism
+56,Australia,7,Catholicism
+57,Australia,7,Catholicism
+58,Australia,7,Catholicism
+59,Australia,7,Catholicism
+60,Australia,7,Catholicism
+61,Australia,7,Catholicism
+62,Australia,7,Catholicism
+63,Australia,7,Catholicism
+64,Australia,7,Catholicism
+65,Australia,7,Catholicism
+66,Australia,7,Catholicism
+67,Australia,7,Catholicism
+68,Australia,7,Catholicism
+69,Australia,7,Catholicism
+70,Australia,7,Catholicism
+71,Australia,7,Catholicism
+72,Australia,7,Catholicism
+73,Australia,7,Catholicism
 74,Australia,12,Atheism
 75,Australia,12,Atheism
 76,Australia,12,Atheism
@@ -1188,12 +1189,12 @@ group,variable,value,religion
 84,Australia,12,Atheism
 85,Australia,12,Atheism
 86,Australia,13,Judaism
-87,Australia,12,Atheism
-88,Australia,12,Atheism
-89,Australia,12,Atheism
-90,Australia,12,Atheism
-91,Australia,12,Atheism
-92,Australia,12,Atheism
+87,Australia,13,Judaism
+88,Australia,13,Judaism
+89,Australia,13,Judaism
+90,Australia,13,Judaism
+91,Australia,13,Judaism
+92,Australia,13,Judaism
 93,Australia,5,Other
 94,Australia,5,Other
 95,Australia,5,Other
@@ -1202,72 +1203,72 @@ group,variable,value,religion
 98,Australia,5,Other
 99,Australia,5,Other
 100,Australia,5,Other
-1,United Kingdom, 7,Catholicism
-2,United Kingdom, 7,Catholicism
-3,United Kingdom, 7,Catholicism
-4,United Kingdom, 7,Catholicism
-5,United Kingdom, 7,Catholicism
-6,United Kingdom, 7,Catholicism
-7,United Kingdom, 7,Catholicism
-8,United Kingdom, 7,Catholicism
-9,United Kingdom, 7,Catholicism
-10,United Kingdom, 7,Catholicism
-11,United Kingdom, 7,Catholicism
-12,United Kingdom, 7,Catholicism
-13,United Kingdom, 7,Catholicism
-14,United Kingdom, 7,Catholicism
-15,United Kingdom, 7,Catholicism
-16,United Kingdom, 7,Catholicism
-17,United Kingdom, 7,Catholicism
-18,United Kingdom, 7,Catholicism
-19,United Kingdom, 7,Catholicism
-20,United Kingdom, 7,Catholicism
-21,United Kingdom, 7,Catholicism
-22,United Kingdom, 7,Catholicism
-23,United Kingdom, 7,Catholicism
-24,United Kingdom, 7,Catholicism
-25,United Kingdom, 7,Catholicism
-26,United Kingdom, 7,Catholicism
-27,United Kingdom, 7,Catholicism
-28,United Kingdom, 7,Catholicism
-29,United Kingdom, 7,Catholicism
-30,United Kingdom, 7,Catholicism
-31,United Kingdom, 7,Catholicism
-32,United Kingdom, 7,Catholicism
-33,United Kingdom, 7,Catholicism
-34,United Kingdom, 7,Catholicism
-35,United Kingdom, 7,Catholicism
-36,United Kingdom, 7,Catholicism
-37,United Kingdom, 7,Catholicism
-38,United Kingdom, 7,Catholicism
-39,United Kingdom, 7,Catholicism
-40,United Kingdom, 7,Catholicism
-41,United Kingdom, 7,Catholicism
-42,United Kingdom, 7,Catholicism
-43,United Kingdom, 7,Catholicism
-44,United Kingdom, 7,Catholicism
-45,United Kingdom, 7,Catholicism
-46,United Kingdom, 7,Catholicism
-47,United Kingdom, 7,Catholicism
-48,United Kingdom, 7,Catholicism
-49,United Kingdom, 7,Catholicism
-50,United Kingdom, 7,Catholicism
-51,United Kingdom, 7,Catholicism
-52,United Kingdom, 7,Catholicism
-53,United Kingdom, 7,Catholicism
-54,United Kingdom, 7,Catholicism
-55,United Kingdom, 7,Catholicism
-56,United Kingdom, 7,Catholicism
-57,United Kingdom, 7,Catholicism
-58,United Kingdom, 7,Catholicism
-59,United Kingdom, 7,Catholicism
-60,United Kingdom, 7,Catholicism
-61,United Kingdom, 7,Catholicism
-62,United Kingdom, 7,Catholicism
-63,United Kingdom, 7,Catholicism
-64,United Kingdom, 7,Catholicism
-65,United Kingdom, 7,Catholicism
-66,United Kingdom, 7,Catholicism
+1,United Kingdom,7,Catholicism
+2,United Kingdom,7,Catholicism
+3,United Kingdom,7,Catholicism
+4,United Kingdom,7,Catholicism
+5,United Kingdom,7,Catholicism
+6,United Kingdom,7,Catholicism
+7,United Kingdom,7,Catholicism
+8,United Kingdom,7,Catholicism
+9,United Kingdom,7,Catholicism
+10,United Kingdom,7,Catholicism
+11,United Kingdom,7,Catholicism
+12,United Kingdom,7,Catholicism
+13,United Kingdom,7,Catholicism
+14,United Kingdom,7,Catholicism
+15,United Kingdom,7,Catholicism
+16,United Kingdom,7,Catholicism
+17,United Kingdom,7,Catholicism
+18,United Kingdom,7,Catholicism
+19,United Kingdom,7,Catholicism
+20,United Kingdom,7,Catholicism
+21,United Kingdom,7,Catholicism
+22,United Kingdom,7,Catholicism
+23,United Kingdom,7,Catholicism
+24,United Kingdom,7,Catholicism
+25,United Kingdom,7,Catholicism
+26,United Kingdom,7,Catholicism
+27,United Kingdom,7,Catholicism
+28,United Kingdom,7,Catholicism
+29,United Kingdom,7,Catholicism
+30,United Kingdom,7,Catholicism
+31,United Kingdom,7,Catholicism
+32,United Kingdom,7,Catholicism
+33,United Kingdom,7,Catholicism
+34,United Kingdom,7,Catholicism
+35,United Kingdom,7,Catholicism
+36,United Kingdom,7,Catholicism
+37,United Kingdom,7,Catholicism
+38,United Kingdom,7,Catholicism
+39,United Kingdom,7,Catholicism
+40,United Kingdom,7,Catholicism
+41,United Kingdom,7,Catholicism
+42,United Kingdom,7,Catholicism
+43,United Kingdom,7,Catholicism
+44,United Kingdom,7,Catholicism
+45,United Kingdom,7,Catholicism
+46,United Kingdom,7,Catholicism
+47,United Kingdom,7,Catholicism
+48,United Kingdom,7,Catholicism
+49,United Kingdom,7,Catholicism
+50,United Kingdom,7,Catholicism
+51,United Kingdom,7,Catholicism
+52,United Kingdom,7,Catholicism
+53,United Kingdom,7,Catholicism
+54,United Kingdom,7,Catholicism
+55,United Kingdom,7,Catholicism
+56,United Kingdom,7,Catholicism
+57,United Kingdom,7,Catholicism
+58,United Kingdom,7,Catholicism
+59,United Kingdom,7,Catholicism
+60,United Kingdom,7,Catholicism
+61,United Kingdom,7,Catholicism
+62,United Kingdom,7,Catholicism
+63,United Kingdom,7,Catholicism
+64,United Kingdom,7,Catholicism
+65,United Kingdom,7,Catholicism
+66,United Kingdom,7,Catholicism
 67,United Kingdom,8,Protestantism
 68,United Kingdom,8,Protestantism
 69,United Kingdom,8,Protestantism
@@ -1296,6 +1297,8 @@ group,variable,value,religion
 92,United Kingdom,13,Judaism
 93,United Kingdom,13,Judaism
 94,United Kingdom,13,Judaism
+95,United Kingdom,5,Other
+96,United Kingdom,5,Other
 97,United Kingdom,5,Other
 98,United Kingdom,5,Other
 99,United Kingdom,5,Other
@@ -1501,106 +1504,106 @@ group,variable,value,religion
 98,Argentina,5,Other
 99,Argentina,5,Other
 100,Argentina,5,Other
-1,Finland,13,Catholicism
-2,Finland,13,Catholicism
-3,Finland,13,Catholicism
-4,Finland,13,Catholicism
-5,Finland,13,Catholicism
-6,Finland,13,Catholicism
-7,Finland,13,Catholicism
-8,Finland,13,Catholicism
-9,Finland,13,Catholicism
-10,Finland,13,Catholicism
-11,Finland,13,Catholicism
-12,Finland,13,Catholicism
-13,Finland,13,Catholicism
-14,Finland,13,Catholicism
-15,Finland,13,Catholicism
-16,Finland,13,Catholicism
-17,Finland,13,Catholicism
-18,Finland,13,Catholicism
-19,Finland,13,Catholicism
-20,Finland,13,Catholicism
-21,Finland,13,Catholicism
-22,Finland,13,Catholicism
-23,Finland,13,Catholicism
-24,Finland,13,Catholicism
-25,Finland,13,Catholicism
-26,Finland,13,Catholicism
-27,Finland,13,Catholicism
-28,Finland,13,Catholicism
-29,Finland,13,Catholicism
-30,Finland,13,Catholicism
-31,Finland,13,Catholicism
-32,Finland,13,Catholicism
-33,Finland,13,Catholicism
-34,Finland,13,Catholicism
-35,Finland,13,Catholicism
-36,Finland,13,Catholicism
-37,Finland,13,Catholicism
-38,Finland,13,Catholicism
-39,Finland,13,Catholicism
-40,Finland,13,Catholicism
-41,Finland,13,Catholicism
-42,Finland,13,Catholicism
-43,Finland,13,Catholicism
-44,Finland,13,Catholicism
-45,Finland,13,Catholicism
-46,Finland,13,Catholicism
-47,Finland,13,Catholicism
-48,Finland,13,Catholicism
-49,Finland,13,Catholicism
-50,Finland,13,Catholicism
-51,Finland,13,Catholicism
-52,Finland,13,Catholicism
-53,Finland,13,Catholicism
-54,Finland,13,Catholicism
-55,Finland,13,Catholicism
-56,Finland,13,Catholicism
-57,Finland,13,Catholicism
-58,Finland,13,Catholicism
-59,Finland,13,Catholicism
-60,Finland,13,Catholicism
-61,Finland,13,Catholicism
-62,Finland,13,Catholicism
-63,Finland,13,Catholicism
-64,Finland,13,Catholicism
-65,Finland,13,Catholicism
-66,Finland,13,Catholicism
-67,Finland,13,Catholicism
-68,Finland,13,Catholicism
-69,Finland,13,Catholicism
-70,Finland,13,Catholicism
-71,Finland,13,Catholicism
-72,Finland,13,Catholicism
-73,Finland,13,Catholicism
-74,Finland,13,Catholicism
-75,Finland,13,Catholicism
-76,Finland,13,Catholicism
-77,Finland,13,Catholicism
-78,Finland,13,Catholicism
-79,Finland,13,Catholicism
-80,Finland,13,Catholicism
-81,Finland,13,Catholicism
-82,Finland,13,Catholicism
-83,Finland,13,Catholicism
-84,Finland,13,Catholicism
-85,Finland,13,Catholicism
-86,Finland,13,Catholicism
-87,Finland,13,Catholicism
-88,Finland,13,Catholicism
-89,Finland,13,Catholicism
-90,Finland,13,Catholicism
-91,Finland,13,Catholicism
-92,Finland,13,Catholicism
-93,Finland,13,Catholicism
-94,Finland,13,Catholicism
-95,Finland,13,Catholicism
-96,Finland,13,Catholicism
-97,Finland,13,Catholicism
-98,Finland,13,Catholicism
-99,Finland,13,Catholicism
-100,Finland,13,Catholicism
+1,Finland,7,Catholicism
+2,Finland,7,Catholicism
+3,Finland,7,Catholicism
+4,Finland,7,Catholicism
+5,Finland,7,Catholicism
+6,Finland,7,Catholicism
+7,Finland,7,Catholicism
+8,Finland,7,Catholicism
+9,Finland,7,Catholicism
+10,Finland,7,Catholicism
+11,Finland,7,Catholicism
+12,Finland,7,Catholicism
+13,Finland,7,Catholicism
+14,Finland,7,Catholicism
+15,Finland,7,Catholicism
+16,Finland,7,Catholicism
+17,Finland,7,Catholicism
+18,Finland,7,Catholicism
+19,Finland,7,Catholicism
+20,Finland,7,Catholicism
+21,Finland,7,Catholicism
+22,Finland,7,Catholicism
+23,Finland,7,Catholicism
+24,Finland,7,Catholicism
+25,Finland,7,Catholicism
+26,Finland,7,Catholicism
+27,Finland,7,Catholicism
+28,Finland,7,Catholicism
+29,Finland,7,Catholicism
+30,Finland,7,Catholicism
+31,Finland,7,Catholicism
+32,Finland,7,Catholicism
+33,Finland,7,Catholicism
+34,Finland,7,Catholicism
+35,Finland,7,Catholicism
+36,Finland,7,Catholicism
+37,Finland,7,Catholicism
+38,Finland,7,Catholicism
+39,Finland,7,Catholicism
+40,Finland,7,Catholicism
+41,Finland,7,Catholicism
+42,Finland,7,Catholicism
+43,Finland,7,Catholicism
+44,Finland,7,Catholicism
+45,Finland,7,Catholicism
+46,Finland,7,Catholicism
+47,Finland,7,Catholicism
+48,Finland,7,Catholicism
+49,Finland,7,Catholicism
+50,Finland,7,Catholicism
+51,Finland,7,Catholicism
+52,Finland,7,Catholicism
+53,Finland,7,Catholicism
+54,Finland,7,Catholicism
+55,Finland,7,Catholicism
+56,Finland,7,Catholicism
+57,Finland,7,Catholicism
+58,Finland,7,Catholicism
+59,Finland,7,Catholicism
+60,Finland,7,Catholicism
+61,Finland,7,Catholicism
+62,Finland,7,Catholicism
+63,Finland,7,Catholicism
+64,Finland,7,Catholicism
+65,Finland,7,Catholicism
+66,Finland,7,Catholicism
+67,Finland,7,Catholicism
+68,Finland,7,Catholicism
+69,Finland,7,Catholicism
+70,Finland,7,Catholicism
+71,Finland,7,Catholicism
+72,Finland,7,Catholicism
+73,Finland,7,Catholicism
+74,Finland,7,Catholicism
+75,Finland,7,Catholicism
+76,Finland,7,Catholicism
+77,Finland,7,Catholicism
+78,Finland,7,Catholicism
+79,Finland,7,Catholicism
+80,Finland,7,Catholicism
+81,Finland,7,Catholicism
+82,Finland,7,Catholicism
+83,Finland,7,Catholicism
+84,Finland,7,Catholicism
+85,Finland,7,Catholicism
+86,Finland,7,Catholicism
+87,Finland,7,Catholicism
+88,Finland,7,Catholicism
+89,Finland,7,Catholicism
+90,Finland,7,Catholicism
+91,Finland,7,Catholicism
+92,Finland,7,Catholicism
+93,Finland,7,Catholicism
+94,Finland,7,Catholicism
+95,Finland,7,Catholicism
+96,Finland,7,Catholicism
+97,Finland,7,Catholicism
+98,Finland,7,Catholicism
+99,Finland,7,Catholicism
+100,Finland,7,Catholicism
 1,New Zealand,7,Christianity_(broadly)
 2,New Zealand,7,Christianity_(broadly)
 3,New Zealand,7,Christianity_(broadly)
