@@ -30,3 +30,10 @@ body {
   overflow: hidden;
    background-size:cover;
 }
+.yAxis {
+  display: none;
+}
+
+.tick line {
+  display: none;
+}

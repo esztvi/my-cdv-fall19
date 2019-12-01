@@ -32,16 +32,17 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
   var x = d3.scaleBand()
     .range([ 0, 1315 ])
     .domain(myGroups)
-    .padding(0.01);
-
+    .padding(0.01)
+// .tickValues([]);
   svg.append("g")
     .attr("transform", "translate(0," + (height-30) + ")") //this is the error line
     .call(d3.axisBottom(x))
+    .style("color", "rgb(0,0,0,0)")
     .call(g => g.select(".domain")
         .remove())
 
 
-  // Build X scales and axis:
+  // Build Y scales and axis:
   var y = d3.scaleBand()
     .range([ 680, 0 ])
     .domain(myVars)
