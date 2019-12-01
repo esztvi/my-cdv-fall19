@@ -43,6 +43,8 @@ d3.json("data.json").then(function(incomingData){
   })
   console.log(extent);
   xScaleYear.domain(extent);
+  let countries = d3.nest().key(d=>d.country).entries(incomingData).map(d=>d.key);
+  xScaleCountry.domain(countries);
   let xAxisGroup=viz.append("g").attr("class","xaxisgroup").attr("fill","whitesmoke").attr("stroke","whitesmoke").attr("line","whitesmoke");
   let xAxis=d3.axisBottom(xScaleYear);
   let xAxisYPos = h -500;
@@ -52,7 +54,6 @@ d3.json("data.json").then(function(incomingData){
   incomingData.forEach(d=>{
     d.x= xScaleYear(timeParse(d.year));
     d.y=h/7
-
     // xAxisGroupCountry=viz.append("g").attr("class","xaxisgroup").attr("fill","whitesmoke").attr("stroke","whitesmoke").attr("line","whitesmoke");
     // let xAxisCountry=d3.axisBottom(xScaleCountry);
     // let xAxisYPosCountry = h -700;
@@ -82,7 +83,7 @@ d3.json("data.json").then(function(incomingData){
     incomingData.forEach(function(d){
       d.yearx = d.x;
       d.yeary = d.y;
-      d.x= xScaleYear(timeParse(d.year));
+      d.x= xScaleCountry(d.country);
       d.y=h/7
     })}
   let simulatiion1= d3.forceSimulation(incomingData)
@@ -112,8 +113,8 @@ d3.json("data.json").then(function(incomingData){
         incomingData.forEach(function(d){
           d.migrationx = d.x;
           d.migrationy = d.y;
-          d.x= XScalePosNeg(d.color);
-          d.y=h/1.5;
+          // d.x= XScalePosNeg(d.color);
+          // d.y=h/1.5;
         })}
     // console.log("just ran");
     // console.log(incomingData[0].x);
