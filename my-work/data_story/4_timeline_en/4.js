@@ -98,7 +98,7 @@ d3.json("data.json").then(function(incomingData){
       incomingData.forEach(function(d){
         d.countryx = d.x;
         d.countryy = d.y;
-        d.x= xScaleCountry(d.country);
+        d.x= XScalePosNeg(d.color);
         d.y=h/3;
       })}
         let simulatiion2= d3.forceSimulation(incomingData)
@@ -113,8 +113,8 @@ d3.json("data.json").then(function(incomingData){
         incomingData.forEach(function(d){
           d.migrationx = d.x;
           d.migrationy = d.y;
-          // d.x= XScalePosNeg(d.color);
-          // d.y=h/1.5;
+          d.x=xScaleYear(timeParse(d.year));
+          d.y=h/1.5;
         })}
     // console.log("just ran");
     // console.log(incomingData[0].x);
