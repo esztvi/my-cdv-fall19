@@ -10,8 +10,8 @@
 //   .style("background-color", "black")
 
   let w = 1425; //single page
-  let h = 800;
-  let projection = d3.geoMercator().translate([w/2-275, h/2-75]).scale(150).center([0,40]);
+  let h = 1000;
+  let projection = d3.geoMercator().translate([w/2, h/2]).scale(325).center([0,40]);
   let path = d3.geoPath().projection(projection);
 
   let viz = d3.select("#container")

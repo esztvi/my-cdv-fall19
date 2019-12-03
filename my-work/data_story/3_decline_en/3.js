@@ -49,6 +49,7 @@ console.log(data);
       d.population = +d.population;
       d.fertilityRate = +d.fertilityRate;
       d.medianAge = +d.medianAge;
+        console.log(d.population);
   });
 
   // Scale the range of the data
@@ -56,35 +57,73 @@ console.log(data);
   y0.domain([0, d3.max(data, function(d) {return Math.max(d.population);})]);
   y1.domain([0, d3.max(data, function(d) {return Math.max(d.fertilityRate); })]);
   y2.domain([0, d3.max(data, function(d) {return Math.max(d.medianAge); })]);
+
   // Add the valueline path.
   svg.append("path")
       .data([data])
       .attr("class", "line")
+      .style("stroke", "whitesmoke")
+      .style("stroke-width","10")
       .attr("d", valueline);
 
   // Add the valueline2 path.
   svg.append("path")
       .data([data])
       .attr("class", "line")
-      .style("stroke", "red")
+      .style("stroke", "rgb(255, 22, 26)")
+      .style("stroke-width","10")
       .attr("d", valueline2);
 
       // Add the valueline3 path.
       svg.append("path")
           .data([data])
           .attr("class", "line")
-          .style("stroke", "green")
-          .attr("d", valueline3);
+          .style("stroke", "rgb(9,130,71)")
+          .style("stroke-width","10")
+          .attr("d", valueline3)
+          ;
+
+          // create a tooltip
+          var tooltip = d3.select("#container")
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+            .style("position","fixed")
+
+          // Three function that change the tooltip when user hover / move / leave a cell
+          var mouseover = function(d) {
+            console.log('hi');
+
+            tooltip.style("opacity", 1)
+          }
+          var mousemove = function(d) {
+            console.log('hi');
+            tooltip
+              .html("" + d.population)
+              .style("left", (d3.mouse(this)[0]+0) + "px")
+              .style("top", (d3.mouse(this)[1]) + "px")
+          }
+          var mouseleave = function(d) {
+            tooltip.style("opacity", 0)
+          }
 
   // Add the X Axis
   svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x))
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave);
 
   // Add the Y0 Axis
   svg.append("g")
       .attr("class", "axisSteelBlue")
-      .call(d3.axisLeft(y).ticks(8, "$.0f"))
+      // .call(d3.axisLeft(y).ticks(8, "$.0f"))
       .call(g => g.select(".domain").remove());
   // Add the Y1 Axis
   svg.append("g")

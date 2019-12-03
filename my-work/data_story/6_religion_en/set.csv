@@ -1,91 +1,91 @@
 group,variable,value,religion
-1,Romania,1,Reformed
-2,Romania,1,Reformed
-3,Romania,1,Reformed
-4,Romania,1,Reformed
-5,Romania,1,Reformed
-6,Romania,1,Reformed
-7,Romania,1,Reformed
-8,Romania,1,Reformed
-9,Romania,1,Reformed
-10,Romania,1,Reformed
-11,Romania,1,Reformed
-12,Romania,1,Reformed
-13,Romania,1,Reformed
-14,Romania,1,Reformed
-15,Romania,1,Reformed
-16,Romania,1,Reformed
-17,Romania,1,Reformed
-18,Romania,1,Reformed
-19,Romania,1,Reformed
-20,Romania,1,Reformed
-21,Romania,1,Reformed
-22,Romania,1,Reformed
-23,Romania,1,Reformed
-24,Romania,1,Reformed
-25,Romania,1,Reformed
-26,Romania,1,Reformed
-27,Romania,1,Reformed
-28,Romania,1,Reformed
-29,Romania,1,Reformed
-30,Romania,1,Reformed
-31,Romania,1,Reformed
-32,Romania,1,Reformed
-33,Romania,1,Reformed
-34,Romania,1,Reformed
-35,Romania,1,Reformed
-36,Romania,1,Reformed
-37,Romania,1,Reformed
-38,Romania,1,Reformed
-39,Romania,1,Reformed
-40,Romania,1,Reformed
-41,Romania,1,Reformed
+1,Romania,2,Roman_Catholicism
+2,Romania,2,Roman_Catholicism
+3,Romania,2,Roman_Catholicism
+4,Romania,2,Roman_Catholicism
+5,Romania,2,Roman_Catholicism
+6,Romania,2,Roman_Catholicism
+7,Romania,2,Roman_Catholicism
+8,Romania,2,Roman_Catholicism
+9,Romania,2,Roman_Catholicism
+10,Romania,2,Roman_Catholicism
+11,Romania,2,Roman_Catholicism
+12,Romania,2,Roman_Catholicism
+13,Romania,2,Roman_Catholicism
+14,Romania,2,Roman_Catholicism
+15,Romania,2,Roman_Catholicism
+16,Romania,2,Roman_Catholicism
+17,Romania,2,Roman_Catholicism
+18,Romania,2,Roman_Catholicism
+19,Romania,2,Roman_Catholicism
+20,Romania,2,Roman_Catholicism
+21,Romania,2,Roman_Catholicism
+22,Romania,2,Roman_Catholicism
+23,Romania,2,Roman_Catholicism
+24,Romania,2,Roman_Catholicism
+25,Romania,2,Roman_Catholicism
+26,Romania,2,Roman_Catholicism
+27,Romania,2,Roman_Catholicism
+28,Romania,2,Roman_Catholicism
+29,Romania,2,Roman_Catholicism
+30,Romania,2,Roman_Catholicism
+31,Romania,2,Roman_Catholicism
+32,Romania,2,Roman_Catholicism
+33,Romania,2,Roman_Catholicism
+34,Romania,2,Roman_Catholicism
+35,Romania,2,Roman_Catholicism
+36,Romania,2,Roman_Catholicism
+37,Romania,2,Roman_Catholicism
+38,Romania,2,Roman_Catholicism
+39,Romania,2,Roman_Catholicism
+40,Romania,2,Roman_Catholicism
+41,Romania,2,Roman_Catholicism
 42,Romania,1,Reformed
 43,Romania,1,Reformed
 44,Romania,1,Reformed
 45,Romania,1,Reformed
 46,Romania,1,Reformed
-47,Romania,2,Roman_Catholicism
-48,Romania,2,Roman_Catholicism
-49,Romania,2,Roman_Catholicism
-50,Romania,2,Roman_Catholicism
-51,Romania,2,Roman_Catholicism
-52,Romania,2,Roman_Catholicism
-53,Romania,2,Roman_Catholicism
-54,Romania,2,Roman_Catholicism
-55,Romania,2,Roman_Catholicism
-56,Romania,2,Roman_Catholicism
-57,Romania,2,Roman_Catholicism
-58,Romania,2,Roman_Catholicism
-59,Romania,2,Roman_Catholicism
-60,Romania,2,Roman_Catholicism
-61,Romania,2,Roman_Catholicism
-62,Romania,2,Roman_Catholicism
-63,Romania,2,Roman_Catholicism
-64,Romania,2,Roman_Catholicism
-65,Romania,2,Roman_Catholicism
-66,Romania,2,Roman_Catholicism
-67,Romania,2,Roman_Catholicism
-68,Romania,2,Roman_Catholicism
-69,Romania,2,Roman_Catholicism
-70,Romania,2,Roman_Catholicism
-71,Romania,2,Roman_Catholicism
-72,Romania,2,Roman_Catholicism
-73,Romania,2,Roman_Catholicism
-74,Romania,2,Roman_Catholicism
-75,Romania,2,Roman_Catholicism
-76,Romania,2,Roman_Catholicism
-77,Romania,2,Roman_Catholicism
-78,Romania,2,Roman_Catholicism
-79,Romania,2,Roman_Catholicism
-80,Romania,2,Roman_Catholicism
-81,Romania,2,Roman_Catholicism
-82,Romania,2,Roman_Catholicism
-83,Romania,2,Roman_Catholicism
-84,Romania,2,Roman_Catholicism
-85,Romania,2,Roman_Catholicism
-86,Romania,2,Roman_Catholicism
-87,Romania,2,Roman_Catholicism
+47,Romania,1,Reformed
+48,Romania,1,Reformed
+49,Romania,1,Reformed
+50,Romania,1,Reformed
+51,Romania,1,Reformed
+52,Romania,1,Reformed
+53,Romania,1,Reformed
+54,Romania,1,Reformed
+55,Romania,1,Reformed
+56,Romania,1,Reformed
+57,Romania,1,Reformed
+58,Romania,1,Reformed
+59,Romania,1,Reformed
+60,Romania,1,Reformed
+61,Romania,1,Reformed
+62,Romania,1,Reformed
+63,Romania,1,Reformed
+64,Romania,1,Reformed
+65,Romania,1,Reformed
+66,Romania,1,Reformed
+67,Romania,1,Reformed
+68,Romania,1,Reformed
+69,Romania,1,Reformed
+70,Romania,1,Reformed
+71,Romania,1,Reformed
+72,Romania,1,Reformed
+73,Romania,1,Reformed
+74,Romania,1,Reformed
+75,Romania,1,Reformed
+76,Romania,1,Reformed
+77,Romania,1,Reformed
+78,Romania,1,Reformed
+79,Romania,1,Reformed
+80,Romania,1,Reformed
+81,Romania,1,Reformed
+82,Romania,1,Reformed
+83,Romania,1,Reformed
+84,Romania,1,Reformed
+85,Romania,1,Reformed
+86,Romania,1,Reformed
+87,Romania,1,Reformed
 88,Romania,3,Unitarian
 89,Romania,3,Unitarian
 90,Romania,3,Unitarian
@@ -603,11 +603,11 @@ group,variable,value,religion
 98,Slovenia,5,Other
 99,Slovenia,5,Other
 100,Slovenia,5,Other
-1,United States,6,Calvinism
-2,United States,6,Calvinism
-3,United States,6,Calvinism
-4,United States,6,Calvinism
-5,United States,6,Calvinism
+1,United States,2,Roman_Catholicism
+2,United States,2,Roman_Catholicism
+3,United States,2,Roman_Catholicism
+4,United States,2,Roman_Catholicism
+5,United States,2,Roman_Catholicism
 6,United States,2,Roman_Catholicism
 7,United States,2,Roman_Catholicism
 8,United States,2,Roman_Catholicism
@@ -673,11 +673,11 @@ group,variable,value,religion
 68,United States,2,Roman_Catholicism
 69,United States,2,Roman_Catholicism
 70,United States,2,Roman_Catholicism
-71,United States,2,Roman_Catholicism
-72,United States,2,Roman_Catholicism
-73,United States,2,Roman_Catholicism
-74,United States,2,Roman_Catholicism
-75,United States,2,Roman_Catholicism
+71,United States,6,Calvinism
+72,United States,6,Calvinism
+73,United States,6,Calvinism
+74,United States,6,Calvinism
+75,United States,6,Calvinism
 76,United States,10,Lutheranism
 77,United States,10,Lutheranism
 78,United States,10,Lutheranism
@@ -790,19 +790,19 @@ group,variable,value,religion
 85,Canada,11,Greek_Catholicism
 86,Canada,11,Greek_Catholicism
 87,Canada,11,Greek_Catholicism
-88,Canada,11,Greek_Catholicism
-89,Canada,11,Greek_Catholicism
-90,Canada,11,Greek_Catholicism
-91,Canada,11,Greek_Catholicism
-92,Canada,11,Greek_Catholicism
-93,Canada,11,Greek_Catholicism
-94,Canada,11,Greek_Catholicism
-95,Canada,11,Greek_Catholicism
-96,Canada,11,Greek_Catholicism
-97,Canada,11,Greek_Catholicism
-98,Canada,11,Greek_Catholicism
-99,Canada,11,Greek_Catholicism
-100,Canada,11,Greek_Catholicism
+88,Canada,2,Roman_Catholicism
+89,Canada,2,Roman_Catholicism
+90,Canada,2,Roman_Catholicism
+91,Canada,2,Roman_Catholicism
+92,Canada,2,Roman_Catholicism
+93,Canada,5,Other
+94,Canada,5,Other
+95,Canada,5,Other
+96,Canada,5,Other
+97,Canada,5,Other
+98,Canada,5,Other
+99,Canada,5,Other
+100,Canada,5,Other
 1,Israel,13,Judaism
 2,Israel,13,Judaism
 3,Israel,13,Judaism
@@ -886,23 +886,23 @@ group,variable,value,religion
 81,Israel,13,Judaism
 82,Israel,13,Judaism
 83,Israel,13,Judaism
-84,Israel,13,Judaism
-85,Israel,13,Judaism
-86,Israel,13,Judaism
-87,Israel,13,Judaism
-88,Israel,13,Judaism
-89,Israel,13,Judaism
-90,Israel,13,Judaism
-91,Israel,13,Judaism
-92,Israel,13,Judaism
-93,Israel,13,Judaism
-94,Israel,13,Judaism
-95,Israel,13,Judaism
-96,Israel,13,Judaism
-97,Israel,13,Judaism
-98,Israel,13,Judaism
-99,Israel,13,Judaism
-100,Israel,13,Judaism
+84,Israel,7,Catholicism
+85,Israel,7,Catholicism
+86,Israel,7,Catholicism
+87,Israel,7,Catholicism
+88,Israel,7,Catholicism
+89,Israel,7,Catholicism
+90,Israel,6,Calvinism
+91,Israel,6,Calvinism
+92,Israel,6,Calvinism
+93,Israel,6,Calvinism
+94,Israel,6,Calvinism
+95,Israel,5,Other
+96,Israel,5,Other
+97,Israel,5,Other
+98,Israel,5,Other
+99,Israel,5,Other
+100,Israel,5,Other
 1,Germany,7,Catholicism
 2,Germany,7,Catholicism
 3,Germany,7,Catholicism
@@ -1591,19 +1591,19 @@ group,variable,value,religion
 85,Finland,7,Catholicism
 86,Finland,7,Catholicism
 87,Finland,7,Catholicism
-88,Finland,7,Catholicism
-89,Finland,7,Catholicism
-90,Finland,7,Catholicism
-91,Finland,7,Catholicism
-92,Finland,7,Catholicism
-93,Finland,7,Catholicism
-94,Finland,7,Catholicism
-95,Finland,7,Catholicism
-96,Finland,7,Catholicism
-97,Finland,7,Catholicism
-98,Finland,7,Catholicism
-99,Finland,7,Catholicism
-100,Finland,7,Catholicism
+88,Finland,6,Calvinism
+89,Finland,6,Calvinism
+90,Finland,6,Calvinism
+91,Finland,6,Calvinism
+92,Finland,6,Calvinism
+93,Finland,5,Other
+94,Finland,5,Other
+95,Finland,5,Other
+96,Finland,5,Other
+97,Finland,5,Other
+98,Finland,5,Other
+99,Finland,5,Other
+100,Finland,5,Other
 1,New Zealand,14,Christianity_(broadly)
 2,New Zealand,14,Christianity_(broadly)
 3,New Zealand,14,Christianity_(broadly)

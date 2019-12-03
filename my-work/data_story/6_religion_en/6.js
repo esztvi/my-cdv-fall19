@@ -1,17 +1,7 @@
-// let w = 1425;
-// let h = 800;
-// let padding = 50;
-// set the dimensions and margins of the graph
+
 var margin = {top: 20, right: 10, bottom: 20, left: 80},
   width = 1425 - margin.left - margin.right,
   height = 800 - margin.top - margin.bottom;
-// let side_padding = ;
-// let color= (2,139,211);
-// let viz = d3.select("#container").append("svg")
-//     .style("width", w)
-//     .style("height", h)
-//     .style("border","black")
-//   .style("background-color", "black")
 
 
   // append the svg object to the body of the page
@@ -48,7 +38,10 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
     .domain(myVars)
     .padding(0.01);
   svg.append("g")
-    .call(d3.axisLeft(y));
+    .call(d3.axisLeft(y))
+    .attr("fill","whitesmoke")
+    .attr("stroke","whitesmoke")
+    .attr("line","whitesmoke");
 
 
   // Build color scale
@@ -58,7 +51,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
       if(datapoint.value == "1")
       { return "limegreen";}
       else if(datapoint.value == "2")
-      { return "hotpink";}
+      { return "maroon";}
       else if(datapoint.value == "3")
       { return "aquamarine";}
       else if(datapoint.value == "4")
@@ -68,7 +61,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
       else if(datapoint.value == "6")
       { return "seagreen";}
       else if(datapoint.value == "7")
-      { return "palevioletred";}
+      { return "red";}
       else if(datapoint.value == "8")
       { return "green";}
       else if(datapoint.value == "9")
@@ -76,15 +69,15 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
       else if(datapoint.value == "10")
       { return "lightgreen";}
       else if(datapoint.value == "11")
-      { return "deeppink";}
+      { return "crimson";}
       else if(datapoint.value == "12")
-      { return "maroon";}
+      { return "gray";}
       else if(datapoint.value == "13")
-      { return "dodgerblue";}
+      { return "rgb(0,56,184)";}
       else if(datapoint.value == "14")
       { return "yellow";}
       else if(datapoint.value == "15")
-      { return "crimson";}
+      { return "lavender";}
       else if(datapoint.value == "16")
       { return "silver";}
   };
@@ -102,6 +95,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
       .style("border-width", "2px")
       .style("border-radius", "5px")
       .style("padding", "5px")
+      .style("position","fixed")
 
     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function(d) {
@@ -110,7 +104,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
     var mousemove = function(d) {
       tooltip
         .html("The religion represented<br>by this cell is: " + d.religion)
-        .style("left", (d3.mouse(this)[0]+70) + "px")
+        .style("left", (d3.mouse(this)[0]+0) + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
     }
     var mouseleave = function(d) {
