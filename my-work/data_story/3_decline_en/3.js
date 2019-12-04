@@ -86,24 +86,6 @@ console.log(data);
           .attr("d", valueline3)
           ;
 
-          var tooltip = svg.append("g")
-            .attr("class", "tooltip")
-            .style("display", "none");
-
-          tooltip.append("rect")
-            .attr("width", 30)
-            .attr("height", 20)
-            .attr("fill", "white")
-            .style("opacity", 0.5);
-
-          tooltip.append("text")
-            .attr("x", 15)
-            .attr("dy", "1.2em")
-            .style("text-anchor", "middle")
-            .attr("font-size", "12px")
-            .attr("font-weight", "bold");
-          }
-        )
 
   // Add the X Axis
   svg.append("g")
@@ -128,3 +110,5 @@ console.log(data);
           .attr("transform", "translate( " + width+100 + ", 0 )")
           .call(d3.axisRight(y2))
           .call(g => g.select(".domain").remove());
+
+        });
