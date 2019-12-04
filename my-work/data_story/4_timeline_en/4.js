@@ -177,7 +177,7 @@ d3.json("data.json").then(function(incomingData){
       d.countryx = d.x;
       d.countryy = d.y;
       d.x= xScalePosNeg(d.eventType) + xScalePosNeg.bandwidth()/2;
-      d.y=h/7*6;
+      d.y=h/7*5;
     });
     // changeToCountryGraph();
 
