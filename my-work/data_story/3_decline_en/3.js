@@ -104,7 +104,9 @@ console.log(data);
           var mousemove = function(d) {
             console.log('hi');
             tooltip
-              .html("" + d.population)
+              .html("Population is:" + d.population,
+                    "Median Age is:" + d.medianAge,
+                    "Fetility Rate is:" + d.fertilityRate)
               .style("left", (d3.mouse(this)[0]+0) + "px")
               .style("top", (d3.mouse(this)[1]) + "px")
           }
