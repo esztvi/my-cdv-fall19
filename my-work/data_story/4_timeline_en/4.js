@@ -153,7 +153,7 @@ d3.json("data.json").then(function(incomingData){
     incomingData.forEach(function(d){
       d.yearx = d.x;
       d.yeary = d.y;
-      d.x= xScaleCountry(d.country);
+      d.x= xScaleCountry(d.country)+ xScalePosNeg.bandwidth()/24;
       d.y=h/7*3;
     });
 
