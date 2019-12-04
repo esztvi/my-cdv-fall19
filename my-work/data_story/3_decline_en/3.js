@@ -1,4 +1,7 @@
 // set the dimensions and margins of the graph
+var glines;
+var mouseG;
+var tooltip;
 let margin = {top: 20, right: 40, bottom: 30, left: 50},
     width = 1425 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
@@ -83,44 +86,30 @@ console.log(data);
           .attr("d", valueline3)
           ;
 
-          // create a tooltip
-          var tooltip = d3.select("#container")
-            .append("div")
-            .style("opacity", 0)
+          var tooltip = svg.append("g")
             .attr("class", "tooltip")
-            .style("background-color", "white")
-            .style("border", "solid")
-            .style("border-width", "2px")
-            .style("border-radius", "5px")
-            .style("padding", "5px")
-            .style("position","fixed")
+            .style("display", "none");
 
-          // Three function that change the tooltip when user hover / move / leave a cell
-          var mouseover = function(d) {
-            console.log('hi');
+          tooltip.append("rect")
+            .attr("width", 30)
+            .attr("height", 20)
+            .attr("fill", "white")
+            .style("opacity", 0.5);
 
-            tooltip.style("opacity", 1)
+          tooltip.append("text")
+            .attr("x", 15)
+            .attr("dy", "1.2em")
+            .style("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("font-weight", "bold");
           }
-          var mousemove = function(d) {
-            console.log('hi');
-            tooltip
-              .html("Population is:" + d.population,
-                    "Median Age is:" + d.medianAge,
-                    "Fetility Rate is:" + d.fertilityRate)
-              .style("left", (d3.mouse(this)[0]+0) + "px")
-              .style("top", (d3.mouse(this)[1]) + "px")
-          }
-          var mouseleave = function(d) {
-            tooltip.style("opacity", 0)
-          }
+        )
 
   // Add the X Axis
   svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
-      .on("mouseover", mouseover)
-      .on("mousemove", mousemove)
-      .on("mouseleave", mouseleave);
+
 
   // Add the Y0 Axis
   svg.append("g")
@@ -130,13 +119,12 @@ console.log(data);
   // Add the Y1 Axis
   svg.append("g")
       .attr("class", "axisRed")
-      .attr("transform", "translate( " + width + ", 0 )")
+      .attr("transform", "translate( " + width+100 + ", 0 )")
       .call(d3.axisRight(y1))
       .call(g => g.select(".domain").remove());
       // Add the Y2 Axis
       svg.append("g")
           .attr("class", "axisGreen")
-          .attr("transform", "translate( " + width + ", 0 )")
+          .attr("transform", "translate( " + width+100 + ", 0 )")
           .call(d3.axisRight(y2))
           .call(g => g.select(".domain").remove());
-});
