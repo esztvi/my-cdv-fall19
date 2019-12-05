@@ -30,6 +30,7 @@
   //   return ColorScale(d.NumberOfMessages);
   // }
   d3.json("map.geojson").then(function(CountriesData){
+    d3.csv("coords.csv").then(function(coords){
     // d3.json("cities.json").then(function(CitiesData){
       viz.selectAll("path")
           .data(CountriesData.features)
@@ -40,13 +41,17 @@
           .attr("d", path)
           .style("fill","whitesmoke")
           viz.append("g")
-              .attr("class", "bubble")
-            .selectAll("circle")
-              .data(CountriesData.feature(path, sovereignt.CountriesData).features)
-            .enter().append("circle")
-              .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-              .attr("r", 1.5);
-
+                    .selectAll("myCircles")
+                    .data(coords)
+                    .enter()
+                    .append("circle")
+                      .attr("cx", coords.lat)
+                      .attr("cy", coords.long)
+                      .attr("r", 20)
+                      .style("fill", "69b3a2")
+                      .attr("stroke", "#69b3a2")
+                      .attr("stroke-width", 3)
+                      .attr("fill-opacity", .4)
     //   CitiesData.map((country) => {
     //     //console.log("Run")
     //     viz.select("#" + country.Country)
@@ -55,4 +60,6 @@
     //
     // });
 
-  });
+  })
+})
+  ;

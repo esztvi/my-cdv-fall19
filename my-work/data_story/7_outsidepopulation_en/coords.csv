@@ -1,43 +1,43 @@
-Country, Lat, Long
-Hungary, 47.1625° N, 19.5033° E
-Czechia, 49.8175° N, 15.4730° E
-Romania, 45.9432° N, 24.9668° E
-Slovakia, 48.6690° N, 19.6990° E
-Serbia, 44.0165° N, 21.0059° E
-Ukraine, 48.3794° N, 31.1656° E
-Austria, 47.5162° N, 14.5501° E
-Croatia, 55.1694° N, 23.8813° E
-Slovenia, 46.1512° N, 14.9955° E
-United States, 48.3794° N, 31.1656° E
-Canada, 56.1304° N, 106.3468° W
-Israel, 31.771959° N, 35.217018° E
-Germany, 48.3794° N, 31.1656° E
-France, 46.2276° N, 2.2137° E
-Brazil, 14.2350° S, 51.9253° W
-Russia, 48.3794° N, 31.1656° E
-Australia, 25.2744° S, 133.7751° E
-United Kingdom, 48.3794° N, 31.1656° E
-Chile, 35.6751° S, 71.5430° W
-Argentina, 38.4161° S, 63.6167° W
-Sweden, 60.1282° N, 18.6435° E
-Switzerland, 46.8182° N, 8.2275° E
-Turkey, 48.3794° N, 31.1656° E
-Mexico, 23.6345° N, 102.5528° W
-Ireland, 53.4129° N, 8.2439° W
-Finland, 61.9241° N, 25.7482° E
-Poland, 48.3794° N, 31.1656° E
-New Zealand, 40.9006° S, 174.8860° E
-Norway, 60.4720° N, 8.4689° E
-Denmark, 56.2639° N, 9.5018° E
-Italy, 41.8719° N, 12.5674° E
-Belgium, 50.5039° N, 4.4699° E
-Greece, 41.8719° N, 12.5674° E
-Luxembourg, 49.8153° N, 6.1296° E
-Cyprus, 35.1264° N, 33.4299° E
-Portugal, 39.3999° N, 8.2245° W
-Latvia, 56.8796° N, 24.6032° E
-Estonia, 58.5953° N, 25.0136° E
-Bulgaria, 42.7339° N, 25.4858° E
-Lithuania, 55.1694° N, 23.8813° E
-Spain, 40.4637° N, 3.7492° W
-Shanghai, 31.2304° N, 121.4737° E
+Country, Long, Lat
+Hungary, 47.1625, 19.5033
+Czechia, 49.8175, 15.4730
+Romania, 45.9432, 24.9668
+Slovakia, 48.6690, 19.6990
+Serbia, 44.0165, 21.0059
+Ukraine, 48.3794, 31.1656
+Austria, 47.5162, 14.5501
+Croatia, 55.1694, 23.8813
+Slovenia, 46.1512, 14.9955
+United States, 48.3794, 31.1656
+Canada, 56.1304, -106.3468
+Israel, 31.771959, 35.217018
+Germany, 48.3794, 31.1656
+France, 46.2276, 2.2137
+Brazil, 14.2350° S, -51.9253
+Russia, 48.3794, 31.1656
+Australia, -25.2744, 133.7751
+United Kingdom, 48.3794, 31.1656
+Chile, -35.6751, -71.5430
+Argentina, -38.4161, -63.6167
+Sweden, 60.1282, 18.6435
+Switzerland, 46.8182, 8.2275
+Turkey, 48.3794, 31.1656
+Mexico, 23.6345, -102.5528
+Ireland, 53.4129, -8.2439
+Finland, 61.9241, 25.7482
+Poland, 48.3794, 31.1656
+New Zealand, -40.9006, 174.8860
+Norway, 60.4720, 8.4689
+Denmark, 56.2639, 9.5018
+Italy, 41.8719, 12.5674
+Belgium, 50.5039, 4.4699
+Greece, 41.8719, 12.5674
+Luxembourg, 49.8153, 6.1296
+Cyprus, 35.1264, 33.4299
+Portugal, 39.3999, -8.2245
+Latvia, 56.8796, 24.6032
+Estonia, 58.5953, 25.0136
+Bulgaria, 42.7339, 25.4858
+Lithuania, 55.1694, 23.8813
+Spain, 40.4637, -3.7492
+Shanghai, 31.2304, 121.4737
