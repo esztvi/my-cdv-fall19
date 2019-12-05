@@ -1,13 +1,3 @@
-// let w = 1425;
-// let h = 800;
-// let padding = 50;
-// let side_padding = ;
-// let color= (2,139,211);
-// let viz = d3.select("#container").append("svg")
-//     .style("width", w)
-//     .style("height", h)
-//     .style("border","black")
-//   .style("background-color", "black")
 
   let w = 2500; //single page
   let h = 1200;
@@ -46,8 +36,23 @@
                     .data(coords)
                     .enter()
                     .append("circle")
-                      .attr("cx", function(d) { return d[" Lat"];})
-                      .attr("cy", function(d) { return d[" Long"];})
+
+                      .attr("cx", function(d) {
+                        // console.log(d);
+                        let long=  d.Long.slice(0,7) ;
+                        let lat=  d.Lat.slice(0,7) ;
+                        // let pixelLoc= projection([lat, long])
+
+                        let pixelLoc= projection([-3.679545, 40.419053])
+                        return pixelLoc[0];
+                      })
+                      .attr("cy", function(d) {
+                        // console.log(d);
+                        let longa=  d.Long.slice(0,7) ;
+                        let lata=  d.Lat.slice(0,7) ;
+                        let pixelLoc= projection([-3.679545, 40.419053])
+                        return pixelLoc[1];
+                      })
                       .attr("r", 20)
                       .style("fill", "69b3a2")
                       .attr("stroke", "#69b3a2")

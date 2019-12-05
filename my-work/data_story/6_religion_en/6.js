@@ -49,37 +49,37 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
 
       console.log(datapoint.value);
       if(datapoint.value == "1")
-      { return "limegreen";}
+      { return "rgb(206,16,16)";}
       else if(datapoint.value == "2")
-      { return "maroon";}
+      { return "rgb(146,0,0)";}
       else if(datapoint.value == "3")
-      { return "aquamarine";}
+      { return "rgb(230,0,0)";}
       else if(datapoint.value == "4")
-      { return "indigo";}
+      { return "rgb(239,70,70)";}
       else if(datapoint.value == "5")
-      { return "lightsteelblue";}
+      { return "rgb(255,170,170)";}
       else if(datapoint.value == "6")
-      { return "seagreen";}
+      { return "rgb(206,72,72)";}
       else if(datapoint.value == "7")
-      { return "red";}
+      { return "rgb(104,6,6)";}
       else if(datapoint.value == "8")
-      { return "green";}
+      { return "rgb(206,30,30)";}
       else if(datapoint.value == "9")
-      { return "blueviolet";}
+      { return "rgb(127,34,34)";}
       else if(datapoint.value == "10")
-      { return "lightgreen";}
+      { return "rgb(182,20,20)";}
       else if(datapoint.value == "11")
-      { return "crimson";}
+      { return "rgb(200,56,20)";}
       else if(datapoint.value == "12")
-      { return "gray";}
+      { return "rgb(220,114,114)";}
       else if(datapoint.value == "13")
-      { return "rgb(0,56,184)";}
+      { return "rgb(47,0,0)";}
       else if(datapoint.value == "14")
-      { return "yellow";}
+      { return "rgb(77,0,0)";}
       else if(datapoint.value == "15")
-      { return "lavender";}
+      { return "rgb(255,193,193)";}
       else if(datapoint.value == "16")
-      { return "silver";}
+      { return "rgb(255,255,255)";}
   };
 
   //Read the data
