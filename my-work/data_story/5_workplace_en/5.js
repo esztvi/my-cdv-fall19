@@ -21,9 +21,6 @@ d3.json("data.json").then(function(incomingData){
   let xScaleHR= d3.scaleLinear().range([padding,w-padding]);
   let xScaleTransp= d3.scaleLinear().range([padding,w-padding]);
   let xScalePC= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFI= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleRE= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFor= d3.scaleLinear().range([padding,w-padding]);
   let xScaleFIR= d3.scaleLinear().range([padding,w-padding]);
   let xScaleRE= d3.scaleLinear().range([padding,w-padding]);
   let xScalePA= d3.scaleLinear().range([padding,w-padding]);
@@ -50,6 +47,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealAg
   // );
+  let xAxisAgGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxFor= viz.append("rect")
   .attr("class","boxFor")
   .attr("x", 50)
@@ -60,7 +63,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealFor
   // );
-
+  let xAxisForGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxFI= viz.append("rect")
   .attr("class","boxFi")
   .attr("x", 50)
@@ -71,6 +79,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealFi
   // );
+  let xAxisFIGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxMin= viz.append("rect")
   .attr("class","boxMin")
   .attr("x", 50)
@@ -81,6 +95,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealMin
   // );
+  let xAxisMinGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxProc= viz.append("rect")
   .attr("class","boxProc")
   .attr("x", 50)
@@ -91,6 +111,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealProc
   // );
+  let xAxisProcGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxEn= viz.append("rect")
   .attr("class","boxEn")
   .attr("x", 50)
@@ -101,6 +127,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealEn
   // );
+  let xAxisEnGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxBuild= viz.append("rect")
   .attr("class","boxBuild")
   .attr("x", 50)
@@ -111,6 +143,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealBuild
   // );
+  let xAxisBuildGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxTrade= viz.append("rect")
   .attr("class","boxTr")
   .attr("x", 50)
@@ -121,6 +159,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealTrade
   // );
+  let xAxisTradeGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxHR= viz.append("rect")
   .attr("class","boxHR")
   .attr("x", 50)
@@ -131,6 +175,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealHR
   // );
+  let xAxisHRGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxTransp= viz.append("rect")
   .attr("class","boxTransp")
   .attr("x", 50)
@@ -141,6 +191,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealTransp
   // );
+  let xAxisTranspGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxPC= viz.append("rect")
   .attr("class","boxPC")
   .attr("x", 50)
@@ -151,6 +207,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealPC
   // );
+  let xAxisPCGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxFIR= viz.append("rect")
   .attr("class","boxFIR")
   .attr("x", 50)
@@ -161,6 +223,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealFI
   // );
+  let xAxisFIRGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxRE= viz.append("rect")
   .attr("class","boxRE")
   .attr("x", 50)
@@ -171,6 +239,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealRE
   // );
+  let xAxisREGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxPA= viz.append("rect")
   .attr("class","boxPA")
   .attr("x", 50)
@@ -181,6 +255,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealPA
   // );
+  let xAxisPAGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxEd= viz.append("rect")
   .attr("class","boxEd")
   .attr("x", 50)
@@ -191,6 +271,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealEd
   // );
+  let xAxisEdGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxHSA= viz.append("rect")
   .attr("class","boxHSA")
   .attr("x", 50)
@@ -201,6 +287,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealHSA
   // );
+  let xAxisHSAGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxServ= viz.append("rect")
   .attr("class","boxServ")
   .attr("x", 50)
@@ -211,6 +303,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealServ
   // );
+  let xAxisServGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxSAA= viz.append("rect")
   .attr("class","boxSAA")
   .attr("x", 50)
@@ -221,6 +319,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealSAA
   // );
+  let xAxisSAAGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxOrg= viz.append("rect")
   .attr("class","boxOrg")
   .attr("x", 50)
@@ -231,6 +335,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealOrg
   // );
+  let xAxisOrgGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxUn= viz.append("rect")
   .attr("class","boxUn")
   .attr("x", 50)
@@ -241,6 +351,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealUn
   // );
+  let xAxisUnGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxGS= viz.append("rect")
   .attr("class","boxGS")
   .attr("x", 50)
@@ -251,6 +367,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealGS
   // );
+  let xAxisGSGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxPaint= viz.append("rect")
   .attr("class","boxPaint")
   .attr("x", 50)
@@ -261,6 +383,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealPaint
   // );
+  let xAxisPaintGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxPCB= viz.append("rect")
   .attr("class","boxPCB")
   .attr("x", 50)
@@ -271,6 +399,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealPCB
   // );
+  let xAxisPCBGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxApar= viz.append("rect")
   .attr("class","boxApar")
   .attr("x", 50)
@@ -281,6 +415,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealApar
   // );
+  let xAxisAparGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxFS= viz.append("rect")
   .attr("class","boxFS")
   .attr("x", 50)
@@ -291,6 +431,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealFS
   // );
+  let xAxisFSGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxRoof= viz.append("rect")
   .attr("class","boxRoof")
   .attr("x", 50)
@@ -301,6 +447,12 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealRoof
   // );
+  let xAxisRoofGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
   let boxWFE= viz.append("rect")
   .attr("class","boxWFE")
   .attr("x", 50)
@@ -311,6 +463,11 @@ d3.json("data.json").then(function(incomingData){
   // .on(
   //   "click", revealWFE
   // );
-
+  let xAxisWFEGroup=viz.append("g")
+      .attr("class","xaxisgroup")
+      .attr("fill","whitesmoke")
+      .attr("stroke","whitesmoke")
+      .attr("line","whitesmoke")
+  ;
 
 });
