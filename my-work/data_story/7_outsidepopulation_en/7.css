@@ -34,3 +34,7 @@ body {
   /* overflow: hidden; */
    background-size:cover;
 }
+.circle:hover{
+  stroke: black;
+  stroke-width: 4px;
+}

@@ -22,6 +22,32 @@
   d3.json("map.geojson").then(function(CountriesData){
     d3.csv("coords.csv").then(function(coords){
     // d3.json("cities.json").then(function(CitiesData){
+
+    var Tooltip = d3.select("#container")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 1)
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+      .style("position","fixed")
+      ;
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+      Tooltip.style("opacity", 1)
+    }
+    var mousemove = function(d) {
+      Tooltip
+        .html(d.Country + "<br>" + "long: " + d.Long + "<br>" + "lat: " + d.Lat)
+        .style("left", (d3.mouse(this)[0])+5 + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
+    }
+    var mouseleave = function(d) {
+      Tooltip.style("opacity", 0)
+    }
       console.log(coords);
       viz.selectAll("path")
           .data(CountriesData.features)
@@ -39,25 +65,28 @@
 
                       .attr("cx", function(d) {
                         // console.log(d);
-                        let long=  d.Long.slice(0,7) ;
-                        let lat=  d.Lat.slice(0,7) ;
+                        let long=  d.Long;
+                        let lat=  d.Lat;
                         // let pixelLoc= projection([lat, long])
 
-                        let pixelLoc= projection([-3.679545, 40.419053])
+                        let pixelLoc= projection([lat, long])
                         return pixelLoc[0];
                       })
                       .attr("cy", function(d) {
                         // console.log(d);
-                        let longa=  d.Long.slice(0,7) ;
-                        let lata=  d.Lat.slice(0,7) ;
-                        let pixelLoc= projection([-3.679545, 40.419053])
-                        return pixelLoc[1];
+                        let longa=  d.Long;
+                        let lata=  d.Lat;
+                        let pixelLoca= projection([lata,longa])
+                        return pixelLoca[1];
                       })
-                      .attr("r", 20)
-                      .style("fill", "69b3a2")
-                      .attr("stroke", "#69b3a2")
-                      .attr("stroke-width", 3)
+                      .attr("r", 3)
+                      .style("fill", "rgb(9,130,71)")
+                      .attr("stroke", "rgb(9,130,71)")
+                      .attr("stroke-width", 10)
                       .attr("fill-opacity", .4)
+                      .on("mouseover", mouseover)
+                      .on("mousemove", mousemove)
+                      .on("mouseleave", mouseleave)
     //   CitiesData.map((country) => {
     //     //console.log("Run")
     //     viz.select("#" + country.Country)
