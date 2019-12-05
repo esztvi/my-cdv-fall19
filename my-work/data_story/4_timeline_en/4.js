@@ -1,6 +1,6 @@
 let w = 1425;
 let h = 700;
-let padding = 50;
+let padding = 75;
 // let side_padding = ;
 // let color= (2,139,211);
 function getSize(datapoint,i) {
@@ -205,7 +205,39 @@ d3.json("data.json").then(function(incomingData){
     });
   }
 
-  console.log(incomingData);
+  // console.log(incomingData);
+  var tooltip = d3.select("#container")
+    .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "black")
+      .style("border-radius", "5px")
+      .style("padding", "10px")
+      .style("color", "white")
+
+  // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+  function showTooltip(d) {
+    tooltip
+      .transition()
+      .duration(200)
+    tooltip
+      .style("opacity", 1)
+      .html(d.year+ " : " + d.country + " - " + d.event)
+      .style("left", (d3.mouse(this)[0]+0) + "px")
+      .style("top", (d3.mouse(this)[1]+0) + "px")
+      .style("position","fixed")
+  };
+  function moveTooltip(){
+    tooltip
+      .style("left", (d3.mouse(this)[0]+0) + "px")
+      .style("top", (d3.mouse(this)[1]+0) + "px")
+  };
+  function hideTooltip(){
+    tooltip
+      .transition()
+      .duration(200)
+      .style("opacity", 0)
+  };
 
   function initGraph(){
       viz.selectAll(".datapoint").data(incomingData).enter()
@@ -216,6 +248,9 @@ d3.json("data.json").then(function(incomingData){
         return d.yearx;
       })
       .attr("r",getSize).attr("fill",getColor)
+      .on("mouseover", showTooltip )
+      .on("mousemove", moveTooltip )
+      .on("mouseleave", hideTooltip )
       .attr("cy",function(d){
         return h -500;
       })
