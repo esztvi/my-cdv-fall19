@@ -28,6 +28,7 @@ let viz = d3.select("#container").append("svg")
 
   // .style("background-color", "lavender")
 ;
+let placement= d3.range(500,700);
 let xScaleCountry= d3.scaleBand().range([padding,w-padding]);
 let xScalePosNeg= d3.scaleBand().range([padding,w-padding]);
 let xScaleYear= d3.scaleTime().range([padding,w-padding]);
@@ -177,7 +178,7 @@ d3.json("data.json").then(function(incomingData){
       d.countryx = d.x;
       d.countryy = d.y;
       d.x= xScalePosNeg(d.eventType) + xScalePosNeg.bandwidth()/2;
-      d.y=h/7*5;
+      d.y=placement;
     });
     // changeToCountryGraph();
 

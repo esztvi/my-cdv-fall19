@@ -2,6 +2,7 @@
 .topnav {
   background-color: #2b3341;
   overflow: hidden;
+  width:2500px;
 }
 
 /* Style the links inside the navigation bar */
@@ -9,7 +10,10 @@
   float: left;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 80px;
+  padding-left: 80px;
   text-decoration: none;
   font-size: 22px;
 }
