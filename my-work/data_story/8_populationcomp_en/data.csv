@@ -1,21 +1,21 @@
-Name, City, Population, Correlating Area, Population2
-Budapest, Budapest, 1757618, Romania, 1431807
-Baranya megye, Pécs, 145985, Ontario, 151750
-Bács-Kiskun megye, Kecskemét, 111836, New Jersey, 115615
-Békés megye, Békéscsaba, 60334, Baden-Württemberg, 50025
-Borsod-Abaúj-Zemplén megye, Miskolc, 159554, New York, 157863
-Csongrád megye, Szeged, 162593, Ukraine, 156600
-Fejér megye, Székesfehérvár, 98673, Michigan, 98036
-Győr-Moson-Sopron megye, Győr, 129372, California, 133988
-Hajdú-Bihar megye, Debrecen, 203914, Ohio, 203417
-Heves megye, Eger, 54609, British Columbia, 43515
-Komárom-Esztergom megye, Tatabánya, 66791, Russia, 76500
-Nógrád megye, Salgótarján, 34627, Sweden, 33018
-Pest megye, Érd, 63993, Bavaria, 72740
-Somogy megye, Kaposvár, 63742, Australia, 69160
-Szabolcs-Szatmár-Bereg megye, Nyíregyháza, 118125, Pennsylvania, 132184
-Jász-Nagykun-Szolnok megye, Szolnok, 72786, London, 96000
-Tolna megye, Szekszárd, 33000, Switzerland,25000
-Vas megye, Szombathely, 77866, Florida, 96885
-Veszprém megye, Veszprém, 60761, Austria, 55038
-Zala megye, Zalaegerszeg, 58959, Alberta, 48655
+Name,City,Population,CorrelatingArea,Population2
+Budapest,Budapest,1757618,Romania,1431807
+Baranya megye,Pécs,145985,Ontario,151750
+Bács-Kiskun megye,Kecskemét,111836,New Jersey,115615
+Békés megye,Békéscsaba,60334,Baden-Württemberg,50025
+Borsod-Abaúj-Zemplén megye,Miskolc,159554,New York,157863
+Csongrád megye,Szeged,162593,Ukraine,156600
+Fejér megye,Székesfehérvár,98673, Michigan,98036
+Győr-Moson-Sopron megye,Győr,129372,California,133988
+Hajdú-Bihar megye,Debrecen,203914,Ohio,203417
+Heves megye,Eger,54609,British Columbia,43515
+Komárom-Esztergom megye,Tatabánya,66791,Russia,76500
+Nógrád megye,Salgótarján,34627,Sweden,33018
+Pest megye,Érd,63993,Bavaria,72740
+Somogy megye,Kaposvár,63742,Australia,69160
+Szabolcs-Szatmár-Bereg megye,Nyíregyháza,118125,Pennsylvania,132184
+Jász-Nagykun-Szolnok megye,Szolnok,72786,London,96000
+Tolna megye,Szekszárd,33000,Switzerland,25000
+Vas megye,Szombathely,77866,Florida,96885
+Veszprém megye,Veszprém,60761,Austria,55038
+Zala megye,Zalaegerszeg,58959,Alberta,48655
