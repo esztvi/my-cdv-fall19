@@ -142,105 +142,49 @@
     {
         "event": "Fleeing Austrians",
         "year": 1848,
-        "country": "United States ",
+        "country": "USA ",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Great Economic Migration",
         "year": 1900,
-        "country": "United States ",
+        "country": "USA ",
         "size": 3,
         "color": "Green"
     },
     {
         "event": "Academic Freedom",
         "year": 1930,
-        "country": "United States ",
+        "country": "USA ",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Post-War Displacement",
         "year": 1946,
-        "country": "United States ",
+        "country": "USA ",
         "size": 3,
         "color": "Green"
     },
     {
         "event": "Post-War Displacement",
         "year": 1948,
-        "country": "United States ",
+        "country": "USA ",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Post-War Displacement",
         "year": 1950,
-        "country": "United States ",
+        "country": "USA ",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Freedom Fighters",
         "year": 1956,
-        "country": "United States ",
-        "size": 3,
-        "color": "Green"
-    },
-    {
-        "event": "Labor Migration",
-        "year": 1914,
-        "country": "Canada",
-        "size": 1,
-        "color": "Green"
-    },
-    {
-        "event": "World War II",
-        "year": 1945,
-        "country": "Canada",
-        "size": 2,
-        "color": "Green"
-    },
-    {
-        "event": "Religious Freedom",
-        "year": 1945,
-        "country": "Isreal",
-        "size": 3,
-        "color": "Green"
-    },
-    {
-        "event": "Treaty of Trianon",
-        "year": 1920,
-        "country": "Germany",
-        "size": 1,
-        "color": "Green"
-    },
-    {
-        "event": "World War II",
-        "year": 1945,
-        "country": "Germany",
-        "size": 1,
-        "color": "Green"
-    },
-    {
-        "event": "1956 Revolution",
-        "year": 1956,
-        "country": "Germany",
-        "size": 3,
-        "color": "Green"
-    },
-    {
-        "event": "Hungarians from Transylvania",
-        "year": 1975,
-        "country": "Germany",
-        "size": 2,
-        "color": "Green"
-    },
-    {
-        "event": "Fleeing Communism",
-        "year": 1980,
-        "country": "Germany",
+        "country": "USA ",
         "size": 3,
         "color": "Green"
     },
@@ -296,14 +240,14 @@
     {
         "event": "1956 Revolution",
         "year": 1956,
-        "country": "United Kingdom",
+        "country": "U.K.",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Hungary's Entry into the EU",
         "year": 2004,
-        "country": "United Kingdom",
+        "country": "U.K.",
         "size": 3,
         "color": "Green"
     },
@@ -340,6 +284,41 @@
         "year": 1900,
         "country": "Argentina",
         "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Treaty of Trianon",
+        "year": 1920,
+        "country": "Germany",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Germany",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Revolution",
+        "year": 1956,
+        "country": "Germany",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Hungarians from Transylvania",
+        "year": 1975,
+        "country": "Germany",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Fleeing Communism",
+        "year": 1980,
+        "country": "Germany",
+        "size": 3,
         "color": "Green"
     },
     {
@@ -387,7 +366,7 @@
     {
         "event": "Employment Opportunities",
         "year": 2004,
-        "country": "Czech Republic",
+        "country": "Czechia",
         "size": 1,
         "color": "Green"
     },
@@ -403,6 +382,13 @@
         "year": 2004,
         "country": "Ireland",
         "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Religious Freedom",
+        "year": 1945,
+        "country": "Israel",
+        "size": 3,
         "color": "Green"
     },
     {
@@ -443,21 +429,21 @@
     {
         "event": "American Immigration Quota on Hungarians",
         "year": 1921,
-        "country": "United States ",
+        "country": "USA ",
         "size": 3,
         "color": "Red"
     },
     {
         "event": "American Immigration Quota on Hungarians",
         "year": 1924,
-        "country": "United States ",
+        "country": "USA ",
         "size": 3,
         "color": "Red"
     },
     {
         "event": "American Immigration Quota on Hungarians",
         "year": 1927,
-        "country": "United States ",
+        "country": "USA ",
         "size": 3,
         "color": "Red"
     },
@@ -467,6 +453,20 @@
         "country": "Russia",
         "size": 3,
         "color": "Red"
+    },
+    {
+        "event": "Labor Migration",
+        "year": 1914,
+        "country": "Canada",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "World War II",
+        "year": 1945,
+        "country": "Canada",
+        "size": 2,
+        "color": "Green"
     },
     {
         "event": "Deportation",

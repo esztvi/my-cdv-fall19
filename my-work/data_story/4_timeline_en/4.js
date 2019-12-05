@@ -127,7 +127,7 @@ d3.json("data.json").then(function(incomingData){
       .attr("line","whitesmoke")
   ;
   let xAxisPosNeg=d3.axisBottom(xScalePosNeg);
-  let xAxisPosNegYPos = h -100;
+  let xAxisPosNegYPos = h -50;
   xAxisPosNegGroup.attr("transform", "translate(0,"+xAxisPosNegYPos+")");
   function createPosNegAxis(){
     xAxisPosNegGroup.call(xAxisPosNeg);
@@ -142,6 +142,8 @@ d3.json("data.json").then(function(incomingData){
     .force("collide",d3.forceCollide(function(d){
       return getSize(d)
     }))
+    .force("x",d3.forceX(function(d){return xScaleYear(d.parsedDate)}))
+    .force("y",d3.forceY(function(d){return h/7}))
     .on("end",simulationYearEnded)
     .tick(100)
   ;
@@ -162,8 +164,9 @@ d3.json("data.json").then(function(incomingData){
 
     let simulationCountry = d3.forceSimulation(incomingData)
       .force("collide",d3.forceCollide(function(d){
-        return getSize(d)
-      }))
+        return getSize(d)}))
+        .force("x",d3.forceX(function(d){return xScaleCountry(d.country)+ xScalePosNeg.bandwidth()/24}))
+      .force("y",d3.forceY(function(d){return h/7*3}))
       .on("end",simulationCountryEnded)
       .tick(100)
     ;
@@ -178,7 +181,7 @@ d3.json("data.json").then(function(incomingData){
       d.countryx = d.x;
       d.countryy = d.y;
       d.x= xScalePosNeg(d.eventType) + xScalePosNeg.bandwidth()/2;
-      d.y=placement;
+      d.y=h/7*5.5;
     });
     // changeToCountryGraph();
 
@@ -186,6 +189,8 @@ d3.json("data.json").then(function(incomingData){
       .force("collide",d3.forceCollide(function(d){
         return getSize(d)
       }))
+      .force("x",d3.forceX(function(d){return xScalePosNeg(d.eventType) + xScalePosNeg.bandwidth()/2}))
+    .force("y",d3.forceY(function(d){return h/7*5.5}))
       .on("end",simulationPosNegEnded)
       .tick(100)
     ;

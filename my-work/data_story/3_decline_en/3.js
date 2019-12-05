@@ -222,8 +222,8 @@ mouseG.append('svg:rect')
 
         // update the text with y value
         d3.select(this).select('#text0')
-          .text(y0.invert(pos.y).toFixed(2))
-                    d3.format(".4r")
+          .text(y0.invert(pos.y).toFixed(0))
+                    // d3.format(".4r")
           ;
 
           d3.select(this).select('#text1')

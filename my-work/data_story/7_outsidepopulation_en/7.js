@@ -32,6 +32,7 @@
   d3.json("map.geojson").then(function(CountriesData){
     d3.csv("coords.csv").then(function(coords){
     // d3.json("cities.json").then(function(CitiesData){
+      console.log(coords);
       viz.selectAll("path")
           .data(CountriesData.features)
           .enter()
@@ -41,12 +42,12 @@
           .attr("d", path)
           .style("fill","whitesmoke")
           viz.append("g")
-                    .selectAll("myCircles")
+                    .selectAll("circle")
                     .data(coords)
                     .enter()
                     .append("circle")
-                      .attr("cx", coords.lat)
-                      .attr("cy", coords.long)
+                      .attr("cx", function(d) { return d[" Lat"];})
+                      .attr("cy", function(d) { return d[" Long"];})
                       .attr("r", 20)
                       .style("fill", "69b3a2")
                       .attr("stroke", "#69b3a2")
