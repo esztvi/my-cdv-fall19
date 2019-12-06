@@ -13,13 +13,13 @@
       .attr("viewBox", "0 0 " + w + " " + h)
       .classed("svg-content", true);
   ;
-
-
+//rgb(9,130,71)
 
   // function getColor(d,i){
   //   return ColorScale(d.NumberOfMessages);
   // }
   d3.json("map.geojson").then(function(CountriesData){
+    let ColorScale = d3.scaleLinear().domain([0,4000000]).range(["rgb(201,246,225)","rgb(9,130,71)"]);
     d3.csv("coords.csv").then(function(coords){
     // d3.json("cities.json").then(function(CitiesData){
 
@@ -82,10 +82,10 @@
                         return pixelLoca[1];
                       })
                       .attr("r", 3)
-                      .style("fill", "rgb(9,130,71)")
-                      .attr("stroke", "rgb(9,130,71)")
-                      .attr("stroke-width", 10)
-                      .attr("fill-opacity", .4)
+                      .style("fill", ColorScale)
+                      // .attr("stroke", ColorScale)
+                      // .attr("stroke-width", 10)
+                      // .attr("fill-opacity", .4)
                       .on("mouseover", mouseover)
                       .on("mousemove", mousemove)
                       .on("mouseleave", mouseleave)

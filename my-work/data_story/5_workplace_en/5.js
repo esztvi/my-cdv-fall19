@@ -11,7 +11,7 @@ let viz = d3.select("#container").append("svg")
 d3.json("data.json").then(function(incomingData){
   console.log(incomingData);
 xScale= d3.scaleLinear().range([padding, w-padding]);
-Yscale= d3.scaleBand().range([extent]);
+// Yscale= d3.scaleBand().range([extent]);
   let boxAg= viz.append("rect")
   .attr("class","boxAg")
   .attr("x", 50)
@@ -19,6 +19,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(0)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealAg
   // );
@@ -35,6 +36,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(255,255,0)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealFor
   // );
@@ -51,6 +53,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(0,255,255)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealFi
   // );
@@ -67,6 +70,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(255,0,255)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealMin
   // );
@@ -83,6 +87,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(255,0,0)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealProc
   // );
@@ -99,6 +104,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(0,255,0)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealEn
   // );
@@ -115,6 +121,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rgb(0,0,255)")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealBuild
   // );
@@ -131,6 +138,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","lavender")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealTrade
   // );
@@ -147,6 +155,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","tomato")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealHR
   // );
@@ -163,6 +172,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","gold")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealTransp
   // );
@@ -179,6 +189,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","maroon")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealPC
   // );
@@ -195,6 +206,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","midnightblue")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealFI
   // );
@@ -211,6 +223,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","teal")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealRE
   // );
@@ -227,6 +240,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","coral")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealPA
   // );
@@ -243,6 +257,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","blueviolet")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealEd
   // );
@@ -259,6 +274,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","green")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealHSA
   // );
@@ -275,6 +291,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","lawngreen")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealServ
   // );
@@ -291,6 +308,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","powderblue")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealSAA
   // );
@@ -307,6 +325,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","gray")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealOrg
   // );
@@ -323,6 +342,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","white")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealUn
   // );
@@ -339,6 +359,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","hotpink")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealGS
   // );
@@ -355,6 +376,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","violet")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealPaint
   // );
@@ -371,6 +393,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","rebeccapurple")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealPCB
   // );
@@ -387,6 +410,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","silver")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealApar
   // );
@@ -403,6 +427,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","indianred")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealFS
   // );
@@ -419,6 +444,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","olive")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealRoof
   // );
@@ -435,6 +461,7 @@ Yscale= d3.scaleBand().range([extent]);
   .attr("width", 1300)
   .attr("height", 100)
   .attr("fill","khaki")
+  .style("cursor", "pointer")
   // .on(
   //   "click", revealWFE
   // );
