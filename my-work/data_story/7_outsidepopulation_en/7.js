@@ -41,8 +41,8 @@
     }
     var mousemove = function(d) {
       Tooltip
-        .html(d.Country + "<br>" + "long: " + d.Long + "<br>" + "lat: " + d.Lat)
-        .style("left", (d3.mouse(this)[0])+5 + "px")
+        .html(d.Country + "<br>" + "Population (High-Ball Estimate): " + d.PopH + "<br>" + "Population (Low-Ball Estimate): " + d.PopL)
+        .style("left", (d3.mouse(this)[0])+1 + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
     }
     var mouseleave = function(d) {
