@@ -65,7 +65,7 @@ var margin = {top: 20, right: 10, bottom: 20, left: 80},
       else if(datapoint.value == "8")
       { return "rgb(206,30,30)";}
       else if(datapoint.value == "9")
-      { return "rgb(127,34,34)";}
+      { return "rgb(239,100,70)";}
       else if(datapoint.value == "10")
       { return "rgb(182,20,20)";}
       else if(datapoint.value == "11")

@@ -85,9 +85,10 @@ d3.json("data.json").then(function(incomingData){
         if(!d.visible){
           return 0;
         }else{
-          return xScale(d.romania);
+          return xScale(d.romania)
         }
       })
+      .attr("fill","rgb(106, 7, 8)");
       graphgroups.select(".austria")
         .transition()
         .attr("x", function(d){
@@ -101,9 +102,10 @@ d3.json("data.json").then(function(incomingData){
           if(!d.visible){
             return 0;
           }else{
-            return xScale(d.austria);
+            return xScale(d.austria)
           }
         })
+        .attr("fill","rgb(237, 41, 57)");
     // let theSituationVisible = graphgroups.selectAll(".bar").data(d=>{
     //   return [
     //     {"visible": d.visible, "country":"romania", "data":d.romania},
