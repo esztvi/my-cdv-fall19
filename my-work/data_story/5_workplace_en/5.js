@@ -8,7 +8,8 @@ let viz = d3.select("#container").append("svg")
 .style("height", h)
 // .style("background-color", "lavender")
 ;
-let yScale= d3.scaleBand().range(["y","height"])
+let z = d3.scaleOrdinal().range(["#98abc5", "#8a89a6"]);
+let yScale= d3.scaleBand().range(["y","height"]);
 let xScaleAg= d3.scaleLinear().range([padding,w-padding]);
 let xScaleFor= d3.scaleLinear().range([padding,w-padding]);
 let xScaleFI= d3.scaleLinear().range([padding,w-padding]);
