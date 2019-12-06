@@ -8,35 +8,36 @@ let viz = d3.select("#container").append("svg")
 .style("height", h)
 // .style("background-color", "lavender")
 ;
+let yScale= d3.scaleBand().range(["y","height"])
+let xScaleAg= d3.scaleLinear().range([padding,w-padding]);
+let xScaleFor= d3.scaleLinear().range([padding,w-padding]);
+let xScaleFI= d3.scaleLinear().range([padding,w-padding]);
+let xScaleMin= d3.scaleLinear().range([padding,w-padding]);
+let xScaleProc= d3.scaleLinear().range([padding,w-padding]);
+let xScaleEn= d3.scaleLinear().range([padding,w-padding]);
+let xScaleBuild= d3.scaleLinear().range([padding,w-padding]);
+let xScaleTrade= d3.scaleLinear().range([padding,w-padding]);
+let xScaleHR= d3.scaleLinear().range([padding,w-padding]);
+let xScaleTransp= d3.scaleLinear().range([padding,w-padding]);
+let xScalePC= d3.scaleLinear().range([padding,w-padding]);
+let xScaleFIR= d3.scaleLinear().range([padding,w-padding]);
+let xScaleRE= d3.scaleLinear().range([padding,w-padding]);
+let xScalePA= d3.scaleLinear().range([padding,w-padding]);
+let xScaleEd= d3.scaleLinear().range([padding,w-padding]);
+let xScaleHSA= d3.scaleLinear().range([padding,w-padding]);
+let xScaleServ= d3.scaleLinear().range([padding,w-padding]);
+let xScaleSAA= d3.scaleLinear().range([padding,w-padding]);
+let xScaleOrg= d3.scaleLinear().range([padding,w-padding]);
+let xScaleUn= d3.scaleLinear().range([padding,w-padding]);
+let xScaleGS= d3.scaleLinear().range([padding,w-padding]);
+let xScalePaint= d3.scaleLinear().range([padding,w-padding]);
+let xScalePCB= d3.scaleLinear().range([padding,w-padding]);
+let xScaleApar= d3.scaleLinear().range([padding,w-padding]);
+let xScaleFS= d3.scaleLinear().range([padding,w-padding]);
+let xScaleRoof= d3.scaleLinear().range([padding,w-padding]);
+let xScaleWFE= d3.scaleLinear().range([padding,w-padding]);
 d3.json("data.json").then(function(incomingData){
   console.log(incomingData);
-  let xScaleAg= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFor= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFI= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleMin= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleProc= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleEn= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleBuild= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleTrade= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleHR= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleTransp= d3.scaleLinear().range([padding,w-padding]);
-  let xScalePC= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFIR= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleRE= d3.scaleLinear().range([padding,w-padding]);
-  let xScalePA= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleEd= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleHSA= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleServ= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleSAA= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleOrg= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleUn= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleGS= d3.scaleLinear().range([padding,w-padding]);
-  let xScalePaint= d3.scaleLinear().range([padding,w-padding]);
-  let xScalePCB= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleApar= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleFS= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleRoof= d3.scaleLinear().range([padding,w-padding]);
-  let xScaleWFE= d3.scaleLinear().range([padding,w-padding]);
 
 
   let boxAg= viz.append("rect")
@@ -45,7 +46,7 @@ d3.json("data.json").then(function(incomingData){
   .attr("y", 0)
   .attr("width", 1300)
   .attr("height", 100)
-  .attr("fill","rgb(12,10,100,0)");
+  .attr("fill","rgb(0)");
   // .on(
   //   "click", revealAg
   // );
@@ -275,11 +276,11 @@ d3.json("data.json").then(function(incomingData){
       .attr("stroke","whitesmoke")
       .attr("line","whitesmoke")
   ;
-  let xAxisPCG=d3.axisBottom(xScalePCG);
-  let xAxisPCGYPos = h -1600;
-  xAxisPCGGroup.attr("transform", "translate(0,"+xAxisPCGYPos+")");
-  function createYearAxis(){
-    xAxisPCGGroup.call(xAxisPCG);
+  let xAxisPC=d3.axisBottom(xScalePC);
+  let xAxisPCYPos = h -1600;
+  xAxisPCGroup.attr("transform", "translate(0,"+xAxisPCYPos+")");
+  function createPCAxis(){
+    xAxisPCGroup.call(xAxisPC);
   }
   let boxFIR= viz.append("rect")
   .attr("class","boxFIR")

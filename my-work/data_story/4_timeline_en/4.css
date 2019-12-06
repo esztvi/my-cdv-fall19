@@ -34,3 +34,7 @@ body {
 
   fill: rgb(9,130,71);
 }
+.datapoint:focus {
+
+  fill: rgb(9,130,71);
+}
