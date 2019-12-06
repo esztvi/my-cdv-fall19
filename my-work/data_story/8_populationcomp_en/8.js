@@ -18,6 +18,7 @@ let hungary_half = viz.append("g")
 .attr("class","hungary")
 .attr("width", w/2)
 .attr("height", h)
+.attr("z-index","0")
 ;
 // hungary_half.append("rect")
 //   .attr("width", w/2)
@@ -30,6 +31,7 @@ let other_half = viz.append("g")
 .attr("width", w/2)
 .attr("height", h)
 .attr("transform","translate("+(w/2)+",0)")
+.attr("z-index","0")
 ;
 // other_half.append("rect")
 //   .attr("width",w/2)
@@ -37,24 +39,27 @@ let other_half = viz.append("g")
 //   .attr("fill", "green")
 //
 // ;
-hungary_half.append("g")
-  .append("div")
-  .attr("class", "tooltip")
+let tooltip = viz.append("div")
+    .attr("class", "tooltip")
+    .attr("width","100px").attr("height","30px")
+    .attr("x","100")
+    .attr("y","700")
   .style("opacity", 1)
-  .style("background-color", "white")
+  .style("background-color", "black")
   .style("border", "solid")
   .style("border-width", "20px")
   .style("border-radius", "1px")
   .style("padding", "5px")
-  .style("position","absolute")
-  ;
+  .style("z-index","1")
+  .style("position","absolute");
+  // ;
 
 d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(CountriesData){
   d3.csv("data.csv").then(function(CitiesData){
     // d3.json("../8_populationcomp_en/comp/bavaria.geojson").then(function(bavariaData){
     // console.log(bavariaData);
     d3.json("compdataComplete.json").then(function(compData){
-      // console.log(compData);
+      console.log(compData);
 
       let projection = d3.geoMercator()
       .translate([w/2/2 , h/2 ])
@@ -127,19 +132,25 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
               drawCountry("romania")
             }else if(d.properties.correlatedData["CorrelatingArea"] == "California"){
                 drawCountry("california")}
-          return tooltip.style("hidden", false).html(d.name);
-        })
-        .on("mousemove",function(CitiesData){
-          tooltip.classed("hidden", false)
+          // return tooltip.style("hidden", false).html(d.name);
+          console.log(d3.event.pageY);
+           tooltip.classed("hidden", false)
                  .style("top", (d3.event.pageY) + "px")
                  .style("left", (d3.event.pageX) + "px")
-    .html("Hungarian City : " +d.City+ " - " + d.Population + "<br>"+"Correlating Region : " +d.CorrelatingArea+ " - " + d.Population2 +"<br>"+ " Note: Maps Not to Scale" );
+    .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +"<br>"+ " Note: Maps Not to Scale" );
         })
+        .on("mousemove",function(d,i){
+          // console.log(d);
+    //       tooltip.classed("hidden", false)
+    //              .style("top", (d3.event.pageY) + "px")
+    //              .style("left", (d3.event.pageX) + "px")
+    // .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +"<br>"+ " Note: Maps Not to Scale" );
+          })
         .on("mouseout",function(d,i){
           d3.select(this).attr("fill","white").attr("stroke-width",1);
           tooltip.classed("hidden", true);
         })
-        ;
+      // });
 
 
 

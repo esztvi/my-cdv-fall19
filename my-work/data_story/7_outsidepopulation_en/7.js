@@ -19,7 +19,7 @@
   //   return ColorScale(d.NumberOfMessages);
   // }
   d3.json("map.geojson").then(function(CountriesData){
-    let ColorScale = d3.scaleLinear().domain([0,4000000]).range(["rgb(201,246,225)","rgb(9,130,71)"]);
+    let ColorScale = d3.scaleLinear().domain([0,5000,1000000,4000000]).range(["rgb(201,246,225)","rgb(12,172,98)","rgb(9,130,71)","rgb(5,41,24)"]);
     d3.csv("coords.csv").then(function(coords){
     // d3.json("cities.json").then(function(CitiesData){
 
@@ -66,7 +66,8 @@
                     .append("circle")
 
                       .attr("cx", function(d) {
-                        // console.log(d);
+                        console.log(d.popH);
+
                         let long=  d.Long;
                         let lat=  d.Lat;
                         // let pixelLoc= projection([lat, long])
@@ -81,8 +82,8 @@
                         let pixelLoca= projection([lata,longa])
                         return pixelLoca[1];
                       })
-                      .attr("r", 3)
-                      .style("fill", ColorScale)
+                      .attr("r", 10)
+                      .style("fill", function(d){return ColorScale(d.PopH)})
                       // .attr("stroke", ColorScale)
                       // .attr("stroke-width", 10)
                       // .attr("fill-opacity", .4)
