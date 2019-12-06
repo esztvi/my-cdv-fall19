@@ -41,12 +41,12 @@ hungary_half.append("g")
   .append("div")
   .attr("class", "tooltip")
   .style("opacity", 1)
-  // .style("background-color", "white")
+  .style("background-color", "white")
   .style("border", "solid")
   .style("border-width", "20px")
   .style("border-radius", "1px")
   .style("padding", "5px")
-  .style("position","fixed")
+  .style("position","absolute")
   ;
 
 d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(CountriesData){
@@ -86,46 +86,46 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
       .on("mouseover",function(d,i){
         d3.select(this).attr("fill","grey").attr("stroke-width",2);
         // which county are we hovering
-        console.log(d.properties.correlatedData["City"] + " -> " + d.properties.correlatedData["Correlating Area"], d.properties.correlatedData);
-        if(d.properties.correlatedData["Correlating Area"] == "Bavaria"){
+        console.log(d.properties.correlatedData["City"] + " -> " + d.properties.correlatedData["CorrelatingArea"], d.properties.correlatedData);
+        if(d.properties.correlatedData["CorrelatingArea"] == "Bavaria"){
           drawCountry("bavaria")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Ukraine"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ukraine"){
           drawCountry("ukraine")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Ohio"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ohio"){
           drawCountry("ohio")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Michigan"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Michigan"){
           drawCountry("michigan")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Florida"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Florida"){
           drawCountry("florida")
-        }else if(d.properties.correlatedData["Correlating Area"] == "New York"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "New York"){
           drawCountry("newyork")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Alberta"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Alberta"){
           drawCountry("alberta")
-        }else if(d.properties.correlatedData["Correlating Area"] == "New Jersey"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "New Jersey"){
           drawCountry("newjersey")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Russia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Russia"){
           drawCountry("russia")
-        }else if(d.properties.correlatedData["Correlating Area"] == "British Columbia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "British Columbia"){
           drawCountry("bc")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Austria"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Austria"){
           drawCountry("austria")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Australia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Australia"){
           drawCountry("australia")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Switzerland"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Switzerland"){
           drawCountry("switzerland")
-        }else if(d.properties.correlatedData["Correlating Area"] == "London"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "London"){
           drawCountry("london")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Pennsylvania"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Pennsylvania"){
           drawCountry("pennsylvania")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Sweden"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Sweden"){
           drawCountry("sweden")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Ontario"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ontario"){
           drawCountry("ontario")
-        }else if(d.properties.correlatedData["Correlating Area"] == "Baden-Württemberg"){
+        }else if(d.properties.correlatedData["Correlating rea"] == "Baden-Württemberg"){
             drawCountry("baden")
-          }else if(d.properties.correlatedData["Correlating Area"] == "Romania"){
+          }else if(d.properties.correlatedData["CorrelatingArea"] == "Romania"){
               drawCountry("romania")
-            }else if(d.properties.correlatedData["Correlating Area"] == "California"){
+            }else if(d.properties.correlatedData["CorrelatingArea"] == "California"){
                 drawCountry("california")}
           return tooltip.style("hidden", false).html(d.name);
         })

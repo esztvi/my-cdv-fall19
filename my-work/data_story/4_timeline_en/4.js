@@ -58,6 +58,7 @@ d3.json("data.json").then(function(incomingData){
     .attr("width", 1300)
     .attr("height", 200)
     .attr("fill","rgb(1,1,1,0)")
+    .style("cursor","pointer")
     .on(
           "click", changeToYearGraph
         );
@@ -85,6 +86,7 @@ d3.json("data.json").then(function(incomingData){
     .attr("y", 200)
     .attr("width", 1300)
     .attr("height", 200)
+    .style("cursor","pointer")
     .attr("fill","rgb(1,1,1,0)")
     .on(
           "click", changeToCountryGraph
@@ -115,6 +117,7 @@ d3.json("data.json").then(function(incomingData){
     .attr("x", 50)
     .attr("y", 400)
     .attr("width", 1300)
+    .style("cursor","pointer")
     .attr("height", 200)
     .attr("fill","rgb(1,1,1,0)")
     .on(

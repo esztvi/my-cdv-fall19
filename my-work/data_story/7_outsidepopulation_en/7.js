@@ -31,8 +31,9 @@
       .style("border", "solid")
       .style("border-width", "2px")
       .style("border-radius", "5px")
+      .style("width","300px")
       .style("padding", "5px")
-      .style("position","fixed")
+      .style("position","absolute")
       ;
 
     // Three function that change the tooltip when user hover / move / leave a cell
@@ -40,9 +41,10 @@
       Tooltip.style("opacity", 1)
     }
     var mousemove = function(d) {
+      console.log(d);
       Tooltip
         .html(d.Country + "<br>" + "Population (High-Ball Estimate): " + d.PopH + "<br>" + "Population (Low-Ball Estimate): " + d.PopL)
-        .style("left", (d3.mouse(this)[0])+1 + "px")
+        .style("left", (d3.mouse(this)[0])+100 + "px")
         .style("top", (d3.mouse(this)[1]) + "px")
     }
     var mouseleave = function(d) {
