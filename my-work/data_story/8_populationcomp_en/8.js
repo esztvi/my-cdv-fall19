@@ -10,7 +10,21 @@ let viz = d3.select("#container")
 // .attr("preserveAspectRatio", "xMinYMin meet")
 // .attr("viewBox", "0 0 " + w + " " + h)
 .classed("svg-content", true);
-;
+
+let tooltip = d3.select("#tooltip")
+    .attr("class", "tooltip")
+    .attr("width","100px").attr("height","30px")
+    .attr("x","100")
+    .attr("y","700")
+  .style("opacity", 1)
+  .style("background-color", "lightgray")
+  .style("border", "solid")
+  .style("border-width", "5px")
+  .style("border-radius", "1px")
+  .style("padding", "5px")
+  .style("z-index","1")
+  .style("position","absolute");
+  ;
 
 
 
@@ -39,19 +53,19 @@ let other_half = viz.append("g")
 //   .attr("fill", "green")
 //
 // ;
-let tooltip = viz.append("div")
-    .attr("class", "tooltip")
-    .attr("width","100px").attr("height","30px")
-    .attr("x","100")
-    .attr("y","700")
-  .style("opacity", 1)
-  .style("background-color", "black")
-  .style("border", "solid")
-  .style("border-width", "20px")
-  .style("border-radius", "1px")
-  .style("padding", "5px")
-  .style("z-index","1")
-  .style("position","absolute");
+// let tooltip = viz.append("div")
+//     .attr("class", "tooltip")
+//     .attr("width","100px").attr("height","30px")
+//     .attr("x","100")
+//     .attr("y","700")
+//   .style("opacity", 1)
+//   .style("background-color", "black")
+//   .style("border", "solid")
+//   .style("border-width", "20px")
+//   .style("border-radius", "1px")
+//   .style("padding", "5px")
+//   .style("z-index","1")
+//   .style("position","absolute");
   // ;
 
 d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(CountriesData){
@@ -141,7 +155,7 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
         })
         .on("mousemove",function(d,i){
           // console.log(d);
-    //       tooltip.classed("hidden", false)
+          tooltip.classed("hidden", false)
     //              .style("top", (d3.event.pageY) + "px")
     //              .style("left", (d3.event.pageX) + "px")
     // .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +"<br>"+ " Note: Maps Not to Scale" );
