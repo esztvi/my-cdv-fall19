@@ -133,7 +133,7 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
           tooltip.classed("hidden", false)
                  .style("top", (d3.event.pageY+10) + "px")
                  .style("left", (d3.event.pageX + 10) + "px")
-    .html("Hungarian City : " +d.City+ " - " + d.Population + "    Correlating Region : " +d.CorrelatingArea+ " - " + d.Population2 + " Note: Maps Not to Scale" );
+    .html("Hungarian City : " +d.City+ " - " + d.Population + "<br>"+"Correlating Region : " +d.CorrelatingArea+ " - " + d.Population2 +"<br>"+ " Note: Maps Not to Scale" );
         })
         .on("mouseout",function(d,i){
           d3.select(this).attr("fill","white").attr("stroke-width",1);
