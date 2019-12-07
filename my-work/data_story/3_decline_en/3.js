@@ -2,9 +2,9 @@
 var glines;
 var mouseG;
 var tooltip;
-let margin = {top: 50, right: 40, bottom: 250, left: 50},
+let margin = {top: 50, right: 65, bottom: 50, left: 30},
     width = 1425 - margin.left - margin.right,
-    height = 800 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom;
     // width1 = 1425 - margin.left- margin.right-12,
 
     function getColor(datapoint,i) {
