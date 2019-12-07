@@ -106,9 +106,9 @@ d3.json("../8_populationcomp_hu/County/hungary.geojson").then(function(Countries
         d3.select(this).attr("fill","grey").attr("stroke-width",2);
         // which county are we hovering
         console.log(d.properties.correlatedData["City"] + " -> " + d.properties.correlatedData["CorrelatingArea"], d.properties.correlatedData);
-        if(d.properties.correlatedData["CorrelatingArea"] == "Bavaria"){
+        if(d.properties.correlatedData["CorrelatingArea"] == "Bajorország"){
           drawCountry("bavaria")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ukraine"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ukrajna"){
           drawCountry("ukraine")
         }else if(d.properties.correlatedData["CorrelatingArea"] == "Ohio"){
           drawCountry("ohio")
@@ -122,36 +122,37 @@ d3.json("../8_populationcomp_hu/County/hungary.geojson").then(function(Countries
           drawCountry("alberta")
         }else if(d.properties.correlatedData["CorrelatingArea"] == "New Jersey"){
           drawCountry("newjersey")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Russia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Oroszország"){
           drawCountry("russia")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "British Columbia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Brit Kolumbia"){
           drawCountry("bc")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Austria"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ausztria"){
           drawCountry("austria")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Australia"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Ausztrália"){
           drawCountry("australia")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Switzerland"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Svájc"){
           drawCountry("switzerland")
         }else if(d.properties.correlatedData["CorrelatingArea"] == "London"){
           drawCountry("london")
         }else if(d.properties.correlatedData["CorrelatingArea"] == "Pennsylvania"){
           drawCountry("pennsylvania")
-        }else if(d.properties.correlatedData["CorrelatingArea"] == "Sweden"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Svédország"){
           drawCountry("sweden")
         }else if(d.properties.correlatedData["CorrelatingArea"] == "Ontario"){
           drawCountry("ontario")
-        }else if(d.properties.correlatedData["Correlating rea"] == "Baden-Württemberg"){
+        }else if(d.properties.correlatedData["CorrelatingArea"] == "Baden-Württemberg"){
             drawCountry("baden")
-          }else if(d.properties.correlatedData["CorrelatingArea"] == "Romania"){
+          }else if(d.properties.correlatedData["CorrelatingArea"] == "Románia"){
               drawCountry("romania")
-            }else if(d.properties.correlatedData["CorrelatingArea"] == "California"){
+            }else if(d.properties.correlatedData["CorrelatingArea"] == "Kalifornia"){
                 drawCountry("california")}
           // return tooltip.style("hidden", false).html(d.name);
           console.log(d3.event.pageY);
            tooltip.classed("hidden", false)
                  .style("top", (d3.event.pageY) + "px")
                  .style("left", (d3.event.pageX) + "px")
-    .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + " people"+ "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +" people"+"<br>"+ " Note: Maps Not to Scale" );
+    .html("Magyar Város : " + d.properties.correlatedData["City"] + " - " + d.properties.correlatedData["Population"]+" ember"+"<br>"+"Összefüggő régió : "+ d.properties.correlatedData["CorrelatingArea"]+" - "+d.properties.correlatedData["Population2"]+" ember"+"<br>"+ " Megjegyzés: A térképek nem
+skálázottak" );
         })
         .on("mousemove",function(d,i){
           // console.log(d);
