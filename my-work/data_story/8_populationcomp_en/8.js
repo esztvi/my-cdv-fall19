@@ -13,7 +13,7 @@ let viz = d3.select("#container")
 
 let tooltip = d3.select("#tooltip")
     .attr("class", "tooltip")
-    .attr("width","100px").attr("height","30px")
+    .attr("width","120px").attr("height","30px")
     .attr("x","100")
     .attr("y","700")
   .style("opacity", 1)
@@ -151,7 +151,7 @@ d3.json("../8_populationcomp_en/County/hungary.geojson").then(function(Countries
            tooltip.classed("hidden", false)
                  .style("top", (d3.event.pageY) + "px")
                  .style("left", (d3.event.pageX) + "px")
-    .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +"<br>"+ " Note: Maps Not to Scale" );
+    .html("Hungarian City : " +d.properties.correlatedData["City"]+ " - " + d.properties.correlatedData["Population"] + " people"+ "<br>"+"Correlating Region : " +d.properties.correlatedData["CorrelatingArea"]+ " - " + d.properties.correlatedData["Population2"] +" people"+"<br>"+ " Note: Maps Not to Scale" );
         })
         .on("mousemove",function(d,i){
           // console.log(d);
