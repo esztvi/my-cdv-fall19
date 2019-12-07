@@ -46,7 +46,7 @@ I wanted this to be a bubble map so badly! But because Europe is so tightly pack
 
 ## Visualization 7: Population Comparisons
 
-<a href="https://imgflip.com/gif/3iqdok"><img src="https://i.imgflip.com/3iqdok.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/3iqdok"><img-align=center src="https://i.imgflip.com/3iqdok.gif" title="made at imgflip.com style= "/></a>
 
 This is an effort to compare populations of Hungarians living outside of Hungary, to those populations of people in county capitals in Hungary. THE BIGGEST CITIES... TECHNICALLY wouldn't be possible because there are three larger cities I didn't include due to overlap of counties. There wasn't a better GeoJSON of Hungary to show cities, so I just changed the dataset to compare county capitals instead of largest cities. Due to the change and the slight bugginess of the tooltip, this visualization gets a 4/10, it's not the data I originally wanted and the tooltip was incredibly difficult to work with.(Tooltips in general are the worst, I never want to make one again.)All my citations are on the page.
 
@@ -56,4 +56,4 @@ The entire project is translated into Hungarian! All of the visualizations and t
 
 ## Posting?
 
-So, high key... I am very concerned about positing this, like up on a website. As I was doing the project, I noticed that the Hungarian Official Police Force's Instagram account kept getting recommended for me to follow despite none of my friends following the page. My instagram is not connected to my Facebook, which I know has previously been examined. I wasn't concerned until we watched our in-class film. If I were to actually have this project accessible it would probably be after winter break, so that I don't cause any unnecessary trouble during the holidays for my family. 
+So, high key... I am very concerned about positing this, like up on a website. As I was doing the project, I noticed that the Hungarian Official Police Force's Instagram account kept getting recommended for me to follow despite none of my friends following the page. My instagram is not connected to my Facebook, which I know has previously been examined. I wasn't concerned until we watched our in-class film. If I were to actually have this project accessible it would probably be after winter break, so that I don't cause any unnecessary trouble during the holidays for my family.
