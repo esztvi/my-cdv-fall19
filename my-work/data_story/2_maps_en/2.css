@@ -30,6 +30,10 @@
   overflow: hidden;
    background-size:cover;
 } */
+a {
+  color: white;
+  text-decoration: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -41,38 +45,38 @@ body {
 }
 h1 {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 1.95em;
     color: #fff;
     /* background-color: #071d36; */
-    padding: 300px 0 50px 100px;
+    padding: 100px 50px 50px 100px;
     margin-bottom: 150px;
 }
 h2 {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 2em;
     color: #fff;
     /* background-color: green; */
     margin-bottom: 150px;
 }
 h3 {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 1.8em;
     color: #fff;
     /* background-color: blue; */
     margin-bottom: 150px;
 }
 h4 {
     font-weight: 300;
-    font-size: 4em;
+    font-size: 1.7em;
     color: #fff;
     /* background-color: violet; */
     margin-bottom: 150px;
 }
 p {
-    width: 30%;
-    margin: 0 auto 500px auto;
-    font-size: 1.4em;
-    color: #555;
+    /* width: 30%; */
+    /* margin: 0 auto 500px auto; */
+    font-size: 1.6em;
+    color: #fff;
     font-weight: 300;
     /* background-color: white; */
     margin-bottom: 150px;
