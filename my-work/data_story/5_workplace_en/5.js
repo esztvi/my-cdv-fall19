@@ -1,5 +1,5 @@
 let w = 1425;
-let h = 2700;
+let h = 1400;
 let padding = 50;
 
 
