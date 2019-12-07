@@ -17,7 +17,7 @@
 <body>
   <div class="topnav">
     <a href="../1_cover_hu/index.html">Főlap</a>
-    <a href="../2_maps_hu/index.html">Térképek</a>
+    <a href="../2_maps_hu/index.html"class='active-page'>Térképek</a>
     <a href="../3_decline_hu/index.html">Népesség Csökkenése</a>
     <a href="../4_timeline_hu/index.html">Idősor</a>
     <a href="../5_workplace_hu/index.html">Munkavállalás Külföldön</a>
@@ -30,23 +30,36 @@
 
 
 </div>
-<div id= "words" style="align:right;position:absolute;top:7%;text-align: center;
-    right:5%;font-size: 20px;color:whitesmoke;display: block;">
-  <p><pre>          Az adatok megértése érdekében
-          először döntét hoztam arrol
-          hogykit számítok magyarnak.
-          Először meg kellet értenem
-          a különbséget az etnikai
-          magyarok és a magyar
-          állampolgárok között. Fontos
-          az adatokat kontextusba
-          helyezni hogy haszálhatóvál
-          váljanak.Ahogy balra vagyis
-          jobbra görget felfedezi a
-          különbséget történelmi
-          határok és a mai határok
-          között.</pre>  </p>
-</div>
-    <script type="text/javascript" src="2.js"></script>
+<h1 style="align:center"> Ennek a projektnek a céljaira a "Magyar" kifejezéskés az <a href="https://www.worldatlas.com/articles/ethnic-groups-of-hungary.html">Etnikai csoportra</a>, vonatkozik, nem csak azokra aki mai Magyarország határain belül él. Ez a megkülönböztetés elengedhetetlen a projekt megértéséhez és kontextualizálásához. Ezek a történelmi térképek bemutatják az ország határának számos (figyelemre méltó) változását a jelenlegi határokhoz viszonyítva, amint azt később bemutattuk: a magyarok vándorlása akkor történt, amikor a határok jelentősen különböztek a mai határoktól. Lényegében az emigrációkor „magyar állampolgárságúként” definiált emberek továbbra is etnikai magyarok annak ellenére, hogy a mai Románia, Horvátország, Szlovákia, Ausztria vagy Szlovénia területéről költöznek.</h1>
+  <h1 class="fade-scroll"style="align:center;"><img src="0com.png" alt="starting point"align=center>Magyarország 1090-ig (Honfoglalás ~ 895)</h1>
+  <h2 class="fade-scroll"style="align:center;"><img src="2com.png" alt="point"align=center>13. századi Magyarország</h2>
+  <h3 class="fade-scroll"style="align:center;"><img src="3com.png" alt="starting "align=center>1526-1606 Magyarország az Oszmán – Magyar háborúk alatt</h3>
+  <h4 class="fade-scroll"style="align:center;"><img src="4com.png" alt="points"align=center>18. századi Magyarország</h4>
+  <p class="fade-scroll"style="align:center;"><img src="5com.png" alt="points"align=center>A világháborúk utáni Magyarország a volt területének 1/3-a</p>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+
+      $(function() {
+
+          var documentEl = $(document),
+              fadeElem = $('.fade-scroll');
+
+
+          documentEl.on('scroll', function() {
+              var currScrollPos = documentEl.scrollTop();
+
+              fadeElem.each(function() {
+                  var $this = $(this),
+                      elemOffsetTop = $this.offset().top;
+                  if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/200);
+              });
+          });
+
+      });
+
+  </script>
 </body>
 </html>
