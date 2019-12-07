@@ -25,226 +25,24 @@
     <a href="../7_outsidepopulation_hu/index.html">Külföldön Élő Magyarok</a>
     <a href="../8_populationcomp_hu/index.html">Népesség Összehasonlítás</a>
   </div>
-
+  <h1>A Magyarok Akik Külföldön Dolgoznak</h1>
+  <h3><pre>Ausztria      Románia</pre></h3>
 <div id="container">
-  <div id="d3id" ></div>
-  <script>
-  var models = [
-    // {
-    //     "industry": "Agriculture",
-    //     "austria": 1064,
-    //     "romania": 85509
-    // },
-    {
-        "industry": "Forestry",
-        "austria": null,
-        "romania": 3377
-    },
-    {
-        "industry": "Fishery",
-        "austria": 783,
-        "romania": 152
-    },
-    {
-        "industry": "Mining",
-        "austria": null,
-        "romania": 8657
-    },
-    // {
-    //     "industry": "Processing",
-    //     "austria": null,
-    //     "romania": 161835
-    // },
-    {
-        "industry": "Energy",
-        "austria": 1279,
-        "romania": 10125
-    },
-    {
-        "industry": "Building",
-        "austria": 1502,
-        "romania": 30457
-    },
-    {
-        "industry": "Trade",
-        "austria": 4187,
-        "romania": 59203
-    },
-    {
-        "industry": "Hotels & Restaurants",
-        "austria": 20540,
-        "romania": 9060
-    },
-    {
-        "industry": "Transportation",
-        "austria": 696,
-        "romania": 14924
-    },
-    {
-        "industry": "Post & Communications",
-        "austria": 271,
-        "romania": 5289
-    },
-    {
-        "industry": "Financing and Insurance",
-        "austria": 339,
-        "romania": 3843
-    },
-    {
-        "industry": "Real Estate",
-        "austria": null,
-        "romania": 8819
-    },
-    {
-        "industry": "Public Administration",
-        "austria": 940,
-        "romania": 16205
-    },
-    {
-        "industry": "Education",
-        "austria": null,
-        "romania": 27513
-    },
-    {
-        "industry": "Health and Social Assistance",
-        "austria": null,
-        "romania": 22296
-    },
-    {
-        "industry": "Services",
-        "austria": 2647,
-        "romania": 13592
-    },
-    {
-        "industry": "Small Agricultural Activities",
-        "austria": null,
-        "romania": 1087
-    },
-    {
-        "industry": "Organizations",
-        "austria": 1717,
-        "romania": 23
-    },
-    {
-        "industry": "Undeclared",
-        "austria": null,
-        "romania": 29
-    },
-    {
-        "industry": "Gas Stations",
-        "austria": 846,
-        "romania": null
-    },
-    {
-        "industry": "Painting",
-        "austria": 1417,
-        "romania": null
-    },
-    {
-        "industry": "Pastry Chef/Baker",
-        "austria": 1111,
-        "romania": null
-    },
-    {
-        "industry": "Aparel",
-        "austria": 827,
-        "romania": null
-    },
-    {
-        "industry": "Furniture Sales",
-        "austria": 659,
-        "romania": null
-    },
-    {
-        "industry": "Roofing",
-        "austria": 651,
-        "romania": null
-    },
-    {
-        "industry": "Work Force Exchange ",
-        "austria": 5902,
-        "romania": null
-    }
-  ];
-  models = models.map(i => {
-    i.industry = i.industry;
-    return i;
-  });
 
-  var container = d3.select('#d3id'),
-      width = 1425,
-      height = 800,
-      margin = {top: 30, right: 100, bottom: 30, left: 100},
-      barPadding = .2,
-      axisTicks = {qty: 5, outerSize: 0, dateFormat: '%m-%d'};
-
-  var svg = container
-     .append("svg")
-     .attr("width", width)
-     .attr("height", height)
-     .append("g")
-     .attr("transform", `translate(${margin.left},${margin.top})`);
-
-  var xScale0 = d3.scaleBand().range([0, width - margin.left - margin.right]).padding(barPadding);
-  var xScale1 = d3.scaleBand();
-  var yScale = d3.scaleLinear().range([height - margin.top - margin.bottom, 0]);
-
-  var xAxis = d3.axisBottom(xScale0).tickSizeOuter(axisTicks.outerSize);
-  var yAxis = d3.axisLeft(yScale).ticks(axisTicks.qty).tickSizeOuter(axisTicks.outerSize);
-
-  xScale0.domain(models.map(d => d.industry));
-  xScale1.domain(['austria', 'romania']).range([0, xScale0.bandwidth()]);
-  yScale.domain([0, d3.max(models, d => d.austria > d.romania ? d.austria : d.romania)]);
-
-  var industry = svg.selectAll(".industry")
-    .data(models)
-    .enter().append("g")
-    .attr("class", "industry")
-    .attr("transform", d => `translate(${xScale0(d.industry)},0)`);
-
-  /* Add field1 bars */
-  industry.selectAll(".bar.austria")
-    .data(d => [d])
-    .enter()
-    .append("rect")
-    .attr("class", "bar austria")
-  .style("fill","rgb(250,26,9)")
-    .attr("x", d => xScale1('austria'))
-    .attr("y", d => yScale(d.austria))
-    .attr("width", xScale1.bandwidth())
-    .attr("height", d => {
-      return height - margin.top - margin.bottom - yScale(d.austria)
-    });
-
-  /* Add field2 bars */
-  industry.selectAll(".bar.romania")
-    .data(d => [d])
-    .enter()
-    .append("rect")
-    .attr("class", "bar romania")
-  .style("fill","rgb(9,130,71)")
-    .attr("x", d => xScale1('romania'))
-    .attr("y", d => yScale(d.romania))
-    .attr("width", xScale1.bandwidth())
-    .attr("height", d => {
-      return height - margin.top - margin.bottom - yScale(d.romania)
-    });
-
-  // Add the X Axis
-  svg.append("g")
-     .attr("class", "x axis")
-     .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
-     .call(xAxis);
-
-  // Add the Y Axis
-  svg.append("g")
-     .attr("class", "y axis")
-     .call(yAxis);
-
-  </script>
 
 </div>
-<div id= "words" style="align:right;position:absolute;top:7%;text-align: center;
+<h2><pre>Foglalkoztatási statisztikák:
+  339000 magyar dolgozik az EU-ban Magyarországon kívül. 92000 magyar dolgozik Ausztriában. </pre> </h2>
+<h2><pre>Munkanélküliség:
+   MAGYARORSZÁG: 3,4% AUSZTRIA: 4,5% ROMÁNIA: 3,8%</pre> </h2>
+<h2><pre>Átlagfizetés:
+   MAGYARORSZÁG: 12978 €, AUSZTRIA: 47120 €, ROMÁNIA: 9,312 € </pre>  </h2>
+<h4>Nem igaz hogy az emberek csak felsőoktatással elérhető állásokra miatt hagyják el Magyaroszágot. A biológusoktól (mint Apám) a benzinkutosoküig, az osztrák és a romániai adatok azt mutatják, hogy az iparágak széles körét töltik be a Magyarok.</h4>
+<h5><img src="apucika.png" alt="anyone"> </br> Tehát: Bárki mehet</h5>
+<h5><img src="data.png" alt="datatable"> </h5>
+<h5>Zöld pont = Magasabb az ebben az országban foglalkoztatottak száma ebben az adott iparágban</h5>
+<p>Sources:<a href="https://countryeconomy.com/countries/compare/hungary/romania">Románia információ forrás<a href="https://countryeconomy.com/countries/compare/hungary/austria">Ausztria információ forrás<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=18&ved=2ahUKEwjmtpLD6MLlAhU8y4sBHUDSCToQFjARegQIBxAC&url=https%3A%2F%2Fec.europa.eu%2Fmigrant-integration%2Findex.cfm%3Faction%3Dmedia.download%26uuid%3D2998179B-D4DD-9D53-5227C598F3ECEA6C&usg=AOvVaw3a_MOLXiwb4LlGo54QrmED">Románia információ forrás<a href="https://dailynewshungary.com/230756-2/">Ausztria információ forrás</p>
+<!-- <div id= "words" style="align:right;position:absolute;top:7%;text-align: center;
     right:5%;font-size: 20px;color:whitesmoke;display: block;">
   <p><pre>Foglalkoztatási statisztikák:
     339000 magyar dolgozik az EU-ban Magyarországon kívül. 92000 magyar dolgozik Ausztriában. </pre>  </p>
@@ -252,7 +50,7 @@
    MAGYARORSZÁG: 3,4% AUSZTRIA: 4,5% ROMÁNIA: 3,8%</pre>  </p>
   <p><pre>Átlagfizetés:
    MAGYARORSZÁG: 12978 €, AUSZTRIA: 47120 €, ROMÁNIA: 9,312 €</pre>  </p>
-</div>
+</div> -->
     <script type="text/javascript" src="5.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@
         "Románia": 10125
     },
     {
-        "industry": "Építés",
+        "industry": "Építő",
         "Ausztria": 1502,
         "Románia": 30457
     },
@@ -100,12 +100,12 @@
         "Románia": 29
     },
     {
-        "industry": "Benzinkútak",
+        "industry": "Benzinkútasak",
         "Ausztria": 846,
         "Románia": null
     },
     {
-        "industry": "Festés",
+        "industry": "Festő",
         "Ausztria": 1417,
         "Románia": null
     },
