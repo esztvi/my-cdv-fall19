@@ -119,16 +119,16 @@
         "color": "Green"
     },
     {
-        "event": "Horvátország része volt Magyarországnak",
+        "event": "Horvát Orsz. része volt Magyarországnak",
         "year": 1867,
-        "country": "Horvátország",
+        "country": "Horvát Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Unió",
         "year": 1918,
-        "country": "Horvátország",
+        "country": "Horvát Orsz.",
         "size": 1,
         "color": "Green"
     },
@@ -140,51 +140,51 @@
         "color": "Green"
     },
     {
-        "event": "Menekülés az Osztrákok",
+        "event": "Menekülés az Osztrákoktól",
         "year": 1848,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Nagy Gazdasági Migráció",
         "year": 1900,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Green"
     },
     {
         "event": "Tudományos szabadság",
         "year": 1930,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Háború utáni Áttelepítés",
         "year": 1946,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Green"
     },
     {
         "event": "Háború utáni Áttelepítés",
         "year": 1948,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Háború utáni Áttelepítés",
         "year": 1950,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Szabadságharcosok",
         "year": 1956,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Green"
     },
@@ -210,44 +210,9 @@
         "color": "Green"
     },
     {
-        "event": "Trianoni Szerződés",
-        "year": 1920,
-        "country": "Németország",
-        "size": 1,
-        "color": "Green"
-    },
-    {
-        "event": "Második Világháború",
-        "year": 1945,
-        "country": "Németország",
-        "size": 1,
-        "color": "Green"
-    },
-    {
-        "event": "1956 Forradalom",
-        "year": 1956,
-        "country": "Németország",
-        "size": 3,
-        "color": "Green"
-    },
-    {
-        "event": "Erdélyi magyarok",
-        "year": 1975,
-        "country": "Németország",
-        "size": 2,
-        "color": "Green"
-    },
-    {
-        "event": "Menekülés a kommunizmustól",
-        "year": 1980,
-        "country": "Németország",
-        "size": 3,
-        "color": "Green"
-    },
-    {
         "event": "Munkavállalói Lehetőségek",
         "year": 2004,
-        "country": "Franciaország",
+        "country": "Francia Orsz.",
         "size": 2,
         "color": "Green"
     },
@@ -275,7 +240,7 @@
     {
         "event": "Politikai és Gazdasági Érdekek",
         "year": 2000,
-        "country": "Oroszország",
+        "country": "Orosz Orsz.",
         "size": 1,
         "color": "Green"
     },
@@ -296,14 +261,49 @@
     {
         "event": "1956 Forradalom",
         "year": 1956,
-        "country": "Egyesült Királyság",
+        "country": "UK",
         "size": 2,
         "color": "Green"
     },
     {
         "event": "Magyarország belépése az EU-ba",
         "year": 2004,
-        "country": "Egyesült Királyság",
+        "country": "UK",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Trianoni Szerződés",
+        "year": 1920,
+        "country": "Német Orsz.",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "Második Világháború",
+        "year": 1945,
+        "country": "Német Orsz.",
+        "size": 1,
+        "color": "Green"
+    },
+    {
+        "event": "1956 Forradalom",
+        "year": 1956,
+        "country": "Német Orsz.",
+        "size": 3,
+        "color": "Green"
+    },
+    {
+        "event": "Erdélyi magyarok",
+        "year": 1975,
+        "country": "Német Orsz.",
+        "size": 2,
+        "color": "Green"
+    },
+    {
+        "event": "Menekülés a kommunizmustól",
+        "year": 1980,
+        "country": "Német Orsz.",
         "size": 3,
         "color": "Green"
     },
@@ -345,21 +345,21 @@
     {
         "event": "Második Világháború",
         "year": 1945,
-        "country": "Svédország",
+        "country": "Svéd Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "1956 Forradalom",
         "year": 1956,
-        "country": "Svédország",
+        "country": "Svéd Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
-        "event": "Menedékjog ",
+        "event": "Menedékjog",
         "year": 2006,
-        "country": "Svédország",
+        "country": "Svéd Orsz.",
         "size": 1,
         "color": "Green"
     },
@@ -387,42 +387,42 @@
     {
         "event": "Munkavállalói Lehetőségek",
         "year": 2004,
-        "country": "Cseh Köztársaság",
+        "country": "Cseh Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Vízummentes utazási megállapodás",
         "year": 1991,
-        "country": "Írország",
+        "country": "Ír Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Munkavállalói Lehetőségek",
         "year": 2004,
-        "country": "Írország",
+        "country": "Ír Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Vallásszabadság",
         "year": 1960,
-        "country": "Finnország",
+        "country": "Finn Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Menekülés a kommunizmustól",
         "year": 1980,
-        "country": "Finnország",
+        "country": "Finn Orsz.",
         "size": 1,
         "color": "Green"
     },
     {
         "event": "Munkavállalói Lehetőségek",
         "year": 1990,
-        "country": "Finnország",
+        "country": "Finn Orsz.",
         "size": 1,
         "color": "Green"
     },
@@ -431,7 +431,7 @@
         "year": 1945,
         "country": "Új Zéland",
         "size": 1,
-        "color": "Green "
+        "color": "Green"
     },
     {
         "event": "1956 Forradalom",
@@ -441,35 +441,35 @@
         "color": "Green"
     },
     {
-        "event": "American Immigration Quota on Hungarians",
+        "event": "Amerikai bevándorlási kvóta a magyarokon",
         "year": 1921,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Red"
     },
     {
-        "event": "American Immigration Quota on Hungarians",
+        "event": "Amerikai bevándorlási kvóta a magyarokon",
         "year": 1924,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Red"
     },
     {
-        "event": "American Immigration Quota on Hungarians",
+        "event": "Amerikai bevándorlási kvóta a magyarokon",
         "year": 1927,
-        "country": "Egyesült Államok ",
+        "country": "USA",
         "size": 3,
         "color": "Red"
     },
     {
-        "event": "Hard Labor Camps",
+        "event": "Munka Táborok",
         "year": 1960,
-        "country": "Orroszország",
+        "country": "Orosz Orsz.",
         "size": 3,
         "color": "Red"
     },
     {
-        "event": "Kitoloncolás ",
+        "event": "Kitoloncolás",
         "year": 2010,
         "country": "Kanada",
         "size": 1,
