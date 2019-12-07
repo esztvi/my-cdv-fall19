@@ -9,6 +9,8 @@ let viz = d3.select("#container").append("svg")
 // .style("background-color", "lavender")
 ;
 d3.json("data.json").then(function(incomingData){
+  // create a tooltip
+
   console.log(incomingData);
   incomingData.forEach(d=>{
     // d.visible = true
