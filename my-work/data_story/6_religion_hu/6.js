@@ -1,5 +1,5 @@
 
-var margin = {top: 20, right: 20, bottom: 10, left: 70},
+var margin = {top: 20, right: 20, bottom: 10, left: 80},
   width = 1425 - margin.left - margin.right,
   height = 800 - margin.top - margin.bottom;
 
@@ -15,7 +15,7 @@ var margin = {top: 20, right: 20, bottom: 10, left: 70},
 
   // Labels of row and columns
   var myGroups = d3.range(1,101).map(d=>String(d));
-  var myVars = ["Egyesült Államok", "Egyesült Királyság", "Szlovénia", "Szlovákia", "Szerbia", "Románia", "Új-Zéland", "Izrael", "Magyarország", "Németország", "Finnország", "Horvátország" ,"Chile","Kanada","Brazília","Ausztria","Ausztrália","Argentína"]
+  var myVars = ["Egy. Államok", "Egy. Királyság", "Szlovénia", "Szlovákia", "Szerbia", "Románia", "Új-Zéland", "Izrael", "Magyarország", "Németország", "Finnország", "Horvátország" ,"Chile","Kanada","Brazília","Ausztria","Ausztrália","Argentína"]
 
   // Build X scales and axis:
 
